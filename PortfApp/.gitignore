@@ -6,9 +6,6 @@
 /out-tsc
 /bazel-out
 
-# Node
-
-
 # IDEs and editors
 .idea/
 .project
