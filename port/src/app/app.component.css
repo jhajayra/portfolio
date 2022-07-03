@@ -1,0 +1,7 @@
+.componente{
+    height: 3000px;
+    width: auto;
+  justify-content: center;
+  background-image: radial-gradient( circle farthest-corner at 3.6% 5.5%,  rgba(255,150,197,1) 9.8%, rgba(255,190,94,1) 26.3%, rgba(246,255,94,1) 43.8%, rgba(113,255,129,1) 59.2%, rgba(187,255,255,1) 74.6%, rgba(214,146,255,1) 89.4% );
+  
+  }
