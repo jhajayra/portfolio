@@ -1,87 +1,21 @@
-.encabezado {
-    height: 100px;
-    width: auto;    
-    background-color: #000000;
-    padding: 0px;
-    border: 0px;
-    margin: 0px;
-   
-} 
-img{
-  height: auto;
-  width: 180px;
-  margin-left: 70px;
-  border: 2px;
-  align-items: flex-start;
-
+.navbar {
+  display: flex;
+  height: 90px;
+  width: auto;
+  border: 0px;
+  justify-content: right;
+  float: right;
 }
 
-.buttons {
-    justify-content:right;
-    align-items: center;
-    margin: 8px;
-    text-align: right;
-    width: auto;
-    height: 50px;
-    margin-top: 20px;
-  }
-  
-  .buttons a {
-    text-decoration: none;
-    font-size: 20px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    color: #f1f1f1;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
-    transition: all .4s ease-in-out;
-    border: 2px;
-    margin: 3px;
-  }
 
-  .btn {
-    height: 40px;
-    width: 80px;
-    color: #f1f1f1;
-    border: 1px;
-    border-style: double;
-    margin: 6px white;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(201,0,169,1) 0%, rgba(144,1,1,1) 90% );
-    font-size: 17px;
-    text-decoration: underline;
-    text-shadow: 2px #fbfbfb;
-    font-style: oblique;
-    font-weight: 500;
-    justify-content: center;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    margin-top: 17px;
-    box-shadow: 2px 2px 5px rgba(246, 143, 183, 0.5);
-    transition: all .2s ease-in-out;
-  }
+#logo .logo-container {
+  display: flex;
+  float: right;
+}
 
-  .btn:hover{
-    transform: scale(1.1);
-  }
-
-  .buttons a:hover {
-    transform: scale(1.2);
-  }
-
-  .fa-facebook {
-    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-  }
-
-  .fa-instagram {
-    background-image: linear-gradient( 109.8deg,  rgb(255, 0, 170) 42.8%, rgb(255, 204, 0) 83.3% );
-  }
-
-  .fa-github {
-    background-image: linear-gradient(to right, #7d7b7a 0%, #304352 100%);
-  }
-
-  .fa-whatsapp {
-    background-image: linear-gradient( 75.7deg,  rgb(5, 215, 5) 3.8%, rgb(92, 158, 4) 87.1% );
-  }
+img {
+  height: 80px;
+  justify-content: right;
+  align-items: end;
+  float: end;
+}
