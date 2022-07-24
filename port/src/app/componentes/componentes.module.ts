@@ -9,6 +9,7 @@ import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { SkillsComponent } from './skills/skills.component';
+import { BarraNavComponent } from './barra-nav/barra-nav.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SkillsComponent } from './skills/skills.component';
     ExperienciaComponent,
     InicioComponent,
     ProyectosComponent,
-    SkillsComponent
+    SkillsComponent,
+    BarraNavComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +36,8 @@ import { SkillsComponent } from './skills/skills.component';
     ExperienciaComponent,
     InicioComponent,
     ProyectosComponent,
-    SkillsComponent
+    SkillsComponent,
+    BarraNavComponent
   ]
 })
 export class ComponentesModule { }

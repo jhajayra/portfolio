@@ -1,0 +1,9 @@
+body {
+    background-image: url(assets/imagenes/numeros.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(20, 0, 7);
+   
+}

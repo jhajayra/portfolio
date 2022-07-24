@@ -1,5 +1,43 @@
-.sobremi {
-    height: 250px;
-    width: auto;
-    background-color: rgb(23, 23, 23);
+ .sobremi {
+    display: flex;
+    align-items: center;
+    margin-top: 7vh;
+    height: 65vh;
+    width: 80vw;
+  }
+  
+  .sobremi div:first-child {
+    margin-right: 7%;
+    color: white;
+  }
+  
+  
+  .sobremi p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5vh;
+    font-weight: 500;
+    line-height: normal;
+    color: rgb(247, 206, 231);
+    cursor: default;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.267);
 }
+
+.foto img {
+  width: 64%;
+  height: auto;
+  opacity: 0.5;
+  margin-left: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

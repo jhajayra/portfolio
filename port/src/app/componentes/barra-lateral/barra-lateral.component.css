@@ -33,7 +33,7 @@
 .wrapper .menu-btn i{
   position: absolute;
   transform: rotate(180deg);
-  font-size: 23px;
+  font-size: 25px;
   transition: all 0.3s ease;
 }
 .wrapper .menu-btn i.fa-times{
@@ -50,19 +50,19 @@
 #sidebar{
   position: fixed;
   height: 100%;
-  width: 270px;
+  width: 230px;
   overflow: hidden;
-  left: -270px;
+  left: -230px;
   transition: all 0.3s ease;
 }
 #btn:checked ~ #sidebar{
   left: 0;
 }
 #sidebar .title{
-  line-height: 65px;
+  line-height: 50px;
   text-align: center;
   background: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 600;
   color: rgb(252, 233, 243);
   border-bottom: 1px solid rgb(24, 0, 7);
@@ -74,8 +74,8 @@
   background-image: linear-gradient( 180deg,  rgb(0, 0, 0) 1.1%, rgb(192, 4, 73) 130.5% );
 }
   #sidebar .list-items li{
-  padding-left: 40px;
-  line-height: 40px;
+  padding-left: 20px;
+  line-height: 37px;
   border-top: 1px solid rgba(119, 1, 36, 0.445);
   border-bottom: 1px solid rgb(129, 0, 60);
   transition: all 0.3s ease;
@@ -83,7 +83,7 @@
 #sidebar .list-items li:hover{
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-  box-shadow: 0 0px 10px 3px rgb(255, 0, 140);
+  box-shadow: 0 0px 15px 3px rgb(248, 165, 211);
 }
 #sidebar .list-items li:first-child{
   border-top: none;
@@ -91,14 +91,16 @@
 #sidebar .list-items li a{
   color: rgb(252, 233, 243);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
   height: 100%;
   width: 100%;
   display: block;
+  align-items: center;
+  margin-left: 10px;
 }
 #sidebar .list-items li a i{
-  margin-right: 20px;
+  margin-right: 80px;
 }
 #sidebar .list-items .icons{
   width: 100%;
@@ -115,21 +117,26 @@
   height: 100%;
   width: 40px;
   display: block;
-  margin: 0 5px;
-  font-size: 18px;
+  margin: 5px;
+  font-size: 20px;
+
   color: rgb(252, 233, 243);
-  background: #7a012c;
-  border-radius: 30px;
-  border: 2px solid #500122;
+  background-image: radial-gradient( circle farthest-corner at 50.4% 50.5%,  rgb(114, 2, 30) 0%, rgb(245, 40, 91) 90% );  border-radius: 30px;
+  border: 2px solid #f5a6c7;
   transition: all 0.3s ease;
 }
 #sidebar .list-items .icons a:hover{
-  background: #5c0124;
   transform: scale(1.1);
-  box-shadow: 0 0px 10px 3px #5c0124;
+  box-shadow: 0 0px 5px 5px #f7aac8;
 }
 .list-items .icons a:first-child{
   margin-left: 0px;
 }
 
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 

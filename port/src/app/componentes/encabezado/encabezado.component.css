@@ -1,21 +1,22 @@
 .navbar {
   display: flex;
-  height: 90px;
-  width: auto;
-  border: 0px;
-  justify-content: right;
-  float: right;
+  align-items: center;
+  margin: auto;
+  border: 2px;
+  padding: 2px;
 }
 
-
-#logo .logo-container {
-  display: flex;
-  float: right;
+.navbar div:first-child {
+  margin-right: 12vh;
+  align-items: center;
 }
 
 img {
-  height: 80px;
-  justify-content: right;
-  align-items: end;
+  height: 16vh;
   float: end;
+}
+
+.barra-lateral {
+  align-items: center;
+  margin-bottom: 11vh;
 }

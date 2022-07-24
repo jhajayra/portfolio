@@ -1,0 +1,67 @@
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px;
+    margin: 6px;
+    cursor: default; 
+    
+}
+
+.inicio div:first-child {
+    margin-right: 9vw;
+}
+
+.presentacion {
+    margin-top: 10vh;
+    margin-left: 0vw;
+    margin-right: 11vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.saludo h2 {
+    font-size: 7vh;
+    font-style: bold;
+    color: whitesmoke; 
+}
+
+.saludo h3 {
+    font-size: 6vh;
+    color: whitesmoke;
+}
+
+.nombre h1 {
+    font-size: 8vh;
+    color: whitesmoke;
+    background-color: rgba(255, 0, 98, 0.979);
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.titulo h2 {
+    font-size: 5vh;
+    color: rgb(58, 0, 39);
+    text-align: center;
+    font-style: italic;
+    text-decoration-line: underline;
+    background-color: rgba(160, 156, 158, 0.404);
+  
+    
+}
+
+.foto {
+    width: 96%;
+    max-width: 220px;
+    margin: 0 auto;
+    margin-top: 4vh;
+    
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 35vh;
+    cursor: none;
+   
+  }
+

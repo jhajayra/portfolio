@@ -1,8 +1,11 @@
 .encabezado {
     display: flex;
-    background-image: linear-gradient( 109.6deg,  rgba(6,2,2,1) 32.4%, rgba(137,30,47,1) 98.8% );    padding: 0px;
+    background-image: linear-gradient( 109.6deg,  rgba(6,2,2,1) 32.4%, rgb(226, 4, 115) 98.8% );    padding: 0px;
     border: 0px;
     margin: 0px;
     padding: 0px;
+    opacity: 0.9;
    
 } 
+
+
