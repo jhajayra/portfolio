@@ -1,19 +1,24 @@
 button {
-    height: 100%;
-    width: 120px;
-    display: block;
-    font-size: 18px;
-    font-weight: 600;
-    color: rgb(252, 233, 243);
-    background: #7a012c;
-    border-radius: 10px;
-    border: 3px solid #f195bb;
-    transition: all 0.3s ease;
+    height: 10vh;
+    width: 23vmin;
+    display: flex;
+    font-size: 4vmin;
+    font-weight: 700;
     text-align: center;
+    justify-content: left;
+    color: rgb(245, 206, 235);
+    background: #0e000557;
+    border-radius: 2vh;
+    border: 1vh solid #000000;
+    transition: all 0.3s ease;
+    text-align: right;
 }
 
 button:hover{
-    box-shadow: 0 0px 15px 3px rgb(245, 145, 200);
-    color: rgb(252, 238, 244);
-    transform: scale(0.9);
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+
   }
+
+
+  

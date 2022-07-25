@@ -24,10 +24,10 @@
 }
 
 .foto img {
-  height: 85vmin;
-  width: auto;
+ 
+  width: 40vmin;
   opacity: 0.3;
-  margin-left: 20%;
+  margin-left: 15%;
   box-shadow: 0 0% 9% 9% crimson;
 }
 
