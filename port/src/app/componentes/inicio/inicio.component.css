@@ -53,15 +53,16 @@
     width: 96%;
     max-width: 220px;
     margin: 0 auto;
-    margin-top: 4vh;
+    margin-top: 5vh;
     
 }
 
 .foto img {
-    width: 100%;
+    width: 95%;
     height: auto;
-    border-radius: 35vh;
+    border-radius: 10%;
     cursor: none;
+    box-shadow: -1vh 0vh 2vh 3vh rgba(26, 0, 0, 0.753);
    
   }
 

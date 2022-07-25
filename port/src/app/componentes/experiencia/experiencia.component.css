@@ -1,7 +1,14 @@
-.experiencia {
-    width: auto;
-    height: 500px;
-    background-color: rgb(0, 0, 0);
-    
+.container {
+    display: flex;
+    align-items: center;
+    margin: 10%; 
+
+}
+
+.box {
+    display: flex;
+   color: blanchedalmond;
+    margin: 10%;
+    border: 5% white;
 
 }
