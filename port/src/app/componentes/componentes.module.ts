@@ -8,6 +8,7 @@ import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { SkillsComponent } from './skills/skills.component';
+import { BtnRedesComponent } from './btn-redes/btn-redes.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { SkillsComponent } from './skills/skills.component';
     ExperienciaComponent,
     InicioComponent,
     ProyectosComponent,
-    SkillsComponent
+    SkillsComponent,
+    BtnRedesComponent
   ],
   imports: [
     CommonModule,
@@ -32,7 +34,8 @@ import { SkillsComponent } from './skills/skills.component';
     ExperienciaComponent,
     InicioComponent,
     ProyectosComponent,
-    SkillsComponent
+    SkillsComponent,
+    BtnRedesComponent
   ]
 })
 export class ComponentesModule { }
