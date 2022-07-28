@@ -1,5 +1,52 @@
 .educacion {
-    width: auto;
-    height: 500px;
-    background-color: darkslategrey;
+    display: flex;
+    width: 90vw;
+    height: 68vh;
+    background-color: rgba(0, 0, 0, 0.671);
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 5vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    width: 16rem;
+    height: 13rem;
+    background-color: rgba(155, 1, 60, 0.479);
+    margin: 1rem;
+    border-radius: 1rem;
+    
+}
+
+.card-title {
+    color: rgb(252, 216, 246);
+    text-decoration: underline;
+    font-size: 5vh;
+}
+
+.card-text {
+    color: aliceblue;
+    text-align: justify;
+    line-height: 1rem;
+    font-size: 3vh;
+}
+
+.btn-card {
+    background-color: rgb(51, 1, 24);
+    border: solid rgb(224, 153, 187);
+    border-radius: 0.6rem;
+    color: white;
+    text-decoration: none;
+    width: 10vh;
+    float: right;
+    font-size: 3vh;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: all;
+    border: 1vh solid rgb(245, 173, 187);
+
 }
