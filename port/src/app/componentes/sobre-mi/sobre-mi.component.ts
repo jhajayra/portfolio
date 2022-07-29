@@ -9,7 +9,13 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class SobreMiComponent  implements OnInit {
 
-  constructor() { }
+  protected descripcion:string;
+
+  constructor() {
+
+    this.descripcion = 'describir aqui'
+
+   }
 
   ngOnInit(): void {
   }

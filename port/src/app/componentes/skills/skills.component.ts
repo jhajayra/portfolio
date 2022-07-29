@@ -7,7 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+  protected softSkills:any;
+
+
+  constructor() {
+
+    this.softSkills=['emotional inteligence', 'team work',
+    'open minded', 'adaptability', 'emotional intelligence' ]
+
+   }
 
   ngOnInit(): void {
   }

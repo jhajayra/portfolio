@@ -19,7 +19,26 @@
 
 .skill-title {
   color: rgb(245, 200, 235);
-  margin-top: 1vh;
+  margin-top: 2vh;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   
+}
+hr {
+  line-height: 0vh;
+  color: white;
+}
+
+img {
+  width: 4rem;
+  height: 4rem;
+  margin: 0.7rem;
+  border-radius: 0.3rem;
+}
+
+.skill {
+  color: white;
+  text-transform: capitalize;
+  text-align: start;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 3.5vh;
 }

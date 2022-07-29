@@ -2,46 +2,50 @@
     display: flex;
     width: 90vw;
     height: 68vh;
-    background-color: rgba(0, 0, 0, 0.671);
     margin-top: 2vh;
     margin-bottom: 2vh;
     border-radius: 5vh;
     justify-content: center;
     align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
 .card {
-    width: 16rem;
-    height: 13rem;
-    background-color: rgba(155, 1, 60, 0.479);
+    width: 23vw;
+    height: 60vh;
+    background-color: rgba(7, 0, 3, 0.507);
     margin: 1rem;
     border-radius: 1rem;
     
 }
 
-.card-title {
-    color: rgb(252, 216, 246);
-    text-decoration: underline;
-    font-size: 5vh;
+.titulo {
+    color: rgb(255, 164, 202);
+    font-size: 3vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+  
+}
+hr {
+    color: rgb(250, 168, 219);
 }
 
-.card-text {
-    color: aliceblue;
-    text-align: justify;
-    line-height: 1rem;
-    font-size: 3vh;
+.lugar {
+    color: rgb(237, 244, 250);
+    text-align: start;
+    font-size: 2.1vw;
+    text-align: center;
+    text-transform: capitalize;
+   
 }
 
-.btn-card {
-    background-color: rgb(51, 1, 24);
-    border: solid rgb(224, 153, 187);
-    border-radius: 0.6rem;
+.anio {
     color: white;
-    text-decoration: none;
-    width: 10vh;
-    float: right;
-    font-size: 3vh;
+    text-align: center;
+    font-size: 2vw;
+    text-align: end;
 }
 
 .card:hover{

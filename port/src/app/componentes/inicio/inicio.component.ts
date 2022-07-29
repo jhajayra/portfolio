@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
-  constructor() { }
+  protected nombre : string;
+  protected titulo : string;
 
-  ngOnInit(): void {
+  constructor() { 
+      this.nombre = 'jhajayra mori infantes';
+      this.titulo = 'developer full stack jr';
+           
+    }
+    
+    ngOnInit(): void {
+      
+               
   }
-
-}
+    }
+    

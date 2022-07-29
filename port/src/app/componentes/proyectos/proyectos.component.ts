@@ -7,8 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProyectosComponent implements OnInit {
 
+  protected proyectos:any;
   
-  constructor() { }
+  
+  constructor() {
+
+    this.proyectos = [{titulo: 'primerproyecto',
+                     descripcion:'descrpcion del proyecto',
+                    anio: 2022}];
+   
+
+   }
   
   ngOnInit(): void {
      
