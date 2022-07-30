@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+
+import { SobremiService } from 'src/app/servicios/sobremi.service';
 
 
 @Component({
@@ -11,7 +12,7 @@ export class SobreMiComponent  implements OnInit {
 
   protected descripcion:string;
 
-  constructor() {
+  constructor(private aboutServ:SobremiService) {
 
     this.descripcion = 'describir aqui'
 

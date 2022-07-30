@@ -1,4 +1,43 @@
 <div class="login ">
-    <button class="btn"><i class="fa-solid fa-right-to-bracket"> </i>Login</button>
-
+    <!-- Button trigger modal -->
+    <button type="button"  data-bs-toggle="modal" data-bs-target="#login" id="login-btn">
+        <i class="fa-solid fa-right-to-bracket"></i> Login
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade container-fluid" id="login" tabindex="-1" aria-labelledby="login-title" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="login-title">Login Form</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="#">
+                    <div class="field">
+                       <input type="text" required>
+                       <label>Email Address</label>
+                    </div>
+                    <div class="field">
+                       <input type="password" required>
+                       <label>Password</label>
+                    </div>
+                    <div class="content">
+                       <div class="checkbox">
+                          <input type="checkbox" id="remember-me">
+                          <label for="remember-me">Remember me</label>
+                       </div>
+                       <div class="pass-link">
+                          <a href="#">Forgot password?</a>
+                       </div>
+                    </div>
+                    <div class="field">
+                       <input type="submit" value="Login">
+                    </div>
+                   
+                 </form>
+            </div>
+            </div>
+        </div>
+      </div>
 </div>

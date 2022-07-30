@@ -1,16 +1,26 @@
 <div class="container">
-    <div class="row">
-      <div class="col-6 ">
-        <div class=" box">Custom column padding</div>
-      </div>
-      <div class="col-6">
-        <div class=" box">Custom column padding</div>
-      </div>
-      <div class="col-6">
-        <div class=" box">Custom column padding</div>
-      </div>
-      <div class="col-6">
-        <div class="box ">Custom column padding</div>
+
+  <div class="accordion animate__animated animate__zoomIn" id="acordion">
+
+    <div class="accordion" *ngFor="let work of works">
+      <h2 class="accordion-header" id="heading">
+        <button class="button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#acor-colap" 
+          aria-expanded="false" aria-controls="acor-colap">
+          * {{work.where}}
+        </button>
+      </h2>
+      <div id="acor-colap" class="accordion-collapse collapse" aria-labelledby="heading" 
+        data-bs-parent="#acordion">
+        <div class="accordion-body">
+            <p class="position">{{work.position}}</p>
+            <p class="description">{{work.description}}</p>
+            <p class="anio">From {{work.from}} To {{work.to}}</p>
+
+        </div>
+        
       </div>
     </div>
+  
   </div>
+  
+</div>

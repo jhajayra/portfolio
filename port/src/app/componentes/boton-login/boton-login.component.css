@@ -1,11 +1,9 @@
-button {
-    height: 10vh;
-    width: 23vmin;
+#login-btn {
     display: flex;
     font-size: 4vmin;
     font-weight: 700;
     text-align: center;
-    justify-content: left;
+    justify-content: center;
     color: rgb(245, 206, 235);
     background: #0e000557;
     border-radius: 2vh;
@@ -14,12 +12,119 @@ button {
     text-align: right;
 }
 
-button:hover{
+#login-btn:hover{
     color: rgb(255, 255, 255);
     transform: scale(1.1);
     transition: 0.6s;
 
   }
 
+  .modal-dialog {
+    width: 41vw;
+    text-align: justify;
+    justify-content: center;
+    opacity: 1.1;
+  }
+
+.modal-header {
+    font-size: 2vw;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    user-select: none;
+    background: linear-gradient(-135deg, #41021f, #75013bfa);
+}
+.modal-body{
+    padding-left: 1vw;
+    background: linear-gradient(-135deg, #f58dbe93, #f7479f80);
+  }
+
+form{
+    padding: 1vw 1vw 2vw 2vw;
+  }
+
+  form .field{
+    height: 8vh;
+    width: 90%;
+    margin-top: 3vh;
+    position: relative;
+  }
+   form .field input{
+    height: 4vw;
+    width: 34vw;
+    outline: none;
+    font-size: 3vh;
+    padding-left: 2vw;
+    border: 1px solid rgb(182, 3, 125);
+    border-radius: 5vh;
+    transition: all 0.3s ease;
+    
+  }
+  form .field input:focus,
+  form .field input:valid{
+    border-color: #14010a;
+  }
+ form .field label{
+    position: absolute;
+    top: 50%;
+    left: 1vw;
+    color: #270015;
+    font-weight: 500;
+    font-size: 1.5vw;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+  }
+  form .field input:focus ~ label,
+  form .field input:valid ~ label{
+    top: 0%;
+    font-size: 1.5vw;
+    color: #270017;
+    background: rgb(248, 175, 224);
+    transform: translateY(-50%);
+  }
+  form .content{
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    font-size: 1.5vw;
+    align-items: center;
+    justify-content: left;
+  }
+  form .content .checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 2vw;
+  }
+
+  form .content label{
+    color: #110007;
+    user-select: none;
+    padding-left: 1vw;
+  }
+  form .content .pass-link{
+    color: "";
+    margin-left: 0;
+    padding-left: 3vw;
+  }
+  form .field input[type="submit"]{
+    color: #fff;
+    border: none;
+    padding-left: 0;
+    margin-top: -1vw;
+    font-size: 2.5vw;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(-135deg, #c850c0, #3d0122);
+    transition: all 0.3s ease;
+  }
+  form .field input[type="submit"]:active{
+    transform: scale(0.95);
+  }
+
+.modal-header button  {
+  color: white;
+}
 
   

@@ -1,14 +1,70 @@
 .container {
     display: flex;
     align-items: center;
-    margin: 8%; 
-
+    justify-content: center;
+    height: 70.5vh;
 }
 
-.box {
-    display: flex;
-   color: blanchedalmond;
-    margin: 10%;
-    border: 5% white;
-
+.accordion h2 button  {
+    background-color: rgba(14, 0, 8, 0.479);
+    color: rgb(253, 180, 216);
+    width: 65vw;
+    height: 6vw;
+    border: 0.5vh solid rgb(245, 173, 187);
+    border-radius: 1vh;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.2vw;
+    font-weight: 500;
+    margin-top: 5vh;
+    text-transform: capitalize;
+    text-align: start;
 }
+
+.accordion h2 button:hover{
+    
+}
+
+.accordion-body {
+    background-color: rgba(17, 1, 8, 0.651);
+    height: 20vh;
+    width: 63vw;
+    margin-left: 1vw;
+   
+}
+
+.accordion-body p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.6vw;
+    line-height: 1.5vh;
+}
+
+.position {
+    font-weight: 600;
+    text-align: start;
+    color: rgb(252, 185, 232);
+    text-transform: capitalize;
+}
+
+.description {
+    font-weight: 500;
+    text-align: justify;
+    color: rgb(235, 215, 221);
+    margin-left: 1vw;
+}
+
+.anio {
+    font-weight: 600;
+    color: rgb(250, 211, 229);
+    text-align: end;
+    margin-right: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
