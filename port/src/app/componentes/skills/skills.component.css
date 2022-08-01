@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-.container-skill {
+.container-soft {
   background-color: rgba(0, 0, 0, 0.466);
   height: 70vh;
   width: 30vw;
@@ -15,6 +15,7 @@
   margin-left: 2vw ;
   margin-right: 2vw;
   text-align: center;
+  text-transform: capitalize;
 }
 
 .skill-title {
@@ -28,17 +29,28 @@ hr {
   color: white;
 }
 
-img {
-  width: 4rem;
-  height: 4rem;
-  margin: 0.7rem;
-  border-radius: 0.3rem;
-}
-
-.skill {
+.skillSoft {
   color: white;
   text-transform: capitalize;
   text-align: start;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 3.5vh;
+}
+
+.container-skill {
+  background-color: rgba(0, 0, 0, 0.527);
+  height: 70vh;
+  width: 30vw;
+  border-radius: 4vh;
+  margin-left: 2vw ;
+  margin-right: 2vw;
+  text-align: center;
+  text-transform: capitalize
+ 
+}
+
+.language {
+  display: inline-block;
+  margin: 0.5vw;
+  
 }

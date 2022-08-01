@@ -12,7 +12,7 @@ export class InicioComponent implements OnInit {
   protected nombre : string;
   protected titulo : string;
 
-  constructor(private homeServ:InicioComponent) { 
+  constructor(private homeServ:InicioService) { 
       this.nombre = 'jhajayra mori infantes';
       this.titulo = 'developer full stack jr';
            

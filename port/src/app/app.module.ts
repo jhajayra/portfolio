@@ -3,20 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import {HttpClientModule} from '@angular/common/http';
 import { ComponentesModule } from './componentes/componentes.module';
+
+
 import { Observable } from 'rxjs';
 import { AppComponent } from './app.component';
 
 
 
+
+
+
 @NgModule({
   declarations: [
-   AppComponent
+   AppComponent,
+   
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    ComponentesModule
+    ComponentesModule,
+    
 
   ],
   providers: [],
