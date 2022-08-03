@@ -59,3 +59,6 @@ a:hover {
     display: flex;
     float: right;
 }
+body {
+    height: 100%;
+}

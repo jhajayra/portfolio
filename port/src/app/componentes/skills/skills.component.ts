@@ -11,6 +11,7 @@ export class SkillsComponent implements OnInit {
   protected softSkills:any;
   protected skillsFront:any;
   protected skillsBack:any;
+  protected listIdioma:any;
 
 
   constructor(private skillsServ:SkillsService) {
@@ -18,17 +19,22 @@ export class SkillsComponent implements OnInit {
     this.softSkills=['emotional inteligence', 'team work',
     'open minded', 'adaptability', 'emotional intelligence' ];
 
-    this.skillsFront=[ {lenguaje:'html', porcentaje:50},
-    {lenguaje:'css', porcentaje:50} ];
+    this.skillsFront=[  {lenguaje:'html', porcentaje:50},
+                        {lenguaje:'css', porcentaje:50} ];
     
     this.skillsBack=[ {lenguaje:'java', porcentaje:20},
-    {lenguaje:'html', porcentaje:50},
-    {lenguaje:'html', porcentaje:50},
-    {lenguaje:'html', porcentaje:50},
-    {lenguaje:'html', porcentaje:50},
-    {lenguaje:'html', porcentaje:50},
-                      {lenguaje:'mysql', porcentaje:20}];
+                      {lenguaje:'html', porcentaje:50},
+                      {lenguaje:'html', porcentaje:50},
+                      {lenguaje:'html', porcentaje:50},
+                      {lenguaje:'html', porcentaje:50},
+                      {lenguaje:'html', porcentaje:50},
+                      {lenguaje:'mysql', porcentaje:20} ];
 
+                  
+    this.listIdioma=[ {idioma:'ingles', nivel:'avanzado'},
+    {idioma:'ingles', nivel:'avanzado'},
+    {idioma:'ingles', nivel:'avanzado'}, {idioma:'ingles', nivel:'avanzado'},
+    ]
 
    }
 

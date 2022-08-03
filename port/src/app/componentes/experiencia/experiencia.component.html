@@ -2,19 +2,19 @@
 
   <div class="accordion animate__animated animate__zoomIn" id="acordion">
 
-    <div class="accordion" *ngFor="let work of works">
+    <div class="accordion" *ngFor="let trabajo of listExperiencia">
       <h2 class="accordion-header" id="heading">
         <button class="button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#acor-colap" 
           aria-expanded="false" aria-controls="acor-colap">
-          * {{work.where}}
+          * {{trabajo.where}}
         </button>
       </h2>
       <div id="acor-colap" class="accordion-collapse collapse" aria-labelledby="heading" 
         data-bs-parent="#acordion">
         <div class="accordion-body">
-            <p class="position">{{work.position}}</p>
-            <p class="description">{{work.description}}</p>
-            <p class="anio">From {{work.from}} To {{work.to}}</p>
+            <p class="position">{{trabajo.position}}</p>
+            <p class="description">{{trabajo.description}}</p>
+            <p class="anio">From {{trabajo.from}} To {{trabajo.to}}</p>
 
         </div>
         
