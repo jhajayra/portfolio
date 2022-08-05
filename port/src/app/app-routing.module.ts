@@ -7,10 +7,12 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
+import { BotonLoginComponent } from './componentes/boton-login/boton-login.component';
 
 
 const routes: Routes = [
   { path: 'home', component: InicioComponent },
+  {path: 'login', component: BotonLoginComponent},
   {path: 'about', component: SobreMiComponent},
   {path:'experience', component: ExperienciaComponent},
   {path:'education', component: EducacionComponent},

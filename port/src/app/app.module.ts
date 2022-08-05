@@ -5,6 +5,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { ComponentesModule } from './componentes/componentes.module';
 
 
+
 import { Observable } from 'rxjs';
 import { AppComponent } from './app.component';
 

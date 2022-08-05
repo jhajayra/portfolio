@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import {FormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 import { BotonLoginComponent } from './boton-login/boton-login.component';
 import { EducacionComponent } from './educacion/educacion.component';
 import { ExperienciaComponent } from './experiencia/experiencia.component';
@@ -8,6 +11,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { SkillsComponent } from './skills/skills.component';
 import { BtnRedesComponent } from './btn-redes/btn-redes.component';
+
 
 
 @NgModule({
@@ -27,6 +31,8 @@ import { BtnRedesComponent } from './btn-redes/btn-redes.component';
   ],
   imports: [
     CommonModule,
+    FormsModule,
+    HttpClientModule,
 
     NgCircleProgressModule.forRoot({
      

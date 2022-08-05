@@ -1,6 +1,8 @@
 <div class="login">
     <!-- Button trigger modal -->
-    <button type="button"  data-bs-toggle="modal" data-bs-target="#login" id="login-btn">
+    <button type="button"  data-bs-toggle="modal" data-bs-target="#login" id="login-btn" routerLink="/login"
+    routerLinkActive="activebutton"
+    ariaCurrentWhenActive="page">
         <i class="fa-solid fa-right-to-bracket"></i> Login
       </button>
       
@@ -15,12 +17,12 @@
             <div class="modal-body">
                 <form action="#">
                     <div class="field">
-                       <input type="text" required>
-                       <label>Email Address</label>
+                       <input type="text" required [(ngModel)]="persona.correo" placeholder=" Email Address">
+         
                     </div>
                     <div class="field">
-                       <input type="password" required>
-                       <label>Password</label>
+                       <input type="password" required [(ngModel)]="persona.contrasenia" placeholder=" Password">
+                       
                     </div>
                     <div class="content">
                        <div class="checkbox">
@@ -40,4 +42,5 @@
             </div>
         </div>
       </div>
+      
 </div>

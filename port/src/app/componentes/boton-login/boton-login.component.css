@@ -65,26 +65,9 @@ form{
   form .field input:focus,
   form .field input:valid{
     border-color: #14010a;
-  }
- form .field label{
-    position: absolute;
-    top: 30%;
-    left: 1vw;
-    color: #270015;
-    font-weight: 500;
-    font-size: 3vh;
-    pointer-events: none;
-    transform: translateY(-50%);
-    transition: all 0.3s ease;
-  }
-  form .field input:focus ~ label,
-  form .field input:valid ~ label{
-    top: 0%;
-    font-size: 1.5vh;
-    color: #270017;
-    background: rgb(248, 175, 224);
-    transform: translateY(-50%);
-  }
+      }
+
+
   form .content{
     display: flex;
     width: 100%;

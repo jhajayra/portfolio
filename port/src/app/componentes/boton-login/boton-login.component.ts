@@ -8,7 +8,16 @@ import { BotonLoginService } from 'src/app/servicios/boton-login.service';
 })
 export class BotonLoginComponent implements OnInit {
 
-  constructor( private loginServ:BotonLoginService) { }
+  protected persona:any;
+
+
+  constructor( private loginServ:BotonLoginService) { 
+
+      this.persona=[ {correo:'', contrasenia:''} 
+      ];
+     
+
+  }
 
   ngOnInit(): void {
   }
