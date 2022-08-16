@@ -5,17 +5,19 @@
     border: 6px;
     margin: 6px;
     cursor: default; 
-    
+    height: 70vh;
 }
 
 .inicio div:first-child {
-    margin-right: 3vw;
+    margin-right: 2vw;
+    
 }
 
 .presentacion {
+    width: 63vw;
     margin-top: 10vh;
     margin-left: 0vw;
-    margin-right: 9vw;
+    margin-right: 8vw;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 

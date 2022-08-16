@@ -13,7 +13,7 @@
 
 .card {
     width: 23vw;
-    height: 60vh;
+    height: 50vh;
     background-color: rgba(7, 0, 3, 0.507);
     margin: 1rem;
     border-radius: 1rem;
@@ -44,7 +44,7 @@ hr {
 .anio {
     color: white;
     text-align: center;
-    font-size: 2nvw;
+    font-size: 2vw;
     text-align: end;
 }
 

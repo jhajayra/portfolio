@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Usuario } from 'src/app/models/Usuario';
+import { InicioService } from 'src/app/servicios/inicio.service';
 
-import { SobremiService } from 'src/app/servicios/sobremi.service';
 
 
 @Component({
@@ -10,15 +11,14 @@ import { SobremiService } from 'src/app/servicios/sobremi.service';
 })
 export class SobreMiComponent  implements OnInit {
 
-  protected descripcion:string;
+  usuario: Usuario = new Usuario("", "", "")
 
-  constructor(private aboutServ:SobremiService) {
+  constructor(private usuarioServ:InicioService ) {
 
-    this.descripcion = 'describir aqui'
-
-   }
+  }
 
   ngOnInit(): void {
+    this.usuarioServ.traerUsuario().subscribe(data => {this.usuario = data})
   }
 
 }

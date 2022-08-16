@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Educacion } from 'src/app/models/Educacion';
 import { EducacionService } from 'src/app/servicios/educacion.service';
 
 
@@ -9,18 +10,13 @@ import { EducacionService } from 'src/app/servicios/educacion.service';
 })
 export class EducacionComponent implements OnInit {
 
-    protected estudios:any;
+  educacion: Educacion = new Educacion ("", "", "")
 
-  constructor(private educserv:EducacionService) { 
-
-      this.estudios = [ {titulo:'Developer', lugar:'argetina programa', anio: 2022, finalizado: true },
-                          {titulo:'graphic designer', lugar:'iccer', anio: 2014, finalizado: true},
-                          {titulo:'Mobile app development', lugar:'aprende programando', anio :2022, finalizado:true}
-
-      ]
-  }
+  constructor(private eduServ:EducacionService) {  }
 
   ngOnInit(): void {
+    this.eduServ.traerEducacion().subscribe(data => {this.educacion = data})
+
   }
 
 }

@@ -1,4 +1,6 @@
+import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Usuario } from 'src/app/models/Usuario';
 import { InicioService } from 'src/app/servicios/inicio.service';
 
 
@@ -7,20 +9,28 @@ import { InicioService } from 'src/app/servicios/inicio.service';
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css']
 })
+
 export class InicioComponent implements OnInit {
 
-  protected nombre : string;
-  protected titulo : string;
+  usuario: Usuario = new Usuario("", "", "")
 
-  constructor(private homeServ:InicioService) { 
-      this.nombre = 'jhajayra mori infantes';
-      this.titulo = 'developer full stack jr';
-           
+  constructor(private usuarioServ:InicioService) { 
+         
     }
     
     ngOnInit(): void {
-      
-               
-  }
+      this.usuarioServ.traerUsuario().subscribe(data => {this.usuario = data})
+    }
+
+    /*public verUsuario():void{
+      this.usuarioServ.traerUsuario().subscribe({
+        next: (response: Usuario) =>{
+        },
+        error: (error: HttpErrorResponse)=>{
+          alert(error.message);
+        }
+      })
+    }*/
+
     }
     
