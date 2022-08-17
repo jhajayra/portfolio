@@ -10,13 +10,17 @@ import { EducacionService } from 'src/app/servicios/educacion.service';
 })
 export class EducacionComponent implements OnInit {
 
-  educacion: Educacion = new Educacion ("", "", "")
+  edu: Educacion[]= [];  
 
   constructor(private eduServ:EducacionService) {  }
 
   ngOnInit(): void {
-    this.eduServ.traerEducacion().subscribe(data => {this.educacion = data})
+    this.eduServ.traerListaEdu().subscribe(data => {this.edu = data})
 
   }
+
+  //cargarEeducacion():void{
+   // this.eduServ.traerListaEdu().subscribe(data => {this.edu = data});
+  //} ------este metodo deberia traer la info pero no trae nada (maty)
 
 }

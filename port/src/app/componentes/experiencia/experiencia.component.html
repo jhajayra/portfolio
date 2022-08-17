@@ -1,26 +1,40 @@
 <div class="container">
-
+ 
   <div class="accordion animate__animated animate__zoomIn" id="acordion">
 
-    <div class="accordion" *ngFor="let trabajo of listExperiencia">
+    <div class="accordion box" *ngFor=" let Experiencia of expe">
+      
       <h2 class="accordion-header" id="heading">
         <button class="button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#acor-colap" 
-          aria-expanded="false" aria-controls="acor-colap">
-          * {{trabajo.where}}
-        </button>
-      </h2>
+        aria-expanded="false" aria-controls="acor-colap">
+        * {{Experiencia.lugarExp}}
+      </button>
+        </h2>
       <div id="acor-colap" class="accordion-collapse collapse" aria-labelledby="heading" 
-        data-bs-parent="#acordion">
-        <div class="accordion-body">
-            <p class="position">{{trabajo.position}}</p>
-            <p class="description">{{trabajo.description}}</p>
-            <p class="anio">From {{trabajo.from}} To {{trabajo.to}}</p>
-
-        </div>
-        
+            data-bs-parent="#acordion">
+            <div class="accordion-body">
+          <p class="position">{{Experiencia.cargoExp}}</p>
+          <br>
+          <p class="description">{{Experiencia.anioExp}}</p>
+      
+      
+      
+            </div>
+    
       </div>
+
+      
+      <div class="modificar">
+
+        <button><i class="fa fa-pencil"></i></button>
+        <button><i class="fa fa-trash"></i></button>
+      </div>
+        
+     
     </div>
-  
+
   </div>
-  
+
+
+
 </div>

@@ -38,3 +38,22 @@ li h5 {
     line-height: 3vh;
     text-align: center;
 }
+
+.modificar button {
+    float: right;
+    background-color: rgba(184, 4, 79, 0.89);
+    border-radius: 100%;
+    height: 5.5vh;
+    border: solid rgb(224, 160, 195);
+    margin: 0.7vh;
+    color: aliceblue;
+    margin-top: 5vh;
+}
+
+.proyecto {
+    display: flex;
+}
+
+.box {
+    width: 50vw;
+}

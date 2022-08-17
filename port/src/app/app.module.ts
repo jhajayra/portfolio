@@ -8,6 +8,7 @@ import { ComponentesModule } from './componentes/componentes.module';
 
 import { Observable } from 'rxjs';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -24,6 +25,7 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     AppRoutingModule,
     ComponentesModule,
+    FormsModule
     
 
   ],

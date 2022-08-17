@@ -1,18 +1,8 @@
 <div class="skills container-fluid animate__animated animate__zoomIn animate__slow">
   <script src="https://cdn.jsdelivr.net/npm/ng-circle-progress@1.6.0/bundles/ng-circle-progress.umd.min.js"></script>
 
-  <div class="soft-skills container container-soft">
-    <h3 class="skill-titulo">Soft Skills</h3>
-    <hr>
-    <ul *ngFor="let skill of softSkills" >
-      <li class="skillLista">{{skill}}</li>
-
-    </ul>
-
-  </div>
-
-  <div class="front container-skill container">
-    <h3 class="skill-titulo">Front End</h3>
+  <div class=" container-skill container">
+    <h3 class="skill-titulo">Skills</h3>
     <hr>
     <div class="circulo">
       <div class="lenguaje" *ngFor="let skill of skillsFront" >
@@ -21,39 +11,16 @@
         [title]="skill.porcentaje"
         [subtitle]="skill.lenguaje"            
         ></circle-progress>
+        <div class="modificar">
+          <button><i class="fa fa-pencil"></i></button>
+          <button><i class="fa fa-trash"></i></button>
+        </div>
       </div>
+      
     </div>
 
   </div>
 
-  <div class="back container-skill container">
-    <h3 class="skill-titulo">Back End</h3>
-    <hr>
-    <div class="circulo">
 
-      <div class="lenguaje" *ngFor="let skill of skillsBack">
-          <circle-progress class="circle"
-          [percent]="skill.porcentaje"
-          [title]="skill.porcentaje"
-          [subtitle]="skill.lenguaje"
-          ></circle-progress>
-      </div>  
-    </div>
-
-
-  </div>
- 
-  <div class="container-idioma container">
-    <h3 class="idioma-titulo">Language</h3>
-    <hr>
-    <div class="lista-idioma">
-      <ul *ngFor="let idioma of listIdioma" >
-        <li class="nombre-idioma">{{idioma.idioma}}</li>
-          <p class="nivel-idioma">Nivel: {{idioma.nivel}}</p>
-      </ul>
-    </div>
-
-
-  </div>
 
 </div>

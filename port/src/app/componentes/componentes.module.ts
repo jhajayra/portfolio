@@ -36,14 +36,14 @@ import { BtnRedesComponent } from './btn-redes/btn-redes.component';
 
     NgCircleProgressModule.forRoot({
      
-      radius:30,
-      outerStrokeWidth: 5,
+      radius:50,
+      outerStrokeWidth: 8,
       outerStrokeColor: "palevioletred",
       innerStrokeWidth: 0,
       showInnerStroke:false,
 
       title:"",
-      titleFontSize:"14",
+      titleFontSize:"20",
       titleColor: "white",
       titleFontWeight:"400",
 
@@ -53,8 +53,8 @@ import { BtnRedesComponent } from './btn-redes/btn-redes.component';
       subtitleFontWeight:"500",
 
 
-      units:"%",
-      unitsFontSize: "14",
+      units:" %",
+      unitsFontSize: "20",
       unitsFontWeight:"400" ,	
       unitsColor:"white",
 

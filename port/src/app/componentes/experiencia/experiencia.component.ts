@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Experiencia } from 'src/app/models/Experiencia';
 import { ExperienciaService } from 'src/app/servicios/experiencia.service';
 
 
@@ -9,17 +10,18 @@ import { ExperienciaService } from 'src/app/servicios/experiencia.service';
 })
 export class ExperienciaComponent implements OnInit {
 
-  protected listExperiencia:any;      
+  expe: Experiencia [] = [];    
 
   constructor(private expeServ:ExperienciaService) {
 
-      this.listExperiencia= [ { where:'lugar', position: 'puesto1', description: 'desripciones de lo que hciste', from: 2012, to:2121, },
-                    { where:'lugar2', position: 'puesto2', description: 'desripcfdciones de lo que hciste', from: 2052, to:2127, }
-      ]
-
+      
   }
 
   ngOnInit(): void {
+    this.expeServ.lista().subscribe(data => {this.expe = data})
   }
 
+  //cargarExperiencia(): void{
+    //this.expeServ.lista().subscribe(data => {this.expe = data})
+  //} --------- este metodo deberia trer la info pero no la trae(maty)
 }

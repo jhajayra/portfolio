@@ -11,11 +11,14 @@ export class EducacionService {
 
   constructor(private http: HttpClient) { }
 
-  public traerEducacion(): Observable<Educacion>{
-    return this.http.get<Educacion>(this.Url + `/detail/id/1`)
+  public traerListaEdu(): Observable<Educacion[]>{
+    return this.http.get<Educacion[]>(this.Url + `/list`)
   }
+  
 
   public editarEducacion(edu:Educacion):Observable <Educacion>{
     return this.http.put<Educacion>(this.Url + `/update/id/{id}`, edu)
   }
+
+  //public borrarEducacion(idEdu: )
 }

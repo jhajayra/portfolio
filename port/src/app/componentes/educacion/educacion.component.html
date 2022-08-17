@@ -2,13 +2,19 @@
     
   
         <div class="card animate__animated animate__zoomIn" >
-              <div class="card-body">
+              <div class="card-body" *ngFor="let educacion of edu">
               <h5 class="titulo">{{educacion.tituloEdu}}</h5>
               <hr>
               <p class="lugar">{{educacion.lugarEdu}}</p>
               <h6 class="anio">{{educacion.anioEdu}}</h6>
           
             </div>
+            <div class="modificar">
+
+              <button><i class="fa fa-pencil"></i></button>
+              <button><i class="fa fa-trash"></i></button>
+            </div>
           </div>
+          
 
 </div>

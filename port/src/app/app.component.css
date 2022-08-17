@@ -62,3 +62,24 @@ a:hover {
 body {
     height: 100%;
 }
+
+#login-btn {
+    display: flex;
+    font-size: 4vmin;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    color: rgb(245, 206, 235);
+    background: #0e000557;
+    border-radius: 2vh;
+    border: 1vh solid #000000;
+    transition: all 0.3s ease;
+    text-align: right;
+}
+
+#login-btn:hover{
+    color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    transition: 0.6s;
+
+  }

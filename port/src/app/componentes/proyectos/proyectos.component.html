@@ -2,9 +2,16 @@
     <ul>
 
         <li class="proyecto" *ngFor="let project of projects">
-            <h3 class="tit_proy">{{project.titulo}}</h3>
-            <p class="descripcion">{{project.descripcion}}</p>
-            <h5 class="año">{{project.anio}}</h5>
+            <div class="box">
+                <h3 class="tit_proy">• {{project.titulo}}</h3>
+                <p class="descripcion">{{project.descripcion}}</p>
+                <h5 class="año">{{project.anio}}</h5>
+            </div>
+            
+            <div class="modificar">
+                <button><i class="fa fa-pencil"></i></button>
+                <button><i class="fa fa-trash"></i></button>
+              </div>
         </li>
     </ul>
 
