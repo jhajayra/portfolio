@@ -1,9 +1,10 @@
-.container {
+.contenedor {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 72vh;
     margin-top: 2vh;
+    margin-left: 20vw;
 }
 
 .accordion h2 button  {
@@ -71,6 +72,29 @@
     color: aliceblue;
 
 }
+
+.agregar button {
+    float: right;
+    background-color: rgba(197, 5, 85, 0.89);
+    border-radius: 12%;
+    height: 7vh;
+    border: solid rgb(224, 160, 195);
+    margin: 0.7vh;
+    color: aliceblue;
+    margin-left: 5vw;
+    align-items: start;
+    font-size:3.5vh;
+    font-weight: 600 ;
+}
+
+.agregar button:hover {
+    transform: scale(1.1);
+}
+
+.modificar button:hover {
+    transform: scale(1.1);
+}
+
 
 
 

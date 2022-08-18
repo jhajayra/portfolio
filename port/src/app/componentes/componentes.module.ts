@@ -36,8 +36,9 @@ import { BtnRedesComponent } from './btn-redes/btn-redes.component';
 
     NgCircleProgressModule.forRoot({
      
-      radius:50,
-      outerStrokeWidth: 8,
+      
+      radius:40,
+      outerStrokeWidth: 7,
       outerStrokeColor: "palevioletred",
       innerStrokeWidth: 0,
       showInnerStroke:false,

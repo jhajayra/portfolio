@@ -1,20 +1,24 @@
-<div class="educacion container-fluid ">
-    
-  
-        <div class="card animate__animated animate__zoomIn" >
-              <div class="card-body" *ngFor="let educacion of edu">
-              <h5 class="titulo">{{educacion.tituloEdu}}</h5>
-              <hr>
-              <p class="lugar">{{educacion.lugarEdu}}</p>
-              <h6 class="anio">{{educacion.anioEdu}}</h6>
-          
-            </div>
-            <div class="modificar">
+<div class="container  container-fluid ">
+  <div class="agregar">
+    <button><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
+</div>
+  <div class="educacion">
+    <div class="card animate__animated animate__zoomIn" >
+          <div class="card-body" *ngFor="let educacion of edu">
+          <h5 class="titulo">{{educacion.tituloEdu}}</h5>
+          <hr>
+          <p class="lugar">{{educacion.lugarEdu}}</p>
+          <h6 class="anio">{{educacion.anioEdu}}</h6>
+      
+        </div>
+        <div class="modificar">
 
-              <button><i class="fa fa-pencil"></i></button>
-              <button><i class="fa fa-trash"></i></button>
-            </div>
-          </div>
-          
+          <button><i class="fa fa-pencil"></i></button>
+          <button><i class="fa fa-trash"></i></button>
+        </div>
+      </div>
+      
+
+  </div>
 
 </div>

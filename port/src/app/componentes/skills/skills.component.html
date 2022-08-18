@@ -1,15 +1,20 @@
-<div class="skills container-fluid animate__animated animate__zoomIn animate__slow">
-  <script src="https://cdn.jsdelivr.net/npm/ng-circle-progress@1.6.0/bundles/ng-circle-progress.umd.min.js"></script>
+  <div class="agregar container">
+    <button><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
+  </div>
+
+
+
+<div class="skills container-fluid animate__animated animate__zoomIn ">
 
   <div class=" container-skill container">
     <h3 class="skill-titulo">Skills</h3>
     <hr>
     <div class="circulo">
-      <div class="lenguaje" *ngFor="let skill of skillsFront" >
+      <div class="lenguaje" *ngFor="let skill of skills" >
         <circle-progress  class="circulo"
         [percent]="skill.porcentaje"
-        [title]="skill.porcentaje"
-        [subtitle]="skill.lenguaje"            
+        [title]="skill.nombreSkill"
+        [subtitle]="skill.nombreSkill"            
         ></circle-progress>
         <div class="modificar">
           <button><i class="fa fa-pencil"></i></button>

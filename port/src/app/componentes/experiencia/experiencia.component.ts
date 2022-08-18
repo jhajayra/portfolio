@@ -18,10 +18,10 @@ export class ExperienciaComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.expeServ.lista().subscribe(data => {this.expe = data})
+    this.cargarExperiencia();
   }
 
-  //cargarExperiencia(): void{
-    //this.expeServ.lista().subscribe(data => {this.expe = data})
-  //} --------- este metodo deberia trer la info pero no la trae(maty)
+  cargarExperiencia(): void{
+    this.expeServ.lista().subscribe(data => {this.expe = data})
+  } 
 }

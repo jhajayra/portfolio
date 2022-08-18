@@ -1,19 +1,26 @@
-<div class="proyectos container-fluid animate__animated animate__zoomIn ">
-    <ul>
+<div class="agregar container">
+    <button><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
+  </div>
 
-        <li class="proyecto" *ngFor="let project of projects">
-            <div class="box">
-                <h3 class="tit_proy">• {{project.titulo}}</h3>
-                <p class="descripcion">{{project.descripcion}}</p>
-                <h5 class="año">{{project.anio}}</h5>
-            </div>
-            
-            <div class="modificar">
-                <button><i class="fa fa-pencil"></i></button>
-                <button><i class="fa fa-trash"></i></button>
-              </div>
-        </li>
-    </ul>
+  <div class="contenedor">
 
-
-</div>
+      <div class="proyectos container-fluid animate__animated animate__zoomIn ">
+          <ul>
+      
+              <li class="proyecto" *ngFor="let proyecto of proye">
+                  <div class="box">
+                      <h3 class="tit_proy">• {{proyecto.nombreProye}}</h3>
+                      <p class="descripcion">{{proyecto.descriProye}}</p>
+                      <h5 class="año">{{proyecto.anioProye}}</h5>
+                  </div>
+                  
+                  <div class="modificar">
+                      <button><i class="fa fa-pencil"></i></button>
+                      <button><i class="fa fa-trash"></i></button>
+                    </div>
+              </li>
+          </ul>
+      
+      
+      </div>
+  </div>

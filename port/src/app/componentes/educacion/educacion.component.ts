@@ -15,12 +15,11 @@ export class EducacionComponent implements OnInit {
   constructor(private eduServ:EducacionService) {  }
 
   ngOnInit(): void {
-    this.eduServ.traerListaEdu().subscribe(data => {this.edu = data})
+    this.cargarEeducacion();
 
   }
-
-  //cargarEeducacion():void{
-   // this.eduServ.traerListaEdu().subscribe(data => {this.edu = data});
-  //} ------este metodo deberia traer la info pero no trae nada (maty)
+cargarEeducacion():void{
+    this.eduServ.traerListaEdu().subscribe(data => {this.edu = data});
+  } 
 
 }
