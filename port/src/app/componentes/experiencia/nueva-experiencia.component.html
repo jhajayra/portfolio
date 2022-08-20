@@ -1,26 +1,27 @@
-<div class="container">
+<div class="container animate__animated animate__rotateInDownRight">
     <div class="row">
         <div>
             <form (ngSubmit)="crear()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombreExp">Cargo</label>
+                    <label for="nombreExp">Cargo :</label>
                     <input type="text" class="form-control" id="nombreExp" name="nombreExp"
                         [(ngModel)]="nombreExp" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="anioExp">Año</label>
+                    <label for="anioExp">Año :</label>
                     <input type="text" class="form-control" id="anioExp" name="anioExp"
                         [(ngModel)]="anioExp" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="lugarExp">Lugar</label>
+                    <label for="lugarExp">Lugar :</label>
                     <input type="text" class="form-control" id="lugarExp" name="lugarExp"
                         [(ngModel)]="lugarExp" required>
                 </div>
-
-                <button class="btn">Add</button>
+                <div class="crear">
+                    <button class="btn"><i class="fa-solid fa-folder-plus"></i> Add</button>
+                </div>
 
             </form>
         </div>

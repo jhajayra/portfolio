@@ -1,26 +1,29 @@
-<div class="container" *ngIf = "expeLabo">
+<div class="container" >
     <div class="row">
         <div>
             <form (ngSubmit)="actualizar()" novalidate #f="ngForm">
+
                 <div class="form-group">
-                    <label for="nombreExp">Cargo</label>
+                    <label for="nombreExp"> Cargo : </label>
                     <input type="text" class="form-control" id="nombreExp" name="nombreExp"
                         [(ngModel)]="expeLabo.nombreExp" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="anioExp">Año</label>
+                    <label for="anioExp"> Año : </label>
                     <input type="text" class="form-control" id="anioExp" name="anioExp"
                         [(ngModel)]="expeLabo.anioExp" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="lugarExp">Lugar</label>
+                    <label for="lugarExp"> Lugar : </label>
                     <input type="text" class="form-control" id="lugarExp" name="lugarExp"
                         [(ngModel)]="expeLabo.lugarExp" required>
                 </div>
 
-                <button class="btn">Update</button>
+                <div class="actualizar">
+                    <button class="btn"><i class="fa-solid fa-pen-to-square"></i> Update</button>
+                </div>
 
             </form>
         </div>

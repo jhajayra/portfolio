@@ -13,12 +13,12 @@ export class InicioService {
   constructor( private http: HttpClient) { }
 
   public traerUsuario(): Observable<Usuario> {
-    return this.http.get<Usuario>(this.Url + `/detail/id/1`);
+    return this.http.get<Usuario>(this.Url + `/detail/1`);
 
   }
 
   public editarUsuario(usuario: Usuario):Observable<Usuario> {
-    return this.http.put<Usuario>(this.Url + `/update/id/1`, usuario);
+    return this.http.put<Usuario>(this.Url + `/update/1`, usuario);
   }
 
 }

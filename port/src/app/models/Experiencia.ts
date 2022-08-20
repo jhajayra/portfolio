@@ -1,11 +1,11 @@
 export class Experiencia {
-    idExp?:number;
-    cargoExp: string;
-    anioExp: number;
+    id?:number;
+    nombreExp: string;
+    anioExp: string;
     lugarExp: string
 
-    constructor (cargoExp: string, anioExp: number, lugarExp: string) {
-        this.cargoExp = cargoExp;
+    constructor (nombreExp: string, anioExp: string, lugarExp: string) {
+        this.nombreExp = nombreExp;
         this.anioExp = anioExp;
         this.lugarExp = lugarExp;
     }

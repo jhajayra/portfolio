@@ -42,7 +42,7 @@
     text-align: center;
     text-transform: uppercase;
     margin-right:1vw ;
-    font-size: 9vh;
+    font-size: 4vw;
     
 }
 .fa-pencil {
@@ -62,7 +62,7 @@
 }
 
 .titulo h2 {
-    font-size: 6vh;
+    font-size: 3vw;
     color: rgb(58, 0, 39);
     text-align: center;
     font-style: italic;
@@ -70,6 +70,7 @@
     background-color: rgba(160, 156, 158, 0.404);
     text-transform: capitalize;
     margin-right:1vw ;
+    
 
 }
 
@@ -88,6 +89,7 @@
     margin: 0 auto;
     margin-top: 5vh;
     margin-bottom: 3vh;
+    margin-left: 12vw;
     
 }
 

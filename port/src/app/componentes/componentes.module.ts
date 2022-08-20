@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router'; 
 
 import { BotonLoginComponent } from './boton-login/boton-login.component';
 import { EducacionComponent } from './educacion/educacion.component';
@@ -11,6 +12,17 @@ import { InicioComponent } from './inicio/inicio.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { SkillsComponent } from './skills/skills.component';
 import { BtnRedesComponent } from './btn-redes/btn-redes.component';
+import { NuevaExperienciaComponent } from './experiencia/nueva-experiencia.component';
+import { EditarExperienciaComponent } from './experiencia/editar-experiencia.component';
+import { NuevaEducacionComponent } from './educacion/nueva-educacion.component';
+import { EditarEducacionComponent } from './educacion/editar-educacion.component';
+import { NuevoProyectoComponent } from './proyectos/nuevo-proyecto.component';
+import { EditarProyectoComponent } from './proyectos/editar-proyecto.component';
+import { NuevaSkillComponent } from './skills/nueva-skill.component';
+import { EditarSkillComponent } from './skills/editar-skill.component';
+import { EditarSobreMiComponent } from './sobre-mi/editar-sobre-mi.component';
+import { EditarInicioComponent } from './inicio/editar-inicio.component';
+
 
 
 
@@ -23,6 +35,17 @@ import { BtnRedesComponent } from './btn-redes/btn-redes.component';
     ProyectosComponent,
     SkillsComponent,
     BtnRedesComponent,
+    NuevaExperienciaComponent,
+    EditarExperienciaComponent,
+    NuevaEducacionComponent,
+    EditarEducacionComponent,
+    NuevoProyectoComponent,
+    EditarProyectoComponent,
+    NuevaSkillComponent,
+    EditarSkillComponent,
+    EditarSobreMiComponent,
+    EditarInicioComponent,
+  
 
     
 
@@ -32,6 +55,7 @@ import { BtnRedesComponent } from './btn-redes/btn-redes.component';
   imports: [
     CommonModule,
     FormsModule,
+    RouterModule,
     HttpClientModule,
 
     NgCircleProgressModule.forRoot({
