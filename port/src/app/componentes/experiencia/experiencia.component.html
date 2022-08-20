@@ -1,5 +1,5 @@
 <div class="agregar container">
-  <button><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
+  <button routerLink="/new-experience"><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
 </div>
 <div class="contenedor">
  
@@ -16,7 +16,7 @@
       <div id="acor-colap" class="accordion-collapse collapse" aria-labelledby="heading" 
             data-bs-parent="#acordion">
             <div class="accordion-body">
-          <p class="position">{{Experiencia.cargoExp}}</p>
+          <p class="position">{{Experiencia.nombreExp}}</p>
           <br>
           <p class="description">{{Experiencia.anioExp}}</p>
       
@@ -29,8 +29,8 @@
       
       <div class="modificar">
 
-        <button><i class="fa fa-pencil"></i></button>
-        <button><i class="fa fa-trash"></i></button>
+        <button routerLink="/edit-experience/{{Experiencia.nombreExp}}"><i class="fa fa-pencil"></i></button>
+        <button (click)="borrar(Experiencia.id)"><i class="fa fa-trash"></i></button>
       </div>
         
      

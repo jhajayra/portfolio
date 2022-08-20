@@ -19,9 +19,23 @@ export class ExperienciaComponent implements OnInit {
 
   ngOnInit(): void {
     this.cargarExperiencia();
+
+  
   }
 
   cargarExperiencia(): void{
     this.expeServ.lista().subscribe(data => {this.expe = data})
   } 
+
+  borrar(id?: number){
+    if (id != undefined){
+      this.expeServ.borrarExpe(id).subscribe(
+        data => {
+        this.cargarExperiencia();
+      }, err => {
+        alert("Error Deleting");
+      }
+      )
+    }
+  }
 }
