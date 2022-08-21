@@ -1,6 +1,6 @@
 export class Educacion {
 
-    idEdu?:number;
+    id?:number;
     tituloEdu:string;
     lugarEdu:string;
     anioEdu:string;

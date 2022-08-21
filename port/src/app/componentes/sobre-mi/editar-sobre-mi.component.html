@@ -1,1 +1,16 @@
-<p>editar-sobre-mi works!</p>
+<div class="container editar" *ngIf="usuario">
+    <div class="form-group">
+
+        <form #form="ngForm" (ngSubmit)="actualizar()" novalidate >
+            <label for="about">Description :</label>
+            <textarea type="text" class="form-control" id="about" name="about"
+                [(ngModel)]="usuario.descripcion" required ></textarea>  
+                 
+
+        </form>
+
+        <div class="actualizar">
+                    <button type="submit"><i class="fa-solid fa-pen-to-square"></i> Update</button>
+        </div>
+    </div>
+</div>

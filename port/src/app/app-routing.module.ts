@@ -36,11 +36,11 @@ const routes: Routes = [
   
   //editar y agregar experiencias
   {path:'new-experience', component: NuevaExperienciaComponent},
-  {path:'edit-experience', component: EditarExperienciaComponent},
+  {path:'edit-experience/:id', component: EditarExperienciaComponent},
 
   //editar y agregar educaciones
   {path:'new-education', component: NuevaEducacionComponent},
-  {path:'edit-education', component: EditarEducacionComponent},
+  {path:'edit-education/:id', component: EditarEducacionComponent},
 
   //editar y agregar proyectos
   {path: 'new-project', component: NuevoProyectoComponent},
@@ -51,7 +51,7 @@ const routes: Routes = [
   {path:'edit-skill', component: EditarSkillComponent},
 
   //editar sobre-mi
-  {path:'edit-about', component: EditarSobreMiComponent},
+  {path:'edit-about/:id', component: EditarSobreMiComponent},
 
   //editar inicio
   {path: 'edit-home', component: EditarInicioComponent},

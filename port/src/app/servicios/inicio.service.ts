@@ -21,4 +21,6 @@ export class InicioService {
     return this.http.put<Usuario>(this.Url + `/update/1`, usuario);
   }
 
+ 
+
 }

@@ -1,10 +1,10 @@
 <div class="container  container-fluid ">
   <div class="agregar">
-    <button><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
+    <button routerLink="/new-education"><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
 </div>
-  <div class="educacion">
-    <div class="card animate__animated animate__zoomIn" >
-          <div class="card-body" *ngFor="let educacion of edu">
+  <div class="educacion ">
+    <div class="card animate__animated animate__zoomIn" *ngFor="let educacion of edu">
+          <div class="card-body" >
           <h5 class="titulo">{{educacion.tituloEdu}}</h5>
           <hr>
           <p class="lugar">{{educacion.lugarEdu}}</p>
@@ -13,8 +13,8 @@
         </div>
         <div class="modificar">
 
-          <button><i class="fa fa-pencil"></i></button>
-          <button><i class="fa fa-trash"></i></button>
+          <button routerLink="/edit-education/{{educacion.id}}"><i class="fa fa-pencil"></i></button>
+          <button (click)="borrarEdu(educacion.id)"><i class="fa fa-trash"></i></button>
         </div>
       </div>
       

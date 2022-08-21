@@ -18,19 +18,15 @@
             <div class="accordion-body">
           <p class="position">{{Experiencia.nombreExp}}</p>
           <br>
-          <p class="description">{{Experiencia.anioExp}}</p>
-      
-      
-      
+          <p class="description">{{Experiencia.anioExp}}</p>    
             </div>
-    
       </div>
 
-      
       <div class="modificar">
 
-        <button routerLink="/edit-experience/{{Experiencia.nombreExp}}"><i class="fa fa-pencil"></i></button>
-        <button (click)="borrar(Experiencia.id)"><i class="fa fa-trash"></i></button>
+        <button type="button" routerLink="/edit-experience/{{Experiencia.id}}"><i class="fa fa-pencil"></i></button>
+        <button type="button"
+         (click)="borrar(Experiencia.id)"><i class="fa fa-trash"></i></button>
       </div>
         
      

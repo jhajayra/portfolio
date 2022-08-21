@@ -1,4 +1,4 @@
-<div class="container" >
+<div class="container" *ngIf="expeLabo">
     <div class="row">
         <div>
             <form (ngSubmit)="actualizar()" novalidate #f="ngForm">
@@ -11,8 +11,8 @@
 
                 <div class="form-group">
                     <label for="anioExp"> Año : </label>
-                    <input type="text" class="form-control" id="anioExp" name="anioExp"
-                        [(ngModel)]="expeLabo.anioExp" required>
+                    <input type="text" class="form-control" id="anioExp" name="anioExp" [(ngModel)]="expeLabo.anioExp"
+                        required>
                 </div>
 
                 <div class="form-group">
@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="actualizar">
-                    <button class="btn"><i class="fa-solid fa-pen-to-square"></i> Update</button>
+                    <button type="submit" class="btn"><i class="fa-solid fa-pen-to-square"></i> Update</button>
                 </div>
 
             </form>

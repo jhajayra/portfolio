@@ -1,0 +1,55 @@
+.container {
+    align-items: center;
+    height: 74vh;
+    width: auto; 
+}
+
+.row {
+    padding-top: 5vh;
+    margin: 2vh;
+    display: block;
+    justify-content: center;
+    padding-left: 19vw;
+}
+.form-group {
+    padding: 1vw;
+}
+.form-group input {
+    line-height: 2vh;
+    width: 38vw;
+    border-radius: 2vh;
+    background-color: rgba(39, 1, 22, 0.849);
+    color: aliceblue;
+    font-weight: 300;
+    padding-left: 4%;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form-group  label {
+     
+    color: rgb(255, 188, 225);
+    font-size: 3.8vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    line-height: 6vh;
+    padding-left: 1vw;
+    background-color: rgba(0, 0, 0, 0.247);
+    border-radius: 3vh;
+}
+
+.crear button {
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 1.9vw;
+    margin-right: 25vw;
+    float: right;
+    background-color: rgb(85, 2, 41);
+    border: solid rgb(226, 204, 212);
+    border-radius: 2vh;
+    text-align: center;
+}
+
+.crear button:hover{
+    transform: scale(0.95);
+    transition: 7ms;
+}

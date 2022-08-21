@@ -4,6 +4,7 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import {FormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router'; 
+import { AppRoutingModule } from '../app-routing.module';
 
 import { BotonLoginComponent } from './boton-login/boton-login.component';
 import { EducacionComponent } from './educacion/educacion.component';
@@ -56,6 +57,7 @@ import { EditarInicioComponent } from './inicio/editar-inicio.component';
     CommonModule,
     FormsModule,
     RouterModule,
+    AppRoutingModule,
     HttpClientModule,
 
     NgCircleProgressModule.forRoot({
@@ -67,10 +69,7 @@ import { EditarInicioComponent } from './inicio/editar-inicio.component';
       innerStrokeWidth: 0,
       showInnerStroke:false,
 
-      title:"",
-      titleFontSize:"20",
-      titleColor: "white",
-      titleFontWeight:"400",
+      showTitle:false,
 
       subtitle: "",
       subtitleFontSize:"17",
@@ -78,10 +77,7 @@ import { EditarInicioComponent } from './inicio/editar-inicio.component';
       subtitleFontWeight:"500",
 
 
-      units:" %",
-      unitsFontSize: "20",
-      unitsFontWeight:"400" ,	
-      unitsColor:"white",
+      showUnits: false,
 
       backgroundColor:"pink",
       backgroundOpacity: 0.3,

@@ -36,7 +36,17 @@ hr {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  line-height: 3vh ;
 }
+
+.porcentaje  {
+  color: rgb(253, 232, 240);
+  font-size: 3.5vh;
+  height: 4vh;
+  text-decoration: overline;
+  
+}
+
 
 .modificar button {
 

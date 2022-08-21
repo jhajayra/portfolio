@@ -1,0 +1,44 @@
+.editar{
+    height: 71vh;
+    width: 50vw;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+}
+.form-group{
+    margin: 2vh;
+    padding-top: 6vh;
+}
+form label {
+    padding: 1vh;
+    color:aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 5vh;
+    font-weight: 500;
+    }
+
+form textarea {
+    width: 25vw;
+    height: 15vw;
+    border-radius: 2vw;
+    align-items: start;
+    background-color: rgba(41, 0, 16, 0.795);
+    color: rgb(255, 225, 245);
+    border: solid ;
+    margin-bottom: 2vw;
+}
+.actualizar button {
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 1.5vw; 
+    background-color: rgb(85, 2, 41);
+    border: solid rgb(226, 204, 212);
+    border-radius: 2vh;
+    text-align: center;
+    
+}
+
+.actualizar button:hover{
+    transform: scale(0.95);
+    transition: 7ms;
+}

@@ -17,7 +17,7 @@ export class EditarExperienciaComponent implements OnInit {
     private ruta:Router) { }
 
   ngOnInit(): void {
-    /*const id = this.activateRouter.snapshot.params['id'];
+    const id = this.activateRouter.snapshot.params['id'];
     this.experiencia.verExpe(id).subscribe(
       data => {
         this.expeLabo = data;
@@ -27,7 +27,7 @@ export class EditarExperienciaComponent implements OnInit {
 
 
       }
-    )*/
+    )
   }
   actualizar():void{
     const id = this.activateRouter.snapshot.params['id'];

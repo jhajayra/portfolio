@@ -1,1 +1,32 @@
-<p>editar-educacion works!</p>
+<div class="container animate__animated animate__rotateInDownRight" *ngIf="educacion">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="actualizar()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="tituloEdu">Titulo :</label>
+                    <input type="text" class="form-control" id="tituloEdu" name="tituloEdu"
+                        [(ngModel)]="educacion.tituloEdu" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="anioEdu">Año :</label>
+                    <input type="text" class="form-control" id="anioEdu" name="anioEdu"
+                        [(ngModel)]="educacion.anioEdu" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lugarEdu">Lugar :</label>
+                    <input type="text" class="form-control" id="lugarEdu" name="lugarEdu"
+                        [(ngModel)]="educacion.lugarEdu" required>
+                </div>
+                <div class="crear">
+                    <button type="submit" class="btn"><i class="fa-solid fa-folder-plus"></i> Add</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+

@@ -15,11 +15,26 @@ export class EducacionComponent implements OnInit {
   constructor(private eduServ:EducacionService) {  }
 
   ngOnInit(): void {
-    this.cargarEeducacion();
+    this.cargarEducacion();
 
   }
-cargarEeducacion():void{
-    this.eduServ.traerListaEdu().subscribe(data => {this.edu = data});
-  } 
+
+    cargarEducacion():void{
+      this.eduServ.lista().subscribe(
+        data => {
+          this.edu = data});
+    } 
+
+    borrarEdu(id?: number){
+      if (id != undefined){
+        this.eduServ.borrarEdu(id).subscribe(
+          data => {
+            this.cargarEducacion();
+          }, err => {
+            alert("Wrong Deleting");
+          }
+        )
+      }
+    }
 
 }

@@ -13,9 +13,9 @@
       <div class="lenguaje" *ngFor="let skill of skills" >
         <circle-progress  class="circulo"
         [percent]="skill.porcentaje"
-        [title]="skill.nombreSkill"
         [subtitle]="skill.nombreSkill"            
         ></circle-progress>
+        <p class="porcentaje">{{skill.porcentaje}} %</p>
         <div class="modificar">
           <button><i class="fa fa-pencil"></i></button>
           <button><i class="fa fa-trash"></i></button>

@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Educacion } from 'src/app/models/Educacion';
+import { EducacionService } from 'src/app/servicios/educacion.service';
 
 @Component({
   selector: 'app-editar-educacion',
@@ -7,9 +10,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditarEducacionComponent implements OnInit {
 
-  constructor() { }
+  educacion:Educacion=null;
+
+  constructor(private eduServ: EducacionService,
+              private activateRoute: ActivatedRoute,
+              private ruta : Router) { }
 
   ngOnInit(): void {
+    const id =this.activateRoute.snapshot.params['id'];
+    this.eduServ.verEdu(id).subscribe(
+      data => {
+        this.educacion = data;
+      }, err => {
+        alert("Failed ");
+        this.ruta.navigate(['']);
+      }
+    )
+  }
+
+  actualizar():void {
+    const id = this.activateRoute.snapshot.params['id'];
+    this.eduServ.editarEdu(id,this.educacion).subscribe(
+      data => {
+        this.ruta.navigate(['']);
+      }, err => {
+        alert("Failed");
+        this.ruta.navigate(['']);
+      }
+    )
   }
 
 }
