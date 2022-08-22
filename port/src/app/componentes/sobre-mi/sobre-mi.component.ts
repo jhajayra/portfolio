@@ -13,13 +13,13 @@ export class SobreMiComponent  implements OnInit {
 
   usuario: Usuario = new Usuario("", "", "")
 
-  constructor(private usuarioServ:InicioService ) {
-
-  }
-
-  ngOnInit(): void {
-    this.usuarioServ.traerUsuario().subscribe(data => {this.usuario = data})
-  }
+  constructor(private usuarioServ:InicioService) { 
+         
+    }
+    
+    ngOnInit(): void {
+      this.usuarioServ.traerUsuario().subscribe(data => {this.usuario = data})
+    }
 
 }
 

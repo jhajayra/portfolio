@@ -24,4 +24,18 @@ export class ProyectosComponent implements OnInit {
     this.proyeServ.lista().subscribe( data => {this.proye = data})
   }
 
+  borrar(id?: number){
+    if (id != undefined){
+      this.proyeServ.borrarProye(id).subscribe(
+        data => {
+        this.cargarProyectos();
+      }, err => {
+        alert("Error Deleting");
+      }
+      )
+    }
+  }
+
+  
+
 }

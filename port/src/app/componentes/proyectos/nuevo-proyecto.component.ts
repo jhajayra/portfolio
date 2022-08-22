@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Proyectos } from 'src/app/models/Proyectos';
+import { ProyectosService } from 'src/app/servicios/proyectos.service';
 
 @Component({
   selector: 'app-nuevo-proyecto',
@@ -7,9 +10,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NuevoProyectoComponent implements OnInit {
 
-  constructor() { }
+  nombreProye: string = "";
+  descriProye: string = "";
+  anioProye: string= "";
+
+  constructor(private nuevoServ: ProyectosService, private ruta: Router) { }
 
   ngOnInit(): void {
+
+  }
+
+  crear(): void {
+    const proye = new Proyectos(this.nombreProye, this.descriProye, this.anioProye);
+    this.nuevoServ.guardarProye(proye).subscribe(
+      data=>{
+        alert("Added Project");
+        this.ruta.navigate(['']);
+      }, err => {
+        alert("Failed");
+        this.ruta.navigate(['']);
+      }
+    )
   }
 
 }

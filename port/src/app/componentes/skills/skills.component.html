@@ -1,8 +1,6 @@
   <div class="agregar container">
-    <button><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
+    <button routerLink="/new-skill" ><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
   </div>
-
-
 
 <div class="skills container-fluid animate__animated animate__zoomIn ">
 
@@ -17,8 +15,8 @@
         ></circle-progress>
         <p class="porcentaje">{{skill.porcentaje}} %</p>
         <div class="modificar">
-          <button><i class="fa fa-pencil"></i></button>
-          <button><i class="fa fa-trash"></i></button>
+          <button routerLink="/edit-skill/{{skill.id}}"><i class="fa fa-pencil"></i></button>
+          <button (click)="borrar(skill.id)"><i class="fa fa-trash"></i></button>
         </div>
       </div>
       

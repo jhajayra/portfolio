@@ -44,17 +44,17 @@ const routes: Routes = [
 
   //editar y agregar proyectos
   {path: 'new-project', component: NuevoProyectoComponent},
-  {path: 'edit-project', component: EditarProyectoComponent},
+  {path: 'edit-project/:id', component: EditarProyectoComponent},
 
   //editar y agregar skills
   {path: 'new-skill', component: NuevaSkillComponent},
-  {path:'edit-skill', component: EditarSkillComponent},
+  {path:'edit-skill/:id', component: EditarSkillComponent},
 
   //editar sobre-mi
   {path:'edit-about/:id', component: EditarSobreMiComponent},
 
   //editar inicio
-  {path: 'edit-home', component: EditarInicioComponent},
+  {path: 'edit-home/:id', component: EditarInicioComponent},
 
   //redirecciona a inicio
   {path:'', component: InicioComponent, pathMatch: 'full'},

@@ -1,1 +1,22 @@
-<p>editar-inicio works!</p>
+<div class="container editar animate__animated animate__bounceInRight" *ngIf="usuario">
+
+    <form #form="ngForm" (ngSubmit)="actualizar()" novalidate>
+
+        <div class="form-group">
+            <label for="nombreCompleto">Nombre Completo :</label>
+            <input type="text" class="form-control" id="nombreCompleto" name="nombreCompleto"
+                [(ngModel)]="usuario.nombreCompleto" required>
+        </div>
+
+        <div class="form-group">
+            <label for="titulo">Titulo :</label>
+            <input type="text" class="form-control" id="titulo" name="titulo"
+                [(ngModel)]="usuario.titulo" required>
+        </div>
+
+        <div class="actualizar">
+            <button type="submit"><i class="fa-solid fa-pen-to-square"></i> Update</button>
+        </div>
+    </form>
+
+</div>

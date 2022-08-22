@@ -22,15 +22,6 @@ export class InicioComponent implements OnInit {
       this.usuarioServ.traerUsuario().subscribe(data => {this.usuario = data})
     }
 
-    /*public verUsuario():void{
-      this.usuarioServ.traerUsuario().subscribe({
-        next: (response: Usuario) =>{
-        },
-        error: (error: HttpErrorResponse)=>{
-          alert(error.message);
-        }
-      })
-    }*/
 
     }
     

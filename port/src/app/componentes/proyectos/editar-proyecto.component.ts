@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { Proyectos } from 'src/app/models/Proyectos';
+import { ProyectosService } from 'src/app/servicios/proyectos.service';
 
 @Component({
   selector: 'app-editar-proyecto',
@@ -7,9 +10,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditarProyectoComponent implements OnInit {
 
-  constructor() { }
+  proye: Proyectos = null;
+  
+  constructor(private proyeServ:ProyectosService,
+    private activateRouter:ActivatedRoute,
+    private ruta:Router) { }
 
   ngOnInit(): void {
+    /*const id = this.activateRouter.snapshot.params['id'];
+    this.proyeServ.verProye(id).subscribe(
+      data => {
+        this.proye = data;
+      }, err =>{
+        alert("Wrong Update");
+        this.ruta.navigate(['']);
+      }
+    )*/
+  }
+  actualizar():void{
+    const id = this.activateRouter.snapshot.params['id'];
+    this.proyeServ.actualizarProye(id,this.proye).subscribe(
+      data => {
+        this.ruta.navigate(['']);
+      }, err =>{
+        alert("Wrong Update");
+        this.ruta.navigate(['']);
+      }
+    )
   }
 
 }

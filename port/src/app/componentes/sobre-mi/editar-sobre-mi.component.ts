@@ -12,12 +12,12 @@ export class EditarSobreMiComponent implements OnInit {
 
   usuario :Usuario;
 
-  constructor(private aboutServ: InicioService,
+  constructor(private homeServ: InicioService,
     private activateRouter:ActivatedRoute,
     private ruta:Router) { }
 
   ngOnInit(): void {
-      this.aboutServ.traerUsuario().subscribe(
+    this.homeServ.traerUsuario().subscribe(
       data => {
         this.usuario = data;
       }, err =>{
@@ -26,19 +26,19 @@ export class EditarSobreMiComponent implements OnInit {
       }
     
     )
-
   }
-    actualizar():void {
-      const id = 1;
-      this.aboutServ.editarUsuario(this.usuario).subscribe(
-        data => {
-          alert("User Update");
-          this.ruta.navigate(['']);
-        }, err => {
-          alert("Wrong Update");
-          this.ruta.navigate(['']);
-        }
-      )
-    }
+
+  actualizar():void {
+    const id = 1;
+    this.homeServ.editarUsuario(this.usuario).subscribe(
+      data => {
+        alert("User Update");
+        this.ruta.navigate(['']);
+      }, err => {
+        alert("Wrong Update");
+        this.ruta.navigate(['']);
+      }
+    )
+  }
 
 }

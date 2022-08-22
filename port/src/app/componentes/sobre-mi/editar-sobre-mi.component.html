@@ -1,16 +1,15 @@
-<div class="container editar" *ngIf="usuario">
-    <div class="form-group">
+<div class="container editar animate__animated animate__bounceInRight" *ngIf="usuario" >
 
-        <form #form="ngForm" (ngSubmit)="actualizar()" novalidate >
+    <form #form="ngForm" (ngSubmit)="actualizar()" novalidate>
+        <div class="form-group">
             <label for="about">Description :</label>
-            <textarea type="text" class="form-control" id="about" name="about"
-                [(ngModel)]="usuario.descripcion" required ></textarea>  
-                 
-
-        </form>
-
-        <div class="actualizar">
-                    <button type="submit"><i class="fa-solid fa-pen-to-square"></i> Update</button>
+            <textarea type="text" class="form-control" id="about" name="about" [(ngModel)]="usuario.descripcion"
+                required></textarea>
         </div>
-    </div>
+        
+        <div class="actualizar">
+            <button type="submit"><i class="fa-solid fa-pen-to-square"></i> Update</button>
+        </div>
+    </form>
+
 </div>

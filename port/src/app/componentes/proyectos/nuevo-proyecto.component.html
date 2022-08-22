@@ -1,1 +1,29 @@
-<p>nuevo-proyecto works!</p>
+<div class="container animate__animated animate__bounceInRight">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="crear()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreProye">Project's Name :</label>
+                    <input type="text" class="form-control" id="nombreProye" name="nombreProye"
+                        [(ngModel)]="nombreProye" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="descriProye">Description :</label>
+                    <input type="text" class="form-control" id="descriProye" name="descriProye"
+                        [(ngModel)]="descriProye" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="anioProye">Year :</label>
+                    <input type="text" class="form-control" id="anioProye" name="anioProye"
+                        [(ngModel)]="anioProye" required>
+                </div>
+                <div class="crear">
+                    <button type="submit"><i class="fa-solid fa-folder-plus"></i> Add</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

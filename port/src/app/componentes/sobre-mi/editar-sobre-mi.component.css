@@ -1,13 +1,23 @@
 .editar{
-    height: 71vh;
+    height: 70vh;
     width: 50vw;
-    margin-top: 2vh;
-    display: flex;
+    margin-top: 6vh;
+    display: block;
     justify-content: center;
 }
+
+form{
+    margin: 2vh;
+    height: 63vh;
+    width: auto;
+    border-radius: 3vh;
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
 .form-group{
     margin: 2vh;
     padding-top: 6vh;
+    padding-left: 2vw;
 }
 form label {
     padding: 1vh;
@@ -28,9 +38,11 @@ form textarea {
     margin-bottom: 2vw;
 }
 .actualizar button {
+    float: right;
     color: aliceblue;
     font-weight: 400;
-    font-size: 1.5vw; 
+    font-size: 1.7vw;
+    margin-right: 3vw; 
     background-color: rgb(85, 2, 41);
     border: solid rgb(226, 204, 212);
     border-radius: 2vh;

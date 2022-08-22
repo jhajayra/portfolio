@@ -1,5 +1,5 @@
 <div class="agregar container">
-    <button><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
+    <button routerLink="/new-project"><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
   </div>
 
   <div class="contenedor">
@@ -9,14 +9,14 @@
       
               <li class="proyecto" *ngFor="let proyecto of proye">
                   <div class="box">
-                      <h3 class="tit_proy">• {{proyecto.nombreProye}}</h3>
+                      <h3 class="titulo">• {{proyecto.nombreProye}}</h3>
                       <p class="descripcion">{{proyecto.descriProye}}</p>
                       <h5 class="año">{{proyecto.anioProye}}</h5>
                   </div>
                   
                   <div class="modificar">
-                      <button><i class="fa fa-pencil"></i></button>
-                      <button><i class="fa fa-trash"></i></button>
+                      <button routerLink="/edit-project/{{proyecto.id}}"><i class="fa fa-pencil"></i></button>
+                      <button (click)="borrar(proyecto.id)"><i class="fa fa-trash"></i></button>
                     </div>
               </li>
           </ul>
