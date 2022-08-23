@@ -27,9 +27,9 @@ export class ExperienciaComponent implements OnInit {
     this.expeServ.lista().subscribe(data => {this.expe = data})
   } 
 
-  borrar(id?: number){
-    if (id != undefined){
-      this.expeServ.borrarExpe(id).subscribe(
+  borrar(idExp?: number){
+    if (idExp != undefined){
+      this.expeServ.borrarExpe(idExp).subscribe(
         data => {
         this.cargarExperiencia();
       }, err => {

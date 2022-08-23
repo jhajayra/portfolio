@@ -9,7 +9,9 @@ import { InicioService } from 'src/app/servicios/inicio.service';
   templateUrl: './sobre-mi.component.html',
   styleUrls: ['./sobre-mi.component.css']
 })
-export class SobreMiComponent  implements OnInit {
+
+
+export class SobreMiComponent implements OnInit {
 
   usuario: Usuario = new Usuario("", "", "")
 
@@ -21,5 +23,6 @@ export class SobreMiComponent  implements OnInit {
       this.usuarioServ.traerUsuario().subscribe(data => {this.usuario = data})
     }
 
-}
+
+    }
 

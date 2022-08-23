@@ -1,5 +1,5 @@
 export class Experiencia {
-    id?:number;
+    idExp?:number;
     cargoExp: string;
     anioExp: string;
     lugarExp: string

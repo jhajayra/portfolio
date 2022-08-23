@@ -29,7 +29,7 @@ export class EditarSobreMiComponent implements OnInit {
   }
 
   actualizar():void {
-    const id = 1;
+    const idPer = 1;
     this.homeServ.editarUsuario(this.usuario).subscribe(
       data => {
         alert("User Update");

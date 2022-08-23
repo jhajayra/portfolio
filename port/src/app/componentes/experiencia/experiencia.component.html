@@ -24,9 +24,9 @@
 
       <div class="modificar">
 
-        <button type="button" routerLink="/edit-experience/{{Experiencia.id}}"><i class="fa fa-pencil"></i></button>
+        <button type="button" routerLink="{{'/edit-experience/'+ Experiencia.idExp}}">{{Experiencia.idExp}}</button>
         <button type="button"
-         (click)="borrar(Experiencia.id)"><i class="fa fa-trash"></i></button>
+         (click)="borrar(Experiencia.idExp)"><i class="fa fa-trash"></i></button>
       </div>
         
      

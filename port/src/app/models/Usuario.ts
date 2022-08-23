@@ -1,6 +1,6 @@
 export class Usuario {
 
-    id?:number;
+    idPer?:number;
 	nombreCompleto:string;
 	titulo:string;
 	descripcion:string;

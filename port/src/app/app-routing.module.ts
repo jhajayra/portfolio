@@ -51,14 +51,14 @@ const routes: Routes = [
   {path:'edit-skill/:id', component: EditarSkillComponent},
 
   //editar sobre-mi
-  {path:'edit-about/:id', component: EditarSobreMiComponent},
+  {path:'edit-about/:idPer', component: EditarSobreMiComponent},
 
   //editar inicio
-  {path: 'edit-home/:id', component: EditarInicioComponent},
+  {path: 'edit-home/:idPer', component: EditarInicioComponent},
 
   //redirecciona a inicio
   {path:'', component: InicioComponent, pathMatch: 'full'},
-  {path:'**', redirectTo:'home', pathMatch:'full'}
+  //{path:'**', redirectTo:'home', pathMatch:'full'}
 
 ];
 
