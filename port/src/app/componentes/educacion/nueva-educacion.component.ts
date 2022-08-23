@@ -12,7 +12,7 @@ export class NuevaEducacionComponent implements OnInit {
 
   tituloEdu :string;
   lugarEdu: string;
-  anioEdu: string;
+  anioEdu: number;
 
   constructor(private eduServ: EducacionService, private ruta:Router) { }
 

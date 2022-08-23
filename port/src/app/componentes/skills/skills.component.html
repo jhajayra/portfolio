@@ -8,15 +8,15 @@
     <h3 class="skill-titulo">Skills</h3>
     <hr>
     <div class="circulo">
-      <div class="lenguaje" *ngFor="let skill of skills" >
-        <circle-progress  class="circulo"
+      <div class="lenguaje animate__animated animate__zoomIn " *ngFor="let skill of skills" >
+        <circle-progress  class="circulo "
         [percent]="skill.porcentaje"
         [subtitle]="skill.nombreSkill"            
         ></circle-progress>
         <p class="porcentaje">{{skill.porcentaje}} %</p>
         <div class="modificar">
-          <button routerLink="/edit-skill/{{skill.id}}"><i class="fa fa-pencil"></i></button>
-          <button (click)="borrar(skill.id)"><i class="fa fa-trash"></i></button>
+          <button routerLink="/edit-skill/{{skill.idSkill}}"><i class="fa fa-pencil"></i></button>
+          <button (click)="borrar(skill.idSkill)"><i class="fa fa-trash"></i></button>
         </div>
       </div>
       

@@ -11,7 +11,7 @@ import { ExperienciaService } from 'src/app/servicios/experiencia.service';
 export class NuevaExperienciaComponent implements OnInit {
 
   cargoExp: string = "";
-  anioExp: string = "";
+  anioExp: number ;
   lugarExp: string= "";
 
   constructor(private nuevaServ: ExperienciaService, private ruta: Router) { }

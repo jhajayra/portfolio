@@ -1,5 +1,5 @@
 export class Skills {
-    id?:number;
+    idSkill?:number;
     nombreSkill:string;
     porcentaje:number;
 

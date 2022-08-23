@@ -25,9 +25,9 @@ export class EducacionComponent implements OnInit {
           this.edu = data});
     } 
 
-    borrarEdu(id?: number){
-      if (id != undefined){
-        this.eduServ.borrarEdu(id).subscribe(
+    borrarEdu(idEdu?: number){
+      if (idEdu != undefined){
+        this.eduServ.borrarEdu(idEdu).subscribe(
           data => {
             this.cargarEducacion();
           }, err => {

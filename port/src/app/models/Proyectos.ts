@@ -1,10 +1,10 @@
 export class Proyectos {
-    id?:number;
+    idProye?:number;
     nombreProye:string;
     descriProye:string;
-    anioProye:string;
+    anioProye:number;
 
-    constructor (nombreProye: string, descriProye: string, anioProye: string){
+    constructor (nombreProye: string, descriProye: string, anioProye: number){
         this.nombreProye = nombreProye;
         this.descriProye = descriProye;
         this.anioProye = anioProye;

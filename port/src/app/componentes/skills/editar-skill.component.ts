@@ -17,7 +17,7 @@ export class EditarSkillComponent implements OnInit {
               private ruta : Router) { }
 
   ngOnInit(): void {
-    /*const id =this.activateRoute.snapshot.params['id'];
+    const id =this.activateRoute.snapshot.params['id'];
     this.skillServ.verSkill(id).subscribe(
       data => {
         this.skill = data;
@@ -25,7 +25,7 @@ export class EditarSkillComponent implements OnInit {
         alert("Failed ");
         this.ruta.navigate(['']);
       }
-    )*/
+    )
   }
 
   actualizar():void {

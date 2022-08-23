@@ -21,9 +21,9 @@ export class SkillsComponent implements OnInit {
     this.skillsServ.lista().subscribe( data=>{this.skills = data});
   }
 
-  borrar(id?: number){
-    if (id != undefined){
-      this.skillsServ.borrarSkill(id).subscribe(
+  borrar(idSkill?: number){
+    if (idSkill != undefined){
+      this.skillsServ.borrarSkill(idSkill).subscribe(
         data => {
         this.cargarSkills();
       }, err => {

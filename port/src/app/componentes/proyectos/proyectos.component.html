@@ -4,10 +4,10 @@
 
   <div class="contenedor">
 
-      <div class="proyectos container-fluid animate__animated animate__zoomIn ">
+      <div class="proyectos container-fluid ">
           <ul>
       
-              <li class="proyecto" *ngFor="let proyecto of proye">
+              <li class="proyecto animate__animated animate__zoomIn " *ngFor="let proyecto of proye">
                   <div class="box">
                       <h3 class="titulo">• {{proyecto.nombreProye}}</h3>
                       <p class="descripcion">{{proyecto.descriProye}}</p>
@@ -15,8 +15,8 @@
                   </div>
                   
                   <div class="modificar">
-                      <button routerLink="/edit-project/{{proyecto.id}}"><i class="fa fa-pencil"></i></button>
-                      <button (click)="borrar(proyecto.id)"><i class="fa fa-trash"></i></button>
+                      <button routerLink="/edit-project/{{proyecto.idProye}}"><i class="fa fa-pencil"></i></button>
+                      <button (click)="borrar(proyecto.idProye)"><i class="fa fa-trash"></i></button>
                     </div>
               </li>
           </ul>

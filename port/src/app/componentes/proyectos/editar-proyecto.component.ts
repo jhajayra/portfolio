@@ -17,7 +17,7 @@ export class EditarProyectoComponent implements OnInit {
     private ruta:Router) { }
 
   ngOnInit(): void {
-    /*const id = this.activateRouter.snapshot.params['id'];
+    const id = this.activateRouter.snapshot.params['id'];
     this.proyeServ.verProye(id).subscribe(
       data => {
         this.proye = data;
@@ -25,7 +25,7 @@ export class EditarProyectoComponent implements OnInit {
         alert("Wrong Update");
         this.ruta.navigate(['']);
       }
-    )*/
+    )
   }
   actualizar():void{
     const id = this.activateRouter.snapshot.params['id'];

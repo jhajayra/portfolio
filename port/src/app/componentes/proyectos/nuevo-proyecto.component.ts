@@ -12,7 +12,7 @@ export class NuevoProyectoComponent implements OnInit {
 
   nombreProye: string = "";
   descriProye: string = "";
-  anioProye: string= "";
+  anioProye: number;
 
   constructor(private nuevoServ: ProyectosService, private ruta: Router) { }
 

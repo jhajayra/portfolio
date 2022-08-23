@@ -24,9 +24,9 @@ export class ProyectosComponent implements OnInit {
     this.proyeServ.lista().subscribe( data => {this.proye = data})
   }
 
-  borrar(id?: number){
-    if (id != undefined){
-      this.proyeServ.borrarProye(id).subscribe(
+  borrar(idProye?: number){
+    if (idProye != undefined){
+      this.proyeServ.borrarProye(idProye).subscribe(
         data => {
         this.cargarProyectos();
       }, err => {

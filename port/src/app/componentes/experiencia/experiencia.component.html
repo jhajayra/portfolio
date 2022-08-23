@@ -3,9 +3,9 @@
 </div>
 <div class="contenedor">
  
-  <div class="accordion animate__animated animate__zoomIn" id="acordion">
+  <div class="accordion " id="acordion">
 
-    <div class="accordion box" *ngFor=" let Experiencia of expe">
+    <div class="accordion box animate__animated animate__zoomIn" *ngFor=" let Experiencia of expe">
       
       <h2 class="accordion-header" id="heading">
         <button class="button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#acor-colap" 
@@ -24,7 +24,7 @@
 
       <div class="modificar">
 
-        <button type="button" routerLink="{{'/edit-experience/'+ Experiencia.idExp}}">{{Experiencia.idExp}}</button>
+        <button type="button" routerLink="{{'/edit-experience/'+ Experiencia.idExp}}"><i class="fa fa-pencil"></i></button>
         <button type="button"
          (click)="borrar(Experiencia.idExp)"><i class="fa fa-trash"></i></button>
       </div>
