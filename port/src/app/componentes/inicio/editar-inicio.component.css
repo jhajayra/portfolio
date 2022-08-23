@@ -1,7 +1,7 @@
 .editar{
-    height: 76vh;
+    
     width: 50vw;
-    padding-top: 7vh;
+    padding-top: 2vh;
     display: block;
     justify-content: center;
 }
@@ -9,20 +9,20 @@
 form{
    
     margin: 2vh;
-    height: 57vh;
+    
     width: 40vw;
     border-radius: 3vh;
     background-color: rgba(0, 0, 0, 0.589);
 }
 .form-group{
     margin: 1vh;
-    padding-top: 3vh;
+  
 }
 
 form label {
     color:aliceblue;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 5vh;
+    font-size: 4vh;
     font-weight: 500;
     margin-left: 1vw;
 }
@@ -36,7 +36,19 @@ form input {
     background-color: rgba(41, 0, 16, 0.795);
     color: rgb(255, 225, 245);
     border: solid ;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
+}
+
+form textarea {
+    margin-left: 2vw;
+    width: 35vw;
+    height: 7vw;
+    border-radius: 2vw;
+    align-items: start;
+    background-color: rgba(41, 0, 16, 0.795);
+    color: rgb(255, 225, 245);
+    border: solid ;
+    margin-bottom: 1vw;
 }
 .actualizar button {
     color: aliceblue;
@@ -46,8 +58,8 @@ form input {
     border: solid rgb(226, 204, 212);
     border-radius: 2vh;
     text-align: center;
-    float: right;
-    margin-right: 4vw;
+    margin-bottom: 2vh;
+    margin-left: 27vw;
     
 }
 

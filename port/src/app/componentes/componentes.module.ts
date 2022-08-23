@@ -21,7 +21,7 @@ import { NuevoProyectoComponent } from './proyectos/nuevo-proyecto.component';
 import { EditarProyectoComponent } from './proyectos/editar-proyecto.component';
 import { NuevaSkillComponent } from './skills/nueva-skill.component';
 import { EditarSkillComponent } from './skills/editar-skill.component';
-import { EditarSobreMiComponent } from './sobre-mi/editar-sobre-mi.component';
+
 import { EditarInicioComponent } from './inicio/editar-inicio.component';
 
 
@@ -44,15 +44,11 @@ import { EditarInicioComponent } from './inicio/editar-inicio.component';
     EditarProyectoComponent,
     NuevaSkillComponent,
     EditarSkillComponent,
-    EditarSobreMiComponent,
+
     EditarInicioComponent,
-  
-
-    
-
-    
 
   ],
+
   imports: [
     CommonModule,
     FormsModule,

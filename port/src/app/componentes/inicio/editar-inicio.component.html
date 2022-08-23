@@ -14,6 +14,12 @@
                 [(ngModel)]="usuario.titulo" required>
         </div>
 
+        <div class="form-group">
+            <label for="about">Description :</label>
+            <textarea type="text" class="form-control" id="about" name="about" [(ngModel)]="usuario.descripcion"
+                required></textarea>
+        </div>
+
         <div class="actualizar">
             <button type="submit"><i class="fa-solid fa-pen-to-square"></i> Update</button>
         </div>

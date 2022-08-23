@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { InicioComponent} from './componentes/inicio/inicio.component';
-import { SobreMiComponent } from './componentes/sobre-mi/sobre-mi.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
@@ -21,14 +20,14 @@ import { EditarProyectoComponent } from './componentes/proyectos/editar-proyecto
 import { NuevaSkillComponent } from './componentes/skills/nueva-skill.component';
 import { EditarSkillComponent } from './componentes/skills/editar-skill.component';
 //editar inicio y  sobre-mi
-import { EditarSobreMiComponent } from './componentes/sobre-mi/editar-sobre-mi.component';
+
 import { EditarInicioComponent } from './componentes/inicio/editar-inicio.component';
 
 
 const routes: Routes = [
   { path: 'home', component: InicioComponent },
   {path: 'login', component: BotonLoginComponent},
-  {path: 'about', component: SobreMiComponent},
+
   {path:'experience', component: ExperienciaComponent},
   {path:'education', component: EducacionComponent},
   {path:'projects', component: ProyectosComponent},
@@ -49,9 +48,6 @@ const routes: Routes = [
   //editar y agregar skills
   {path: 'new-skill', component: NuevaSkillComponent},
   {path:'edit-skill/:id', component: EditarSkillComponent},
-
-  //editar sobre-mi
-  {path:'edit-about/:idPer', component: EditarSobreMiComponent},
 
   //editar inicio
   {path: 'edit-home/:idPer', component: EditarInicioComponent},

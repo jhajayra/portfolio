@@ -17,6 +17,27 @@
             <h2>I'm {{usuario.titulo}}</h2>
             <button routerLink="/edit-home/{{usuario.idPer}}"><i class="fa fa-pencil"></i></button>
         </div>
+
+
+        <p>
+            <button class="about" type="button" data-bs-toggle="collapse" data-bs-target="#about" aria-expanded="false" aria-controls="about">
+              About Me :
+            </button>
+            <button routerLink="/edit-home/{{usuario.idPer}}"><i class="fa fa-pencil"></i></button>
+          </p>
+          <div style="min-height: 120px;" class="sobre-mi">
+            <div class="collapse collapse-horizontal" id="about">
+              <p class="card card-body" style="width: 300px;">
+                {{usuario.descripcion}}
+              </p>
+            </div>
+        </div>
+        
+
+            
+
+      
+
     </div>
 
 
