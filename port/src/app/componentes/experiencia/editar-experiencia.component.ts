@@ -31,6 +31,7 @@ export class EditarExperienciaComponent implements OnInit {
   }
   actualizar():void{
     const id = this.activateRouter.snapshot.params['id'];
+    
     this.experiencia.actualizarExpe(id,this.expeLabo).subscribe(
       data => {
         this.ruta.navigate(['']);

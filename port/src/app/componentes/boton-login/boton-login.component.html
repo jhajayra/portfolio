@@ -7,17 +7,19 @@
             <h5 class="title" id="login-title">Login Form</h5>
           </div>
           <div class="body">
-              <form action="#">
+              <form action="#" #f="ngForm"  novalidate>
                   <div class="field">
-                     <input type="text" required [(ngModel)]="persona.correo" placeholder=" Email Address">
+                     <input type="text" id="nombreUsuario" name="nombreUsuario" class="form-control" for="nombreUsuario"
+                     required [(ngModel)]="nombreUsuario" placeholder=" Username">
        
                   </div>
                   <div class="field">
-                     <input type="password" required [(ngModel)]="persona.contrasenia" placeholder=" Password">
+                     <input type="password" id="password" class="form-control" for="password"
+                     required [(ngModel)]="password" placeholder=" Password">
                      
                   </div>
                    <div class="field">
-                     <input type="submit" value="Login">
+                     <button type="submit" value="Login" class="" (click)="onLogin()"> login</button>
                   </div>
                  
                </form>
