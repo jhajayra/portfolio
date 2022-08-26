@@ -38,7 +38,7 @@ export class BotonLoginComponent implements OnInit {
       this.authService.login(this.loginUsuario).subscribe(
         (data) => {
           this.isLogged = true;
-          this.isLogginFail = false;
+        
           this.tokenService.setToken(data.token);
           this.tokenService.setUserName(data.nombreUsuario);
           this.tokenService.setAuthorities(data.authorities);
@@ -46,7 +46,7 @@ export class BotonLoginComponent implements OnInit {
           this.router.navigate(['']);
         },
         (err) => {
-          this.isLogged = false;
+         
           this.isLogginFail = true;
           this.errMsj = err.error.mensaje;
           console.log(this.errMsj);

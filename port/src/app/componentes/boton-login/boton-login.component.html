@@ -4,22 +4,23 @@
       <div class="dialog animate__animated animate__zoomIn">
         
           <div class="header">
-            <h5 class="title" id="login-title">Login Form</h5>
+            <h5 class="title" id="login-title">Login</h5>
           </div>
           <div class="body">
               <form action="#" #f="ngForm"  novalidate>
                   <div class="field">
                      <input type="text" id="nombreUsuario" name="nombreUsuario" class="form-control" for="nombreUsuario"
-                     required [(ngModel)]="nombreUsuario" placeholder=" Username">
+                     required [(ngModel)]="nombreUsuario" [ngModelOptions]="{standalone: true}"
+                     placeholder=" Username">
        
                   </div>
                   <div class="field">
                      <input type="password" id="password" class="form-control" for="password"
-                     required [(ngModel)]="password" placeholder=" Password">
+                     required [(ngModel)]="password" placeholder=" Password" [ngModelOptions]="{standalone: true}">
                      
                   </div>
                    <div class="field">
-                     <button type="submit" value="Login" class="" (click)="onLogin()"> login</button>
+                     <input type="button" value="Login" (click)="onLogin()">
                   </div>
                  
                </form>
