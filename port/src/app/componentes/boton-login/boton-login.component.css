@@ -1,12 +1,13 @@
 .login {
-  height: 65vh;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+
 }
   .dialog {
-    width: 38vw;
+    width: 22em;
     text-align: justify;
     justify-content: center;
-    opacity: 1.1;
-    margin-left: 30vw;
     align-items: center;
     margin-top: 10vh;
   }
@@ -21,10 +22,10 @@
 }
 
 .header h5 {
-  font-size: 3vw;
+  font-size: 2em;
 }
 .body{
-    padding-left: 1vw;
+   
     background: linear-gradient(-135deg, #f58dbe93, #f7479f80);
   }
 
@@ -34,18 +35,19 @@ form{
 
   form .field{
     height: 8vh;
-    width: 90%;
+    justify-content: center;
     margin-top: 3vh;
     position: relative;
   }
    form .field input{
     height: 5.5vh;
-    width: 30vw;
+    text-align: center;
     outline: none;
     font-size: 3vh;
     border: 1px solid rgb(182, 3, 125);
     border-radius: 5vh;
     transition: all 0.3s ease;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
   }
   form .field input:focus,
@@ -54,24 +56,28 @@ form{
       }
 
 
-  form .field input[type="button"]{
+  form .field button[type="button"]{
     color: #fff;
     border: solid rgb(46, 0, 11);
-    padding-left: 0;
+    float: right;
     margin-top: -1vw;
-    font-size: 2.5vh;
+    margin-right: 3vh;
+    border-radius: 2vh;
     text-align: center;
     font-weight: 500;
     cursor: pointer;
     background: linear-gradient(-135deg, #2e002b, #88014b);
     transition: all 0.3s ease;
   }
-  form .field input[type="submit"]:active{
-    transform: scale(0.95);
-  }
+ 
 
 .header button  {
   color: white;
 }
 
-  
+@media (max-width: 576px) {
+  .dialog {
+    padding: 4em;
+  }
+
+}

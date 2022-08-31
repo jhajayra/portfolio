@@ -1,44 +1,54 @@
 <div class="inicio container-fluid">
- 
-    <div class="foto animate__animated animate__zoomIn animate__slow" >    
-        <img src="../../../assets/imagenes/foto1.jpg" alt="foto de perfil" height="390" width="220" >              
+
+  <div class="foto animate__animated animate__zoomIn animate__slow">
+    <img src="../../../assets/imagenes/foto1.jpg" alt="foto de perfil" height="390" width="220">
+  </div>
+  <div class="presentacion animate__animated animate__zoomIn animate__slow">
+    <div class="saludo">
+      <h2>HELLO!!</h2>
+      <h3>My Name is </h3>
     </div>
-    <div class="presentacion animate__animated animate__zoomIn animate__slow">
-        <div class="saludo">
-            <h2>HELLO!!</h2>
-            <h3>My Name is </h3>
-        </div>
+
+    <div class="nombre">
+      <h1> {{usuario.nombreCompleto}} mori infantes</h1>
+      <button routerLink="/edit-home/{{usuario.idPer}}"><i class="fa fa-pencil"></i></button>
+    </div>
+    <div class="titulo">
+      <h2>I'm {{usuario.titulo}}</h2>
+      <button routerLink="/edit-home/{{usuario.idPer}}"><i class="fa fa-pencil"></i></button>
+    </div>
+
+    <div class=" d-none d-sm-block">
+      <div class="sobre">
+        <button class="about" type="button" data-bs-toggle="collapse" data-bs-target="#about" aria-expanded="false"
+          aria-controls="about">
+          About Me :
+        </button>
+        <button id="lapiz" routerLink="/edit-home/{{usuario.idPer}}"><i class="fa fa-pencil"></i></button>
+      </div>
+      <div class="sobre-mi">
+        <div class="collapse collapse-horizontal" id="about">
+          <label name="" class="card card-body">
+        {{usuario.descripcion}}
       
-        <div class="nombre">
-            <h1> {{usuario.nombreCompleto}}</h1>
-            <button  routerLink="/edit-home/{{usuario.idPer}}"><i class="fa fa-pencil"></i></button>
+          </label>
         </div>
-        <div class="titulo">
-            <h2>I'm {{usuario.titulo}}</h2>
-            <button routerLink="/edit-home/{{usuario.idPer}}"><i class="fa fa-pencil"></i></button>
-        </div>
+      </div>
+    </div>
 
-
-        <p>
-            <button class="about" type="button" data-bs-toggle="collapse" data-bs-target="#about" aria-expanded="false" aria-controls="about">
-              About Me :
-            </button>
-            <button routerLink="/edit-home/{{usuario.idPer}}"><i class="fa fa-pencil"></i></button>
-          </p>
-          <div style="min-height: 120px;" class="sobre-mi">
-            <div class="collapse collapse-horizontal" id="about">
-              <p class="card card-body" style="width: 300px;">
-                {{usuario.descripcion}}
-              </p>
-            </div>
-        </div>
-        
-
-            
-
+    <div class="pantallas-xs d-block d-sm-none">
+      <h3>About Me:</h3>
       
+      <textarea >
+      {{usuario.descripcion}}
+    </textarea>
 
     </div>
+
+
+
+
+  </div>
 
 
 

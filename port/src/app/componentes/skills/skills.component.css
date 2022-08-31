@@ -1,8 +1,6 @@
 .skills {
-  height: 64vh;
+  padding: 4vh;
 }
-
-
 .skill-titulo {
   color: rgb(245, 200, 235);
   margin-top:3vh;
@@ -16,6 +14,7 @@ hr {
 
 
 .container-skill {
+  padding: 0.5vh;
   background-color: rgba(0, 0, 0, 0.527);
   height: auto;
   width: 80vw;
@@ -24,6 +23,7 @@ hr {
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 2vh;
+  padding-bottom: 3vh;
   
 }
 
@@ -32,11 +32,27 @@ hr {
     
 }
 
-.circulo {
+.circulos {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  line-height: 3vh ;
+  line-height: 4vh ;
+}
+@media (max-width: 760px){
+  .circulos{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skill-titulo{
+    font-size: 6vh;
+  }
+  .lenguaje {
+      margin-bottom: 4vh;
+
+    }
+
 }
 
 .porcentaje  {
@@ -63,6 +79,7 @@ hr {
 .agregar {
     height: 7vh;
     margin-top: 2vh;
+    padding-bottom: 2vh;
 }
 .agregar button {
     float: right;

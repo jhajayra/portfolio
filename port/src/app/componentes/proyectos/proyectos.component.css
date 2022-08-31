@@ -1,78 +1,110 @@
+.contenedor {
+    justify-content: center;
+    height: 73vh;
+ 
+   }
 .proyectos {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     display: flex;
     justify-content: center;
-    height: auto;
-   
-    
-}
-li {
-    background-color: rgba(0, 0, 0, 0.438);
-    border-radius: 3vh;
-    color: rgb(248, 148, 203);
-    width: auto;
-    margin-bottom: 2vh;
-}
-
-
-.proyectos ul li h3 {
-    margin-top: 1vh;
-    font-size: 2.5vw;
-    display: block;
-    justify-content: left;
+    align-items: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 600;
-    text-decoration: underline;
-    
-    text-transform: capitalize;
+
 }
 
-li p {
+.card {
+    width: max-content;
     
-    font-size: 2vw;
-    text-align: justify;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: start;
-    color: beige;
+    background-color: rgba(7, 0, 3, 0.507);
+    margin: 1rem;
+    border-radius: 1rem;
+    
+    
 }
 
-li h5 {
-   
-    color: rgb(250, 181, 221);
+@media (max-width: 760px) {
+    .proyectos {
+        display: block; 
+        justify-content: center;
+        padding-top: 1vh;
+    }
+    .card {
+        margin-bottom: 4vh;
+        align-items: center;
+        margin-left: 1.2em;
+        width: 80%;
+        height: auto;
+        padding: 2vh;
+    }
+    .contenedor {
+        justify-content: center;
+        height: auto;
+    }
+    h3 {
+        font-size: 4vh;
+    }
+    h4 {
+        font-size: 3.5vh;
+    }
+    
+
+    
+}
+
+.titulo {
+    color: rgb(255, 193, 219);
+    
+    font-weight: 500;
+    text-transform: uppercase;
     text-align: center;
-    font-size: 2vw;
+  
 }
+hr {
+    color: rgb(255, 255, 255);
+}
+
+.lugar {
+    color: rgb(237, 244, 250);
+    text-align: start;
+   
+    text-align: center;
+    text-transform: capitalize;
+   
+}
+
+.anio {
+    color: white;
+    text-align: center;
+      text-align: end;
+}
+
+.card:hover{
+    transition: all;
+    border: 1vh solid rgb(245, 173, 187);
+
+}
+
 .modificar {
-    padding-right:1vw ;
+
+    padding: 1vw;
 }
 
 .modificar button {
     float: right;
-    background-color: rgba(184, 4, 79, 0.89);
+    background-color: rgba(216, 5, 93, 0.89);
     border-radius: 100%;
-    height: 5.5vh;
+    height: 5.3vh;
     border: solid rgb(224, 160, 195);
     margin: 0.7vh;
     color: aliceblue;
-    margin-top: 5vh;
-    
-}
 
-.proyecto {
-    display: flex;
 }
-
-.box {
-    width: 50vw;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    padding-top: 0.8vw;
-    padding-bottom: 0.7vw;
-}
-
 .agregar {
     height: 7vh;
     margin-top: 2vh;
 }
+
 .agregar button {
     float: right;
     background-color: rgba(197, 5, 85, 0.89);
@@ -81,10 +113,10 @@ li h5 {
     border: solid rgb(224, 160, 195);
     margin: 0.7vh;
     color: aliceblue;
-    margin-left: 4vw;
+    margin-left: 5vw;
     align-items: start;
-    font-size:3.5vh;
-    font-weight: 600 ;
+    font-weight: 600;
+    font-size: 3.5vh;
 }
 
 .agregar button:hover {

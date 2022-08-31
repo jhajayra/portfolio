@@ -1,8 +1,8 @@
-.container {
-    width: 90vw;
+.contenedor {
+    justify-content: center;
     height: 73vh;
-    border-radius: 5vh;
-}
+ 
+   }
 .educacion {
     margin-top: 2vh;
     margin-bottom: 2vh;
@@ -14,30 +14,56 @@
 }
 
 .card {
-    width: 23vw;
-    height: 50vh;
+    width: max-content;
+    
     background-color: rgba(7, 0, 3, 0.507);
     margin: 1rem;
     border-radius: 1rem;
     
+    
+}
+
+@media (max-width: 760px) {
+    .educacion {
+        display: block; 
+        justify-content: center;
+    }
+    .card {
+        align-items: center;
+        margin-left: 1em;
+        width: 80%;
+    }
+    .contenedor{
+        justify-content: center;
+        height: auto;
+    }
+    h3 {
+        font-size: 4vh;
+    }
+    h4 {
+        font-size: 3.5vh;
+    }
+    
+
+    
 }
 
 .titulo {
-    color: rgb(255, 164, 202);
-    font-size: 3vw;
+    color: rgb(255, 193, 219);
+    
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
   
 }
 hr {
-    color: rgb(250, 168, 219);
+    color: rgb(255, 255, 255);
 }
 
 .lugar {
     color: rgb(237, 244, 250);
     text-align: start;
-    font-size: 2vw;
+   
     text-align: center;
     text-transform: capitalize;
    
@@ -46,14 +72,18 @@ hr {
 .anio {
     color: white;
     text-align: center;
-    font-size: 2vw;
-    text-align: end;
+      text-align: end;
 }
 
 .card:hover{
     transition: all;
     border: 1vh solid rgb(245, 173, 187);
 
+}
+
+.modificar {
+
+    padding: 1vw;
 }
 
 .modificar button {

@@ -1,26 +1,25 @@
-<div class="agregar container">
-    <button routerLink="/new-project"><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
-  </div>
+<div class="contenedor container-fluid">
+    <div class="agregar container">
+        <button routerLink="/new-project"><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
+    </div>
+    
+    
+    <div class="proyectos">
+        <div class="card animate__animated animate__zoomIn " *ngFor="let proyecto of proye">
+            <div class="card-body">
+                <h3 class="titulo">{{proyecto.nombreProye}}</h3>
+                <hr>
+                <h4 class="lugar">{{proyecto.descriProye}}</h4>
+                <h4 class="anio">{{proyecto.anioProye}}</h4>
+    
+            </div>
+            <div class="modificar">
+                <button routerLink="/edit-project/{{proyecto.idProye}}"><i class="fa fa-pencil"></i></button>
+                <button (click)="borrar(proyecto.idProye)"><i class="fa fa-trash"></i></button>
+            </div>
+    
+    
+        </div>
+    </div>
 
-  <div class="contenedor">
-
-      <div class="proyectos container-fluid ">
-          <ul>
-      
-              <li class="proyecto animate__animated animate__zoomIn " *ngFor="let proyecto of proye">
-                  <div class="box">
-                      <h3 class="titulo">• {{proyecto.nombreProye}}</h3>
-                      <p class="descripcion">{{proyecto.descriProye}}</p>
-                      <h5 class="año">{{proyecto.anioProye}}</h5>
-                  </div>
-                  
-                  <div class="modificar">
-                      <button routerLink="/edit-project/{{proyecto.idProye}}"><i class="fa fa-pencil"></i></button>
-                      <button (click)="borrar(proyecto.idProye)"><i class="fa fa-trash"></i></button>
-                    </div>
-              </li>
-          </ul>
-      
-      
-      </div>
-  </div>
+</div>
