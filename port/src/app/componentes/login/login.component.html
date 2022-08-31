@@ -1,0 +1,36 @@
+<div class="container log">
+
+    <div class="dialogo">
+        <div class="head">
+            <h5 class="titulo">Login</h5>
+        </div>
+        <div class="body">
+
+            <form action="" #f="ngForm" novalidate>
+
+
+
+                <div class="fila">
+                    <input type="text" id="nombreUsuario" name="nombreUsuario" class="form-control" for="nombreUsuario"
+                    required [(ngModel)]="nombreUsuario" [ngModelOptions]="{standalone: true}" placeholder=" Username">
+                </div>
+                
+                
+                <div class="fila">
+                    <input type="password" id="password" class="form-control" for="password" required [(ngModel)]="password"
+                    placeholder=" Password" [ngModelOptions]="{standalone: true}">
+                </div>
+                <div class="fila">
+                    <button type="button" (click)="onLogin()"> Accsess </button>
+                </div>
+                
+                
+            </form>
+
+
+        </div>
+
+
+    </div>
+
+</div>

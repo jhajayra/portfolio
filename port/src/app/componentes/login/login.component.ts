@@ -2,15 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoginUsuario } from 'src/app/models/login-usuario';
 import { AuthService } from 'src/app/servicios/auth.service';
-import { BotonLoginService } from 'src/app/servicios/boton-login.service';
 import { TokenService } from 'src/app/servicios/token.service';
 
 @Component({
-  selector: 'app-boton-login',
-  templateUrl: './boton-login.component.html',
-  styleUrls: ['./boton-login.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class BotonLoginComponent implements OnInit {
+export class LoginComponent implements OnInit {
+
     isLogged = false;
     isLogginFail = false;
     loginUsuario!: LoginUsuario;
@@ -53,4 +53,4 @@ export class BotonLoginComponent implements OnInit {
         }
       );
     }
-  }
+}

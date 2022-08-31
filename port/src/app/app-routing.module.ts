@@ -6,7 +6,8 @@ import { ExperienciaComponent } from './componentes/experiencia/experiencia.comp
 import { SkillsComponent } from './componentes/skills/skills.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
-import { BotonLoginComponent } from './componentes/boton-login/boton-login.component';
+import { LoginComponent } from './componentes/login/login.component';
+
 //editar experiencias
 import { NuevaExperienciaComponent } from './componentes/experiencia/nueva-experiencia.component';
 import { EditarExperienciaComponent } from './componentes/experiencia/editar-experiencia.component';
@@ -26,7 +27,7 @@ import { EditarInicioComponent } from './componentes/inicio/editar-inicio.compon
 
 const routes: Routes = [
   { path: 'home', component: InicioComponent },
-  {path: 'login', component: BotonLoginComponent},
+  {path: 'login', component:LoginComponent},
 
   {path:'experience', component: ExperienciaComponent},
   {path:'education', component: EducacionComponent},
@@ -54,7 +55,7 @@ const routes: Routes = [
 
   //redirecciona a inicio
   {path:'', component: InicioComponent, pathMatch: 'full'},
-  //{path:'**', redirectTo:'home', pathMatch:'full'}
+  {path:'**', redirectTo:'home', pathMatch:'full'}
 
 ];
 

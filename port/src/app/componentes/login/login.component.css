@@ -1,18 +1,19 @@
-.login {
-  height: 75vh;
-  display: flex;
-  justify-content: center;
-
+.log {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
 }
-  .dialog {
+
+.dialogo {
+
     width: 22em;
     text-align: justify;
     justify-content: center;
     align-items: center;
     margin-top: 10vh;
-  }
+}
 
-.header {
+.head {
     height: 8vh;
     font-weight: 600;
     text-align: center;
@@ -21,25 +22,27 @@
     background: linear-gradient(-135deg, #41021f, #75013bfa);
 }
 
-.header h5 {
-  font-size: 2em;
+.head h5 {
+    font-size: 2em;
 }
-.body{
-   
+
+.body {
+
     background: linear-gradient(-135deg, #f58dbe93, #f7479f80);
-  }
+}
 
-form{
+form {
     padding: 1vw 1vw 2vw 2vw;
-  }
+}
 
-  form .field{
+form .fila {
     height: 8vh;
     justify-content: center;
     margin-top: 3vh;
     position: relative;
-  }
-   form .field input{
+}
+
+form .fila input {
     height: 5.5vh;
     text-align: center;
     outline: none;
@@ -48,15 +51,14 @@ form{
     border-radius: 5vh;
     transition: all 0.3s ease;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
-  }
-  form .field input:focus,
-  form .field input:valid{
-    border-color: #14010a;
-      }
+}
 
+form .fila input:focus,
+form .fila input:valid{
+  border-color: #14010a;
+    }
 
-  form .field button[type="button"]{
+form .fila button[type="button"]{
     color: #fff;
     border: solid rgb(46, 0, 11);
     float: right;
@@ -68,16 +70,15 @@ form{
     cursor: pointer;
     background: linear-gradient(-135deg, #2e002b, #88014b);
     transition: all 0.3s ease;
-  }
- 
-
-.header button  {
-  color: white;
 }
 
-@media (max-width: 576px) {
-  .dialog {
-    padding: 4em;
+.head  button  {
+    color: white;
   }
 
-}
+  @media (max-width: 576px) {
+    .dialogo {
+      padding: 4em;
+    }
+  
+  }

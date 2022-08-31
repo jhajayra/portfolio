@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router'; 
 import { AppRoutingModule } from '../app-routing.module';
 
-import { BotonLoginComponent } from './boton-login/boton-login.component';
+
 import { EducacionComponent } from './educacion/educacion.component';
 import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { InicioComponent } from './inicio/inicio.component';
@@ -21,7 +21,7 @@ import { NuevoProyectoComponent } from './proyectos/nuevo-proyecto.component';
 import { EditarProyectoComponent } from './proyectos/editar-proyecto.component';
 import { NuevaSkillComponent } from './skills/nueva-skill.component';
 import { EditarSkillComponent } from './skills/editar-skill.component';
-
+import { LoginComponent } from './login/login.component';
 import { EditarInicioComponent } from './inicio/editar-inicio.component';
 
 
@@ -29,7 +29,7 @@ import { EditarInicioComponent } from './inicio/editar-inicio.component';
 
 @NgModule({
   declarations: [
-    BotonLoginComponent,
+    LoginComponent,
     EducacionComponent,
     ExperienciaComponent,
     InicioComponent,
@@ -84,7 +84,7 @@ import { EditarInicioComponent } from './inicio/editar-inicio.component';
   ],
 
   exports: [
-    BotonLoginComponent,
+    LoginComponent,
     EducacionComponent,
     ExperienciaComponent,
     InicioComponent,
