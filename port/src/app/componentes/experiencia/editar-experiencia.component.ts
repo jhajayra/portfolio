@@ -22,7 +22,7 @@ export class EditarExperienciaComponent implements OnInit {
       data => {
         this.expeLabo = data;
       }, err =>{
-        alert("Wrong Update");
+        alert("Failed");
         this.ruta.navigate(['']);
 
 
@@ -36,7 +36,7 @@ export class EditarExperienciaComponent implements OnInit {
       data => {
         this.ruta.navigate(['']);
       }, err =>{
-        alert("Wrong Update");
+        alert("Wrong Update,Check Your Information");
         this.ruta.navigate(['']);
       }
     )

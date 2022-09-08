@@ -1,5 +1,5 @@
   <div class="agregar container">
-    <button routerLink="/new-skill" ><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
+    <button *ngIf="isLogged" routerLink="/new-skill" ><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
   </div>
 
 <div class="skills container-fluid animate__animated animate__zoomIn ">
@@ -15,8 +15,8 @@
         ></circle-progress>
         <p class="porcentaje">{{skill.porcentaje}} %</p>
         <div class="modificar">
-          <button routerLink="/edit-skill/{{skill.idSkill}}"><i class="fa fa-pencil"></i></button>
-          <button (click)="borrar(skill.idSkill)"><i class="fa fa-trash"></i></button>
+          <button *ngIf="isLogged" routerLink="/edit-skill/{{skill.idSkill}}"><i class="fa fa-pencil"></i></button>
+          <button *ngIf="isLogged" (click)="borrar(skill.idSkill)"><i class="fa fa-trash"></i></button>
         </div>
       </div>
       

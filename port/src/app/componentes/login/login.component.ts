@@ -31,6 +31,7 @@ export class LoginComponent implements OnInit {
         this.isLogginFail = false;
         this.roles = this.tokenService.getAuthorities();
       }
+      
     }
   
     onLogin(): void {
@@ -38,19 +39,20 @@ export class LoginComponent implements OnInit {
       this.authService.login(this.loginUsuario).subscribe(
         (data) => {
           this.isLogged = true;
-        
           this.tokenService.setToken(data.token);
           this.tokenService.setUserName(data.nombreUsuario);
           this.tokenService.setAuthorities(data.authorities);
           this.roles = data.authorities;
-          this.router.navigate(['']);
+          location.reload();
         },
         (err) => {
-         
+          
           this.isLogginFail = true;
           this.errMsj = err.error.mensaje;
           console.log(this.errMsj);
         }
-      );
+        );
+        this.router.navigate(['']);
+      
     }
 }

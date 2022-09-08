@@ -1,6 +1,6 @@
 <div class="contenedor  container-fluid ">
   <div class="agregar">
-    <button routerLink="/new-education"><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
+    <button *ngIf="isLogged" routerLink="/new-education"><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
   </div>
   <div class="educacion ">
     <div class="card animate__animated animate__zoomIn " *ngFor="let educacion of edu">
@@ -13,8 +13,8 @@
       </div>
       <div class="modificar">
 
-        <button routerLink="/edit-education/{{educacion.idEdu}}"><i class="fa fa-pencil"></i></button>
-        <button (click)="borrarEdu(educacion.idEdu)"><i class="fa fa-trash"></i></button>
+        <button *ngIf="isLogged" routerLink="/edit-education/{{educacion.idEdu}}"><i class="fa fa-pencil"></i></button>
+        <button *ngIf="isLogged" (click)="borrarEdu(educacion.idEdu)"><i class="fa fa-trash"></i></button>
       </div>
     </div>
 

@@ -22,7 +22,7 @@ export class EditarProyectoComponent implements OnInit {
       data => {
         this.proye = data;
       }, err =>{
-        alert("Wrong Update");
+        alert("Failed");
         this.ruta.navigate(['']);
       }
     )
@@ -33,7 +33,7 @@ export class EditarProyectoComponent implements OnInit {
       data => {
         this.ruta.navigate(['']);
       }, err =>{
-        alert("Wrong Update");
+        alert("Wrong Update, Check Your Information");
         this.ruta.navigate(['']);
       }
     )

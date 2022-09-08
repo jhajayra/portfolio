@@ -26,7 +26,7 @@ export class NuevaEducacionComponent implements OnInit {
         alert("Education Saved");
         this.ruta.navigate(['']);
       }, err => {
-        alert("Failed");
+        alert("Failed, Check Your Information");
         this.ruta.navigate(['']);
       }
     )

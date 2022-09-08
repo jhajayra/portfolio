@@ -27,7 +27,7 @@ export class NuevaExperienciaComponent implements OnInit {
         alert("Added Experience");
         this.ruta.navigate(['']);
       }, err => {
-        alert("Failed");
+        alert("Failed, Check Your Information");
         this.ruta.navigate(['']);
       }
     )

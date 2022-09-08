@@ -27,7 +27,7 @@ export class NuevoProyectoComponent implements OnInit {
         alert("Added Project");
         this.ruta.navigate(['']);
       }, err => {
-        alert("Failed");
+        alert("Failed, Check Your Information");
         this.ruta.navigate(['']);
       }
     )

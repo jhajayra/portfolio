@@ -1,12 +1,15 @@
 .skills {
   padding: 4vh;
+  height: 67vh;
 }
+
 .skill-titulo {
   color: rgb(245, 200, 235);
-  margin-top:3vh;
+  margin-top: 3vh;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
 hr {
   line-height: 0vh;
   color: white;
@@ -19,48 +22,53 @@ hr {
   height: auto;
   width: 80vw;
   border-radius: 4vh;
-  margin-left: 8vw ;
+  margin-left: 8vw;
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 2vh;
   padding-bottom: 3vh;
-  
+
 }
 
 .lenguaje {
-   margin: 0.5vw;
-    
+  margin: 0.5vw;
+
 }
 
 .circulos {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  line-height: 4vh ;
+  line-height: 4vh;
 }
-@media (max-width: 760px){
-  .circulos{
+
+@media (max-width: 760px) {
+  .circulos {
     display: block;
     justify-content: center;
     align-items: center;
   }
-  
-  .skill-titulo{
+
+  .skill-titulo {
     font-size: 6vh;
   }
-  .lenguaje {
-      margin-bottom: 4vh;
 
-    }
+  .lenguaje {
+    margin-bottom: 4vh;
+  }
+
+  .skills {
+    height: auto;
+  }
 
 }
 
-.porcentaje  {
+.porcentaje {
   color: rgb(253, 232, 240);
   font-size: 3.5vh;
   height: 4vh;
   text-decoration: overline;
-  
+
 }
 
 
@@ -73,32 +81,33 @@ hr {
   margin: 0.7vh;
   color: aliceblue;
   font-size: 2vh;
-  
+
 }
 
 .agregar {
-    height: 7vh;
-    margin-top: 2vh;
-    padding-bottom: 2vh;
+  height: 7vh;
+  margin-top: 2vh;
+  padding-bottom: 2vh;
 }
+
 .agregar button {
-    float: right;
-    background-color: rgba(197, 5, 85, 0.89);
-    border-radius: 12%;
-    height: 7vh;
-    border: solid rgb(224, 160, 195);
-    margin: 0.7vh;
-    color: aliceblue;
-    margin-left: 5vw;
-    align-items: start;
-    font-size:3.5vh;
-    font-weight: 600 ;
+  float: right;
+  background-color: rgba(197, 5, 85, 0.89);
+  border-radius: 12%;
+  height: 7vh;
+  border: solid rgb(224, 160, 195);
+  margin: 0.7vh;
+  color: aliceblue;
+  margin-left: 5vw;
+  align-items: start;
+  font-size: 3.5vh;
+  font-weight: 600;
 }
 
 .agregar button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .modificar button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }

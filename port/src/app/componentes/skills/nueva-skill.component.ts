@@ -25,7 +25,7 @@ export class NuevaSkillComponent implements OnInit {
         alert("Skill Saved");
         this.ruta.navigate(['']);
       }, err => {
-        alert("Failed");
+        alert("Failed, Check Your Information");
         this.ruta.navigate(['']);
       }
     )

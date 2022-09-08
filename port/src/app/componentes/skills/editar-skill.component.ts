@@ -34,7 +34,7 @@ export class EditarSkillComponent implements OnInit {
       data => {
         this.ruta.navigate(['']);
       }, err => {
-        alert("Failed");
+        alert("Wrong Update, Check Your Information");
         this.ruta.navigate(['']);
       }
     )

@@ -10,12 +10,13 @@
     </div>
 
     <div class="nombre">
-      <h1> {{usuario.nombreCompleto}} mori infantes</h1>
-      <button routerLink="/edit-home/{{usuario.idPer}}"><i class="fa fa-pencil"></i></button>
+      <h1> {{usuario.nombreCompleto}} </h1>
+      <button routerLink="/edit-home/{{usuario.idPer}}"
+      *ngIf="isLogged"><i  class="fa fa-pencil"></i></button>
     </div>
     <div class="titulo">
       <h2>I'm {{usuario.titulo}}</h2>
-      <button routerLink="/edit-home/{{usuario.idPer}}"><i class="fa fa-pencil"></i></button>
+      <button routerLink="/edit-home/{{usuario.idPer}}" *ngIf="isLogged"><i class="fa fa-pencil"></i></button>
     </div>
 
     <div class=" d-none d-sm-block">
@@ -24,7 +25,7 @@
           aria-controls="about">
           About Me :
         </button>
-        <button id="lapiz" routerLink="/edit-home/{{usuario.idPer}}"><i class="fa fa-pencil"></i></button>
+        <button *ngIf="isLogged" id="lapiz" routerLink="/edit-home/{{usuario.idPer}}"><i class="fa fa-pencil"></i></button>
       </div>
       <div class="sobre-mi">
         <div class="collapse collapse-horizontal" id="about">
