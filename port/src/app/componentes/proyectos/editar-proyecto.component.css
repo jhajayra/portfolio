@@ -1,18 +1,18 @@
 .container {
     align-items: center;
-    height: 74vh;
+    height: auto;
     width: auto; 
 }
 
 .row {
-    padding-top: 5vh;
+    padding-top: 4vh;
     margin: 2vh;
     display: block;
     justify-content: center;
     padding-left: 19vw;
 }
 .form-group {
-    padding: 1vw;
+    padding: 0.5em;
 }
 .form-group input {
     line-height: 2vh;
@@ -24,6 +24,17 @@
     padding-left: 4%;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.form-group textarea {
+    width: 38vw;
+    border-radius: 2vh;
+    background-color: rgba(27, 1, 15, 0.849);
+    color: aliceblue;
+    font-weight: 300;
+    padding-left: 3%;
+    font-weight: 400;
+    height: 5em;
+
+}
 
 .form-group  label {
      
@@ -31,25 +42,80 @@
     font-size: 3.8vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
-    line-height: 6vh;
     padding-left: 1vw;
     background-color: rgba(0, 0, 0, 0.247);
     border-radius: 3vh;
 }
 
+.actualizar {
+    display: flex;
+    padding-top: 0.7em;
+}
 .actualizar button {
     color: aliceblue;
     font-weight: 500;
-    font-size: 1.9vw;
-    margin-right: 25vw;
-    float: right;
+    font-size: larger;
+    margin-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
     background-color: rgb(85, 2, 41);
     border: solid rgb(226, 204, 212);
     border-radius: 2vh;
     text-align: center;
+    margin-left: 5em;
+    margin-right: 4em;
 }
 
 .actualizar button:hover{
     transform: scale(0.95);
     transition: 7ms;
+}
+
+.alert {
+    width: 24em;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.651);
+    border-radius: 3vh;
+    justify-content: center;
+}
+.alert h6 {
+    
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 2vh;
+}
+
+@media (max-width: 760px){
+    .container {
+        height: auto;
+    }
+    .actualizar button{
+        font-size: medium;
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+        border: solid 1.7px;
+        border-radius: 1vh;
+        margin-left: 2em;
+        margin-right: 1em;
+        
+    }
+
+    .form-group input{
+        margin-top: 0.5vh;
+        width: 14em;
+    }
+    .form-group textarea {
+        width: 14em;
+        height: 10em;
+    }
+    .row{
+        padding-left: 1em;
+    }
+    .alert{
+        width: 15em;
+    }
+    .form-group  label {
+        font-size: x-large;
+        margin-top: 1.5vh;
+    }
 }

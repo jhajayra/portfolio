@@ -1,6 +1,6 @@
 .container {
     align-items: center;
-    height: 74vh;
+    height: auto;
     width: auto; 
 }
 
@@ -36,20 +36,69 @@
     background-color: rgba(0, 0, 0, 0.247);
     border-radius: 3vh;
 }
-
+.editar {
+    display: flex;
+    padding-top: 1em;
+}
 .editar button {
     color: aliceblue;
     font-weight: 500;
-    font-size: 1.9vw;
-    margin-right: 25vw;
-    float: right;
+    font-size: larger;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
     background-color: rgb(85, 2, 41);
     border: solid rgb(226, 204, 212);
     border-radius: 2vh;
     text-align: center;
+    margin-left: 5em;
+    margin-right: 3em;
+   
 }
 
 .editar button:hover{
     transform: scale(0.95);
     transition: 7ms;
+}
+
+@media (max-width: 760px){
+    .container {
+        height: auto;
+    }
+    .editar button{
+        font-size: medium;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+        border: solid 1.7px;
+        border-radius: 1vh;
+        margin-left: 2em;
+        margin-right: 1em;
+    }
+
+    .form-group input{
+        width: auto;
+    }
+    .row{
+        padding-left: 2em;
+    }
+    .alert{
+        width: 15em;
+    }
+    .form-group  label {
+        font-size: x-large;
+    }
+}
+
+.alert {
+    width: 24em;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.651);
+    border-radius: 3vh;
+    justify-content: center;
+}
+.alert h6 {
+    
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 2vh;
 }

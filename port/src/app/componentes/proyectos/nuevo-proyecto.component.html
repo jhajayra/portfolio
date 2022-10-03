@@ -5,13 +5,26 @@
                 <div class="form-group">
                     <label for="nombreProye">Project's Name :</label>
                     <input type="text" class="form-control" id="nombreProye" name="nombreProye"
-                        [(ngModel)]="nombreProye" required>
+                        [(ngModel)]="nombreProye" required
+                        minlength="5"
+                        maxlength="50"
+                        #proyecto = "ngModel" >
+                       <div class="alert" *ngIf=" proyecto.invalid && (proyecto.dirty || proyecto.touched)">
+                            <h6 *ngIf="proyecto.errors?.['required']">Enter Valid Project.</h6>
+                            <h6 *ngIf="proyecto.errors?.['minlength']">The project must have at least 5 characters.</h6>
+                            <h6 *ngIf="proyecto.errors?.['maxlength']">The project must be less than 50 characters.</h6>
+                        </div>
                 </div>
 
                 <div class="form-group">
                     <label for="descriProye">Description :</label>
-                    <input type="text" class="form-control" id="descriProye" name="descriProye"
-                        [(ngModel)]="descriProye" required>
+                    <textarea type="text" class="form-control" id="descriProye" name="descriProye"
+                        [(ngModel)]="descriProye" required 
+                        placeholder="The description must be between 10 and 500 characters."
+                        minlength="10"
+                        maxlength="500" >
+                       
+                    </textarea>
                 </div>
 
                 <div class="form-group">
@@ -20,7 +33,8 @@
                         [(ngModel)]="anioProye" required>
                 </div>
                 <div class="crear">
-                    <button type="submit"><i class="fa-solid fa-folder-plus"></i> Add</button>
+                    <button ><i class="fa-solid fa-folder-plus"></i> Add</button>
+                    <button type="button" routerLink="/projects"> <i class="fa-solid fa-rectangle-xmark"></i> Cancel</button>
                 </div>
 
             </form>

@@ -14,8 +14,7 @@
 }
 
 .card {
-    width: max-content;
-    
+    width: 18em;
     background-color: rgba(7, 0, 3, 0.507);
     margin: 1rem;
     border-radius: 1rem;
@@ -32,8 +31,8 @@
     .card {
         margin-bottom: 4vh;
         align-items: center;
-        margin-left: 1.2em;
-        width: 80%;
+        margin-left: 2.5em;
+        width: 17em;
         height: auto;
         padding: 2vh;
     }
@@ -42,10 +41,10 @@
         height: auto;
     }
     h3 {
-        font-size: 4vh;
+        font-size: x-large;
     }
     h4 {
-        font-size: 3.5vh;
+        font-size: large;
     }
     
 
@@ -94,7 +93,7 @@ hr {
     float: right;
     background-color: rgba(216, 5, 93, 0.89);
     border-radius: 100%;
-    height: 5.3vh;
+   
     border: solid rgb(224, 160, 195);
     margin: 0.7vh;
     color: aliceblue;
@@ -109,14 +108,14 @@ hr {
     float: right;
     background-color: rgba(197, 5, 85, 0.89);
     border-radius: 12%;
-    height: 7vh;
+    
     border: solid rgb(224, 160, 195);
     margin: 0.7vh;
     color: aliceblue;
     margin-left: 5vw;
     align-items: start;
     font-weight: 600;
-    font-size: 3.5vh;
+    font-size: x-large;
 }
 
 .agregar button:hover {
@@ -126,3 +125,4 @@ hr {
 .modificar button:hover {
     transform: scale(1.1);
 }
+

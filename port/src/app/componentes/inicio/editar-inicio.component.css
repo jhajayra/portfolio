@@ -25,45 +25,105 @@ form label {
     font-size: 4vh;
     font-weight: 500;
     margin-left: 1vw;
+    margin-top: 1.5vh;
 }
 
 form input {
-    margin-left: 2vw;
+    margin-left: 1em;
     margin-right: 1vw;
     width: 35vw;
-    border-radius: 2vw;
+    border-radius: 1em;
     align-items: start;
     background-color: rgba(41, 0, 16, 0.795);
     color: rgb(255, 225, 245);
     border: solid ;
-    margin-bottom: 1vw;
 }
 
 form textarea {
-    margin-left: 2vw;
+    margin-left: 1em;
+    margin-right: 1vw;
     width: 35vw;
     height: 7vw;
-    border-radius: 2vw;
+    border-radius: 1em;
     align-items: start;
     background-color: rgba(41, 0, 16, 0.795);
     color: rgb(255, 225, 245);
     border: solid ;
     margin-bottom: 1vw;
 }
+.actualizar {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
 .actualizar button {
     color: aliceblue;
-    font-weight: 400;
-    font-size: 1.8vw; 
+    font-weight: 500;
+    font-size: larger; 
     background-color: rgb(85, 2, 41);
     border: solid rgb(226, 204, 212);
     border-radius: 2vh;
     text-align: center;
-    margin-bottom: 2vh;
-    margin-left: 27vw;
+    margin-bottom: 4vh;
+    margin-left: 3em;
+    margin-right: 3em;
     
 }
 
 .actualizar button:hover{
     transform: scale(0.95);
     transition: 7ms;
+}
+@media (max-width: 576px){
+    .editar{
+        justify-content: start;
+        width: auto;
+    }
+     form {
+        width: auto;
+        background: none;
+        margin-left: 2em;
+    }
+    .form-group {
+        margin: 1em;
+    }
+    form label{
+        font-size: x-large;
+        margin-top: 1vh;
+    }
+    form input {
+        height: auto;
+        margin: 0.4em;
+        width: 13em;
+    }
+    .actualizar button{
+        font-size: medium;
+        margin-left: 0;
+        margin-right: 2em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+        margin-left: 1.5em;
+        margin-right: 0.5em;
+    }
+    .actualizar {
+        justify-content: start;
+    }
+    .form-group textarea {
+        height: auto;
+        width: 13em;
+        margin-left: 0.3em;
+    }
+}
+.alert {
+    width: 24em;
+    align-items: center;
+    border-radius: 3vh;
+    justify-content: center;
+    margin-left: 1em;
+}
+.alert h6 {
+    
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 2vh;
 }

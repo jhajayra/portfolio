@@ -1,66 +1,63 @@
-    <header>
+<header>
 
-        <div class="container-fluid componente">
-        
+    <div class="container-fluid componente">
+
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-                <img src="../assets/imagenes/arg-programa.png" alt="logo arg-programa"  id="logo"  >
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barra-nav" aria-controls="barra-nav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="barra-nav">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link "  routerLink="/home"
-                                routerLinkActive="activebutton"
-                                ariaCurrentWhenActive="page" >Home</a>
-                            </li>
-                           
-                            <li class="nav-item">
-                                <a class="nav-link"  routerLink="/experience"
-                                routerLinkActive="activebutton"
-                                ariaCurrentWhenActive="page">Experience</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link "  routerLink="/education"
-                                routerLinkActive="activebutton"
-                                ariaCurrentWhenActive="page">Education</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"  routerLink="/projects"
-                                routerLinkActive="activebutton"
-                                ariaCurrentWhenActive="page">Projects</a>
-                              </li>
-                              <li class="nav-item" >
-                                  <a class="nav-link"  routerLink="/skills"
-                                  routerLinkActive="activebutton"
-                                  ariaCurrentWhenActive="page">Skills</a>
-                              </li>
-                        </ul>
-                    </div>
-                </div>
-          </nav>
-        </div>
-    </header>
+                <img src="../assets/imagenes/arg-programa.png" alt="logo arg-programa" id="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barra-nav"
+                    aria-controls="barra-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="barra-nav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " routerLink="/home" routerLinkActive="activebutton"
+                                ariaCurrentWhenActive="page">Home</a>
+                        </li>
 
-    <body>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/experience" routerLinkActive="activebutton"
+                                ariaCurrentWhenActive="page">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " routerLink="/education" routerLinkActive="activebutton"
+                                ariaCurrentWhenActive="page">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/projects" routerLinkActive="activebutton"
+                                ariaCurrentWhenActive="page">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/skills" routerLinkActive="activebutton"
+                                ariaCurrentWhenActive="page">Skills</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<body>
     <router-outlet></router-outlet>
-    
+
 </body>
 <footer>
 
     <div class="redes">
         <app-btn-redes></app-btn-redes>
     </div>
-    <div class="login">
-        <button type="button"  data-bs-toggle="modal" data-bs-target="#login" id="login-btn" 
-            routerLink="/login"
-            routerLinkActive="activebutton"
-            ariaCurrentWhenActive="page" *ngIf="!isLogged">
-            <i class="fa-solid fa-right-to-bracket"></i> &nbsp;Login
-      </button>
-    </div>
-    <div class="logout">
-        <button type="button" (click)="onLogOut()" *ngIf="isLogged"><i class="fa-solid fa-power-off"></i>&nbsp;Logout</button>
+    <div class="login-box">
+        <div class="login">
+            <button type="button" data-bs-toggle="modal" data-bs-target="#login" id="login-btn" routerLink="/login"
+                routerLinkActive="activebutton" ariaCurrentWhenActive="page" *ngIf="!isLogged">
+                <i class="fa-solid fa-right-to-bracket"></i> &nbsp;Login
+            </button>
+            <div class="logout">
+                <button type="button" (click)="onLogOut()" *ngIf="isLogged"><i
+                        class="fa-solid fa-power-off"></i>&nbsp;Logout</button>
+            </div>
+        </div>
     </div>
 </footer>

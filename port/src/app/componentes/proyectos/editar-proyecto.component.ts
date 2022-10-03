@@ -31,10 +31,10 @@ export class EditarProyectoComponent implements OnInit {
     const id = this.activateRouter.snapshot.params['id'];
     this.proyeServ.actualizarProye(id,this.proye).subscribe(
       data => {
-        this.ruta.navigate(['']);
+        this.ruta.navigate(['/projects']);
       }, err =>{
         alert("Wrong Update, Check Your Information");
-        this.ruta.navigate(['']);
+        this.ruta.navigate(['/projects']);
       }
     )
   }

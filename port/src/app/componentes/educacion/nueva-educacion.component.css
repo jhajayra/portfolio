@@ -1,12 +1,12 @@
 .container {
     align-items: center;
-    height: 74vh;
+    height: auto;
     width: auto; 
 }
 
 .row {
-    padding-top: 5vh;
-    margin: 2vh;
+    padding-top: 7vh;
+    margin: 0vh;
     display: block;
     justify-content: center;
     padding-left: 19vw;
@@ -17,7 +17,7 @@
 .form-group input {
     line-height: 2vh;
     width: 38vw;
-    border-radius: 2vh;
+    border-radius: 1em;
     background-color: rgba(39, 1, 22, 0.849);
     color: aliceblue;
     font-weight: 300;
@@ -31,25 +31,69 @@
     font-size: 3.8vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
-    line-height: 6vh;
     padding-left: 1vw;
     background-color: rgba(0, 0, 0, 0.247);
-    border-radius: 3vh;
+    border-radius: 1em;
 }
-
+.crear {
+    display: flex;
+    padding-top: 1em;
+}
 .crear button {
     color: aliceblue;
     font-weight: 500;
-    font-size: 1.9vw;
-    margin-right: 25vw;
-    float: right;
+    font-size: larger;
     background-color: rgb(85, 2, 41);
     border: solid rgb(226, 204, 212);
     border-radius: 2vh;
     text-align: center;
+    margin-bottom: 6vh;
+    margin-top: 4vh;
+    justify-content: right;
+    margin-right: 4em;
+    margin-left: 5em;
 }
 
 .crear button:hover{
     transform: scale(0.95);
     transition: 7ms;
+}
+.alert {
+    width: 24em;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.651);
+    border-radius: 3vh;
+    justify-content: center;
+}
+.alert h6 {
+    
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 2vh;
+}
+
+@media (max-width: 760px){
+    .container {
+        height: auto;
+    }
+    .crear button{
+        font-size: medium;
+        margin-bottom: 5vh;
+        border: solid 1.7px;
+        border-radius: 1vh;
+        margin-left: 2em;
+        margin-right: 1em;
+    }
+    .form-group input{
+        width: auto;
+    }
+    .row{
+        padding-left: 2em;
+    }
+    .alert{
+        width: 15em;
+    }
+    .form-group  label {
+        font-size: x-large;
+    }
 }

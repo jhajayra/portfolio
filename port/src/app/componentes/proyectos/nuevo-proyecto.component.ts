@@ -25,10 +25,10 @@ export class NuevoProyectoComponent implements OnInit {
     this.nuevoServ.guardarProye(proye).subscribe(
       data=>{
         alert("Added Project");
-        this.ruta.navigate(['']);
+        this.ruta.navigate(['/projects']);
       }, err => {
         alert("Failed, Check Your Information");
-        this.ruta.navigate(['']);
+        this.ruta.navigate(['/projects']);
       }
     )
   }

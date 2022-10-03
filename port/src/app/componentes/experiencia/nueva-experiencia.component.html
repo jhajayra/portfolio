@@ -5,12 +5,29 @@
                 <div class="form-group">
                     <label for="cargoExp">Position :</label>
                     <input type="text" class="form-control" id="cargoExp" name="cargoExp"
-                        [(ngModel)]="cargoExp" required>
+                        [(ngModel)]="cargoExp" required
+                        minlength="5"
+                        maxlength="50"
+                        #cargo = "ngModel" >
+                       <div class="alert" *ngIf=" cargo.invalid && (cargo.dirty || cargo.touched)">
+                            <h6 *ngIf="cargo.errors?.['required']">Enter Valid Position.</h6>
+                            <h6 *ngIf="cargo.errors?.['minlength']">The position must have at least 5 characters.</h6>
+                            <h6 *ngIf="cargo.errors?.['maxlength']">The position must be less than 50 characters.</h6>
+                        </div>
                 </div>
                 <div class="form-group">
                     <label for="lugarExp">Where :</label>
                     <input type="text" class="form-control" id="lugarExp" name="lugarExp"
-                        [(ngModel)]="lugarExp" required>
+                        [(ngModel)]="lugarExp" required
+                        minlength="5"
+                        maxlength="50"
+                        #lugar = "ngModel" >
+                       <div class="alert" *ngIf=" lugar.invalid && (lugar.dirty || lugar.touched)">
+                            <h6 *ngIf="lugar.errors?.['required']">Enter Valid Place.</h6>
+                            <h6 *ngIf="lugar.errors?.['minlength']">The place must have at least 5 characters.</h6>
+                            <h6 *ngIf="lugar.errors?.['maxlength']">The place must be less than 50 characters.</h6>
+                        </div>
+                        
                 </div>
 
                 <div class="form-group">
@@ -20,7 +37,9 @@
                 </div>
 
                 <div class="crear">
-                    <button type="submit"><i class="fa-solid fa-folder-plus"></i> Add</button>
+                    <button ><i class="fa-solid fa-folder-plus" ></i> Add</button>
+                    <button type="button" routerLink="/experience"> <i class="fa-solid fa-rectangle-xmark"></i> Cancel</button>
+
                 </div>
 
             </form>

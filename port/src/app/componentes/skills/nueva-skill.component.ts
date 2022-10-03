@@ -23,10 +23,10 @@ export class NuevaSkillComponent implements OnInit {
     this.skillServ.actualizarSkill(skill).subscribe(
       data => {
         alert("Skill Saved");
-        this.ruta.navigate(['']);
+        this.ruta.navigate(['/skills']);
       }, err => {
         alert("Failed, Check Your Information");
-        this.ruta.navigate(['']);
+        this.ruta.navigate(['/skills']);
       }
     )
   }

@@ -5,24 +5,53 @@
         <div class="form-group">
             <label for="nombreCompleto">Nombre Completo :</label>
             <input type="text" class="form-control" id="nombreCompleto" name="nombreCompleto"
-                [(ngModel)]="usuario.nombreCompleto" required>
+                [(ngModel)]="usuario.nombreCompleto" required
+                minlength="5"
+                maxlength="35"
+                #nombre = "ngModel" >
+            <div class="alert" *ngIf=" nombre.invalid && (nombre.dirty || nombre.touched)">
+                    <h6 *ngIf="nombre.errors?.['required']">Enter Valid Name.</h6>
+                    <h6 *ngIf="nombre.errors?.['minlength']">The name must have at least 5 characters.</h6>
+                    <h6 *ngIf="nombre.errors?.['maxlength']">The name must be less than 35 characters.</h6>
+            </div>
         </div>
 
         <div class="form-group">
             <label for="titulo">Titulo :</label>
             <input type="text" class="form-control" id="titulo" name="titulo"
-                [(ngModel)]="usuario.titulo" required>
+                [(ngModel)]="usuario.titulo" required
+                minlength="5"
+                maxlength="35"
+                #ocupacion = "ngModel" >
+            <div class="alert" *ngIf=" ocupacion.invalid && (ocupacion.dirty || ocupacion.touched)">
+                    <h6 *ngIf="ocupacion.errors?.['required']">Enter Valid Title.</h6>
+                    <h6 *ngIf="ocupacion.errors?.['minlength']">The title must have at least 5 characters.</h6>
+                    <h6 *ngIf="ocupacion.errors?.['maxlength']">The title must be less than 35 characters.</h6>
+            </div>
         </div>
 
         <div class="form-group">
             <label for="about">Description :</label>
             <textarea type="text" class="form-control" id="about" name="about" [(ngModel)]="usuario.descripcion"
-                required></textarea>
+                required
+                minlength="25"
+                maxlength="600"
+                #descrip = "ngModel" >
+                <div class="alert" *ngIf=" descrip.invalid && (descrip.dirty || descrip.touched)">
+                        <h6 *ngIf="descrip.errors?.['required']">Enter Valid Description.</h6>
+                        <h6 *ngIf="descrip.errors?.['minlength']">The description must have at least 25 characters.</h6>
+                        <h6 *ngIf="descrip.errors?.['maxlength']">The description must be less than 600 characters.</h6>
+                </div>
+            </textarea>
         </div>
 
         <div class="actualizar">
-            <button type="submit"><i class="fa-solid fa-pen-to-square"></i> Update</button>
+            <button ><i class="fa-solid fa-pen-to-square"></i> Update</button>
+            <button type="button" routerLink="/home"> <i class="fa-solid fa-rectangle-xmark"></i> Cancel</button>
+
         </div>
     </form>
 
 </div>
+
+<!--    AHORA VER VIDEO PARA AGREGARLE MODAL QUE PERMITA CONFIRMAR LA ELIMINACION DE LAS ESPERIENCIAS O ETC, -->

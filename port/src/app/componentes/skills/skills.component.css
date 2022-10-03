@@ -48,9 +48,11 @@ hr {
     justify-content: center;
     align-items: center;
   }
-
+  .container-skill{
+    margin-left: 0.6em;
+  }
   .skill-titulo {
-    font-size: 6vh;
+    font-size: xx-large;
   }
 
   .lenguaje {
@@ -60,27 +62,33 @@ hr {
   .skills {
     height: auto;
   }
-
+  .modificar button {
+    height: 2.3em;
+   
+   
+  }
+ 
 }
 
 .porcentaje {
   color: rgb(253, 232, 240);
-  font-size: 3.5vh;
+  font-size: larger;
   height: 4vh;
   text-decoration: overline;
 
 }
 
-
+.modificar{
+  align-items: center;
+}
 .modificar button {
 
   background-color: rgba(221, 109, 156, 0.63);
   border-radius: 100%;
-  height: 5vh;
   border: solid rgb(224, 160, 195);
   margin: 0.7vh;
   color: aliceblue;
-  font-size: 2vh;
+  font-size: medium;
 
 }
 
@@ -94,13 +102,12 @@ hr {
   float: right;
   background-color: rgba(197, 5, 85, 0.89);
   border-radius: 12%;
-  height: 7vh;
   border: solid rgb(224, 160, 195);
   margin: 0.7vh;
   color: aliceblue;
   margin-left: 5vw;
   align-items: start;
-  font-size: 3.5vh;
+  font-size: x-large;
   font-weight: 600;
 }
 

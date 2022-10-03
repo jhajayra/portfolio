@@ -5,18 +5,35 @@
             <div class="form-group">
                 <label for="nombreSkill">Skill's Name :</label>
                 <input type="text" class="form-control" id="nombreSkill" name="nombreSkill" [(ngModel)]="skill.nombreSkill"
-                    required>
+                    required
+                    minlength="3"
+                    maxlength="30"
+                    #nskill = "ngModel" >
+                    <div class="alert" *ngIf=" nskill.invalid && (nskill.dirty || nskill.touched)">
+                        <h6 *ngIf="nskill.errors?.['required']">Enter Valid Skill.</h6>
+                        <h6 *ngIf="nskill.errors?.['minlength']">The skill must have at least 3 characters.</h6>
+                        <h6 *ngIf="nskill.errors?.['maxlength']">The skill must be less than 30 characters.</h6>
+                    </div>
             </div>
 
             <div class="form-group">
                 <label for="porcentaje">Percent :</label>
                 <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje"
-                    required>
+                    required
+                    minlength="1"
+                    maxlength="3"
+                    #numero = "ngModel" >
+                    <div class="alert" *ngIf=" numero.invalid && (numero.dirty || numero.touched)">
+                        <h6 *ngIf="numero.errors?.['required']">Enter Valid Percent.</h6>
+                        <h6 *ngIf="numero.errors?.['minlength']">The percent must have at least 1 characters.</h6>
+                        <h6 *ngIf="numero.errors?.['maxlength']">The percent must be less than 3 characters.</h6>
+                    </div>
             </div>
 
 
             <div class="actualizar">
-                <button type="submit" class="btn"><i class="fa-solid fa-folder-plus"></i> Add</button>
+                <button><i class="fa-solid fa-folder-plus"></i> Add</button>
+                <button type="button" routerLink="/skills"> <i class="fa-solid fa-rectangle-xmark"></i> Cancel</button>
             </div>
 
         </form>

@@ -32,10 +32,10 @@ export class EditarSkillComponent implements OnInit {
     const id = this.activateRoute.snapshot.params['id'];
     this.skillServ.editarSkill(id,this.skill).subscribe(
       data => {
-        this.ruta.navigate(['']);
+        this.ruta.navigate(['/skills']);
       }, err => {
         alert("Wrong Update, Check Your Information");
-        this.ruta.navigate(['']);
+        this.ruta.navigate(['/skills']);
       }
     )
   }
