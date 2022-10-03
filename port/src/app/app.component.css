@@ -28,13 +28,14 @@ a {
     margin-right: 2vh;
     text-align: right;  
 }
+
 @media (max-width: 760px){
 
     a {
-        font-size: large;
-        line-height: 1.5vh;
-        margin-right: 3vh;
-        text-align: center;
+      font-size: large;
+      line-height: 1.5vh;
+      margin-right: 3vh;
+      text-align: center;
     }
 
 
@@ -51,7 +52,7 @@ a:hover {
 
 
  #logo {
-        height: 12vh;  
+    height: 12vh;  
     
     }
 
@@ -133,7 +134,13 @@ body {
         font-size: medium;
         font-weight: 400;
     }
+
+    #logo {
+      height: 4em;
+    }
   }
+
+  
   .login-box{
     display: flex;
   }

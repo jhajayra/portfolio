@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Usuario } from 'src/app/models/Usuario';
 import { InicioService } from 'src/app/servicios/inicio.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-editar-inicio',
@@ -21,8 +22,15 @@ export class EditarInicioComponent implements OnInit {
       data => {
         this.usuario = data;
       }, err =>{
-        alert("Wrong Update");
-        this.ruta.navigate(['']);
+        Swal.fire({
+          title: 'Failed.',
+          icon: 'error',
+          width: 350,
+          padding: '1em',
+          background: 'radial-gradient( circle farthest-corner at 7.5% 14.2%,  rgba(254,243,240,1) 0%, rgba(250,236,252,1) 90% )',
+          confirmButtonColor: 'rgb(170, 5, 74)',
+        });
+         this.ruta.navigate(['']);
       }
     
     )
@@ -32,10 +40,24 @@ export class EditarInicioComponent implements OnInit {
     const idPer = 1;
     this.homeServ.editarUsuario(this.usuario).subscribe(
       data => {
-        alert("User Update");
-        this.ruta.navigate(['']);
+        Swal.fire({
+          title: 'Updated User!',
+          icon: 'success',
+          width: 300,
+          padding: '1em',
+          background: 'radial-gradient( circle farthest-corner at 7.5% 14.2%,  rgba(254,243,240,1) 0%, rgba(250,236,252,1) 90% )',
+          confirmButtonColor: 'rgb(170, 5, 74)',
+        });
+         this.ruta.navigate(['']);
       }, err => {
-        alert("Wrong Update");
+        Swal.fire({
+          title: 'Wrong Update.',
+          icon: 'error',
+          width: 350,
+          padding: '1em',
+          background: 'radial-gradient( circle farthest-corner at 7.5% 14.2%,  rgba(254,243,240,1) 0%, rgba(250,236,252,1) 90% )',
+          confirmButtonColor: 'rgb(170, 5, 74)',
+        });
         this.ruta.navigate(['']);
       }
     )
