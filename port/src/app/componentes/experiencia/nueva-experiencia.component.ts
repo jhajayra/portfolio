@@ -11,9 +11,12 @@ import Swal from 'sweetalert2';
 })
 export class NuevaExperienciaComponent implements OnInit {
 
-  cargoExp: string = "";
-  anioExp: number ;
-  lugarExp: string= "";
+  cargoExp: string;
+  lugarExp: string;
+  anioInicio: number ;
+  mesInicio: string;
+  anioFin: number;
+  mesFin: string;
 
   constructor(private nuevaServ: ExperienciaService, private ruta: Router) { }
 
@@ -22,9 +25,9 @@ export class NuevaExperienciaComponent implements OnInit {
   }
 
   crear(): void {
-    const expe = new Experiencia(this.cargoExp, this.anioExp, this.lugarExp);
+    const expe = new Experiencia(this.cargoExp, this.lugarExp, this.anioInicio, this.mesInicio, this.anioFin, this.mesFin);
     this.nuevaServ.guardarExpe(expe).subscribe(
-      data=>{
+      data => {
         Swal.fire({
           title: 'Added Experience!',
           icon: 'success',

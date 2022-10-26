@@ -2,22 +2,24 @@
     align-items: center;
     height: auto;
     width: auto; 
+    display: flex;
+    justify-content: center;
 }
 
 .row {
-    padding-top: 5vh;
+    padding-top: 4vh;
     margin: 2vh;
     display: block;
-    justify-content: center;
-    padding-left: 19vw;
+    
 }
 .form-group {
-    padding: 1vw;
+    padding: 0.5vw;
 }
 .form-group input {
-    line-height: 2vh;
-    width: 38vw;
-    border-radius: 2vh;
+    width: 22vw;
+    height: 5.1vh;
+    margin-left: 1em;
+    border-radius: 1.5vh;
     background-color: rgba(39, 1, 22, 0.849);
     color: aliceblue;
     font-weight: 300;
@@ -37,6 +39,48 @@
     border-radius: 3vh;
 }
 
+.fecha-inicio, .fecha-fin{
+    display: flex;
+}
+.fecha-inicio input, .fecha-fin input {
+    width: 8em;
+    margin-left: 1em;
+    margin: 0.3em;
+    text-align: center;
+}
+
+.fecha-grupo {
+    display: block;
+    width: 11em;
+    align-items: center;
+    
+}
+
+#mesInicio, #mesFin {
+    width: 8em;
+    height: 5vh;
+    border-radius: 1.5vh;
+    background-color: rgba(39, 1, 22, 0.849);
+    color: aliceblue;
+    font-weight: 300;
+    border: solid 1px ;
+    margin: 0.3em;
+
+    margin-left: 1em;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+}
+
+
+select [type="month"]::-webkit-scrollbar-corner {
+    filter: invert(1);
+    padding-right: 0.5em;
+  }
+
+
+
+
+
 .crear {
     display: flex;
     padding-top: 2em;
@@ -50,8 +94,8 @@
     border-radius: 2vh;
     text-align: center;
     margin-bottom: 4vh;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: 2em;
+    margin-right: 3em;
     
 }
 

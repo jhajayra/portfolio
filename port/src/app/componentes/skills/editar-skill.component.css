@@ -17,11 +17,13 @@
 .form-group input {
     line-height: 2vh;
     width: 20em;
+    height: 5.5vh;
+    color: aliceblue;
+    padding-left: 1em;
+    margin-left: 1em;
     border-radius: 2vh;
     background-color: rgba(39, 1, 22, 0.849);
-    color: aliceblue;
     font-weight: 300;
-    padding-left: 4%;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -62,14 +64,15 @@
 }
 
 .alert {
-    width: 24em;
+    width: 20em;
+    margin-left: 1em;
     align-items: center;
     background: rgba(0, 0, 0, 0.651);
     border-radius: 3vh;
     justify-content: center;
 }
 .alert h6 {
-    
+    font-size: small;
     color: rgb(255, 255, 255);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 2vh;
@@ -89,7 +92,9 @@
         margin-right: 1.5em;
         
     }
-
+    .form-group label{
+        font-size: x-large;
+    }
     .form-group input{
         width: auto;
     }

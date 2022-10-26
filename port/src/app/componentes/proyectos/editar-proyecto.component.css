@@ -16,21 +16,24 @@
 }
 .form-group input {
     line-height: 2vh;
-    width: 38vw;
-    border-radius: 2vh;
+    width: 30vw;
+    height: 5.5vh;
+    margin-left:1em ;
+    border-radius: 1em;
     background-color: rgba(39, 1, 22, 0.849);
     color: aliceblue;
     font-weight: 300;
-    padding-left: 4%;
+    padding-left: 1em;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .form-group textarea {
-    width: 38vw;
+    width: 30vw;
     border-radius: 2vh;
     background-color: rgba(27, 1, 15, 0.849);
     color: aliceblue;
     font-weight: 300;
     padding-left: 3%;
+    margin-left: 1em;
     font-weight: 400;
     height: 5em;
 
@@ -62,8 +65,8 @@
     border: solid rgb(226, 204, 212);
     border-radius: 2vh;
     text-align: center;
-    margin-left: 5em;
-    margin-right: 4em;
+    margin-left: 4em;
+    margin-right: 2em;
 }
 
 .actualizar button:hover{
@@ -72,14 +75,15 @@
 }
 
 .alert {
-    width: 24em;
+    width: 25em;
     align-items: center;
     background: rgba(0, 0, 0, 0.651);
     border-radius: 3vh;
     justify-content: center;
+    margin-left: 1em;
 }
 .alert h6 {
-    
+    font-size: small;
     color: rgb(255, 255, 255);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 2vh;
@@ -112,7 +116,7 @@
         padding-left: 1em;
     }
     .alert{
-        width: 15em;
+        width: 14em;
     }
     .form-group  label {
         font-size: x-large;

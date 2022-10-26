@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Skills } from 'src/app/models/Skills';
+import { SoftSkills } from 'src/app/models/SoftSkills';
 import { SkillsService } from 'src/app/servicios/skills.service';
+import { SoftSkillsService } from 'src/app/servicios/soft-skills.service';
 import { TokenService } from 'src/app/servicios/token.service';
 import Swal from 'sweetalert2';
 
@@ -13,9 +15,11 @@ export class SkillsComponent implements OnInit {
 
   skills : Skills [] = [];
   
+  
   isLogged = false;
   
-  constructor(private skillsServ:SkillsService, private token:TokenService) {  }
+  constructor(private skillsServ:SkillsService, 
+              private token:TokenService) {  }
 
 
   ngOnInit(): void {
@@ -73,4 +77,9 @@ export class SkillsComponent implements OnInit {
   })
   
 }
+
+
+
+ 
+
 }

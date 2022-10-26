@@ -30,11 +30,74 @@
                         </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="anioExp"> Year : </label>
-                    <input type="text" class="form-control" id="anioExp" name="anioExp" [(ngModel)]="expeLabo.anioExp"
-                        required>
+                <div class="form-group fecha-inicio">
+
+                    <div class="fecha-grupo">
+                        <label for="mesInicio">Start Month :</label>
+                        <select type="month"  id="mesInicio" name="mesInicio" [(ngModel)]="expeLabo.mesInicio"
+                            required>
+                            <option selected>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+
+
+                    </div>
+
+                    <div class="fecha-grupo">
+                        <label for="anioInicio">Start Year :</label>
+                        <input type="number" class="form-control" id="anioInicio" name="anioInicio"
+                            [(ngModel)]="expeLabo.anioInicio" required 
+                            
+                            maxlength="4"
+                            min="2000"
+                            max="2023">
+                    </div>
                 </div>
+
+
+                <div class="form-group fecha-fin">
+
+                    <div class="fecha-grupo">
+                        <label for="mesFin">End Month :</label>
+                        
+                        <select type="month"  id="mesFin" name="mesFin" [(ngModel)]="expeLabo.mesFin" required>
+                            <option selected>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                          </select>
+                    </div>
+
+                    <div class="fecha-grupo">
+                        <label for="anioFin">End Year :</label>
+                        <input type="number" class="form-control " id="anioFin" name="anioFin" [(ngModel)]="expeLabo.anioFin"
+                            required
+                            
+                            maxlength="4"
+                            min="2000"
+                            max="2023"
+                            >
+                    </div>
+                </div>
+
 
 
                 <div class="actualizar">

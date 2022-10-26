@@ -20,7 +20,7 @@ export class SkillsService {
     return this.httpSkill.get<Skills>(this.Url + `/detail/${id}`);
   }
   
-  public actualizarSkill(skill: Skills):Observable<any>{
+  public guardarSkill(skill: Skills):Observable<any>{
    return this.httpSkill.post<any>(this.Url + `/create`, skill);
   }
 

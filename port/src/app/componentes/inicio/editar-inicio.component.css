@@ -59,13 +59,13 @@ form textarea {
 .actualizar button {
     color: aliceblue;
     font-weight: 500;
-    font-size: larger; 
+    font-size: medium; 
     background-color: rgb(85, 2, 41);
     border: solid rgb(226, 204, 212);
     border-radius: 2vh;
     text-align: center;
     margin-bottom: 4vh;
-    margin-left: 3em;
+    margin-left: 2em;
     margin-right: 3em;
     
 }
@@ -74,14 +74,13 @@ form textarea {
     transform: scale(0.95);
     transition: 7ms;
 }
-@media (max-width: 576px){
+@media (max-width: 760px){
     .editar{
         justify-content: start;
         width: auto;
     }
      form {
-        width: auto;
-        background: none;
+        width: 16em;
         margin-left: 2em;
     }
     .form-group {

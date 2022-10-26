@@ -1,0 +1,27 @@
+<div class="contenedor container-fluid">
+
+  <div class="container animate__animated animate__zoomIn">
+
+    <div class="agregar ">
+      <button *ngIf="isLogged" routerLink="/new-soft"><i class="fa fa-plus-square" aria-hidden="true"></i> New</button>
+    </div>
+    
+    <div class="caja">
+      <h3>Soft Skills</h3>
+      <hr>
+      <div class="lista" *ngFor="let soft of softList">
+        <h6> <i class="fa-solid fa-star-half-stroke"></i> &nbsp;{{soft.nombreSoft}}</h6>
+        
+        <div class="modificar">
+          <button *ngIf="isLogged" routerLink="/edit-soft/{{soft.idSoft}}"><i class="fa fa-pencil"></i></button>
+          <button *ngIf="isLogged" (click)="borrar(soft.idSoft)"><i class="fa fa-trash"></i></button>
+        </div>
+
+      </div>
+
+    </div>
+    
+
+  </div>
+
+</div>

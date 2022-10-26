@@ -6,7 +6,7 @@
 }
 
 .row {
-    padding-top: 7vh;
+    padding-top: 15vh;
     margin: 2vh;
     display: block;
     justify-content: center;
@@ -17,13 +17,12 @@
 }
 .form-group input {
     line-height: 2vh;
-    width: 20em;
-    height: 5.5vh;
-    color: aliceblue;
-    margin-left: 1em;
+    width: 26em;
     border-radius: 2vh;
     background-color: rgba(39, 1, 22, 0.849);
+    color: aliceblue;
     font-weight: 300;
+    padding-left: 1.5em;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -37,24 +36,24 @@
     padding-left: 1vw;
     background-color: rgba(0, 0, 0, 0.247);
     border-radius: 3vh;
+    margin-bottom: 0.5em;
 }
 
 .crear {
     display: flex;
-    padding-top: 1em;
+    padding-top: 0.5em;
 }
 .crear button {
     color: aliceblue;
     font-weight: 500;
     font-size: larger;
-    margin-left: 1em;
     margin-top: 2vh;
     background-color: rgb(85, 2, 41);
     border: solid rgb(226, 204, 212);
     border-radius: 2vh;
     text-align: center;
-    margin-left: 3em ;
-    margin-right: 1.8em ;
+    margin-left: 4em ;
+    margin-right: 2em ;
 }
 
 .crear button:hover{
@@ -63,15 +62,14 @@
 }
 
 .alert {
-    width: 20em;
-    margin-left: 1em;
+    width: 26em;
     align-items: center;
     background: rgba(0, 0, 0, 0.651);
     border-radius: 3vh;
     justify-content: center;
 }
 .alert h6 {
-    font-size: small;
+    
     color: rgb(255, 255, 255);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     height: 2vh;
@@ -79,23 +77,23 @@
 
 @media (max-width: 760px){
     .container {
-        height: auto;
+        height: 25em;
     }
     .crear button{
-        font-size: medium;
-        margin-bottom: 5vh;
+        font-size: small;
+        margin-bottom: 8vh;
         border: solid 1.7px;
         border-radius: 1vh;
-        margin-left: 1.5em;
+        margin-left: 2em;
     }
     .form-group input{
         width: auto;
     }
     .form-group label {
-        font-size:x-large ;
+        font-size:large ;
     }
     .row{
-        padding-left: 2em;
+        padding-left: 1em;
     }
     .alert {
         width: 15em;

@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { RouterModule } from '@angular/router'; 
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from '../app-routing.module';
 
 
@@ -23,6 +23,9 @@ import { NuevaSkillComponent } from './skills/nueva-skill.component';
 import { EditarSkillComponent } from './skills/editar-skill.component';
 import { LoginComponent } from './login/login.component';
 import { EditarInicioComponent } from './inicio/editar-inicio.component';
+import { NuevaSoftComponent } from './skills/nueva-soft/nueva-soft.component';
+import { EditarSoftComponent } from './skills/nueva-soft/editar-soft.component';
+import { SoftSkillsComponent } from './skills/nueva-soft/soft-skills.component';
 
 
 
@@ -46,6 +49,9 @@ import { EditarInicioComponent } from './inicio/editar-inicio.component';
     EditarSkillComponent,
 
     EditarInicioComponent,
+    NuevaSoftComponent,
+    EditarSoftComponent,
+    SoftSkillsComponent,
 
   ],
 
@@ -57,30 +63,30 @@ import { EditarInicioComponent } from './inicio/editar-inicio.component';
     HttpClientModule,
 
     NgCircleProgressModule.forRoot({
-     
-      
-      radius:40,
-      outerStrokeWidth: 7,
+
+
+      radius: 30,
+      outerStrokeWidth: 5,
       outerStrokeColor: "palevioletred",
       innerStrokeWidth: 0,
-      showInnerStroke:false,
+      showInnerStroke: false,
 
-      showTitle:false,
+      showTitle: false,
 
       subtitle: "",
-      subtitleFontSize:"17",
-      subtitleColor:"peachpuff",
-      subtitleFontWeight:"500",
+      subtitleFontSize: "14",
+      subtitleColor: "peachpuff",
+      subtitleFontWeight: "400",
 
 
       showUnits: false,
 
-      backgroundColor:"pink",
+      backgroundColor: "pink",
       backgroundOpacity: 0.3,
-      backgroundPadding:3,
-      backgroundStrokeWidth:5,
-      })
-    
+      backgroundPadding: 3,
+      backgroundStrokeWidth: 5,
+    })
+
   ],
 
   exports: [

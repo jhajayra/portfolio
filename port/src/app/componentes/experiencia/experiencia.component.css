@@ -1,8 +1,9 @@
 .contenedor {
     justify-content: center;
     height: 73vh;
- 
-   }
+
+}
+
 .experiencia {
     margin-top: 2vh;
     margin-bottom: 2vh;
@@ -18,47 +19,64 @@
     background-color: rgba(7, 0, 3, 0.507);
     margin: 1rem;
     border-radius: 1rem;
-    
-    
+
+
 }
 
 @media (max-width: 760px) {
     .experiencia {
-        display: block; 
+        display: block;
         justify-content: center;
         padding-top: 1vh;
     }
+
     .card {
         margin-bottom: 4vh;
         align-items: center;
         margin-left: 2.5em;
         width: 17em;
         height: auto;
-        padding: 2vh;
+        padding: 0.5vh;
     }
+
     .contenedor {
         justify-content: center;
         height: auto;
     }
+
     h3 {
         font-size: x-large;
     }
+
     h4 {
         font-size: large;
     }
-    
 
-    
+    h6 {
+        text-align: center;
+        font-size: small;
+    }
+
+    .modificar button {
+        font-size: x-small;
+    }
+
+    .modificar {
+        padding: 0 ;
+    }
+
+
 }
 
 .titulo {
     color: rgb(255, 193, 219);
-    
+
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
-  
+
 }
+
 hr {
     color: rgb(255, 255, 255);
 }
@@ -66,39 +84,40 @@ hr {
 .lugar {
     color: rgb(237, 244, 250);
     text-align: start;
-   
+
     text-align: center;
     text-transform: capitalize;
-   
+
 }
 
-.anio {
+h6 {
     color: white;
     text-align: center;
-      text-align: end;
+    padding-top: 1em;
+
 }
 
-.card:hover{
+.card:hover {
     transition: all;
     border: 1vh solid rgb(245, 173, 187);
 
 }
 
 .modificar {
-
-    padding: 1vw;
+    padding: 0 1em 1em 1em;
 }
 
 .modificar button {
     float: right;
     background-color: rgba(216, 5, 93, 0.89);
     border-radius: 100%;
-   
+    font-size: small;
     border: solid rgb(224, 160, 195);
     margin: 0.7vh;
     color: aliceblue;
 
 }
+
 .agregar {
     height: 7vh;
     margin-top: 2vh;
@@ -108,7 +127,7 @@ hr {
     float: right;
     background-color: rgba(197, 5, 85, 0.89);
     border-radius: 12%;
-    
+
     border: solid rgb(224, 160, 195);
     margin: 0.7vh;
     color: aliceblue;
@@ -125,4 +144,3 @@ hr {
 .modificar button:hover {
     transform: scale(1.1);
 }
-

@@ -10,7 +10,7 @@
                         minlength="5"
                         maxlength="50"
                         #titulo = "ngModel" >
-                       <div class="alert" *ngIf=" titulo.invalid && (titulo.dirty || titulo.touched)">
+                       <div class="alert" id="negro" *ngIf=" titulo.invalid && (titulo.dirty || titulo.touched)">
                             <h6 *ngIf="titulo.errors?.['required']">Enter Valid Title.</h6>
                             <h6 *ngIf="titulo.errors?.['minlength']">The title must have at least 5 characters.</h6>
                             <h6 *ngIf="titulo.errors?.['maxlength']">The title must be less than 50 characters.</h6>
@@ -26,7 +26,7 @@
                         minlength="5"
                         maxlength="50"
                         #lugar = "ngModel" >
-                       <div class="alert" *ngIf=" lugar.invalid && (lugar.dirty || lugar.touched)">
+                       <div class="alert" id="negro" *ngIf=" lugar.invalid && (lugar.dirty || lugar.touched)">
                             <h6 *ngIf="lugar.errors?.['required']">Enter Valid Place.</h6>
                             <h6 *ngIf="lugar.errors?.['minlength']">The place must have at least 5 characters.</h6>
                             <h6 *ngIf="lugar.errors?.['maxlength']">The place must be less than 50 characters.</h6>
@@ -35,8 +35,12 @@
 
                 <div class="form-group">
                     <label for="anioEdu">Year :</label>
-                    <input type="text" class="form-control" id="anioEdu" name="anioEdu"
-                        [(ngModel)]="educacion.anioEdu" required>
+                    <input type="number" class="form-control" id="anioEdu" name="anioEdu"
+                        [(ngModel)]="educacion.anioEdu" 
+                        required
+                        maxlength="4"
+                        min="2000"
+                        max="2023">
                 </div>
 
                 <div class="editar">

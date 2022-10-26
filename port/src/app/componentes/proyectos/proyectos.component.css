@@ -91,7 +91,7 @@ hr {
 
 .modificar {
 
-    padding: 1vw;
+    padding: 0 0.5em 0.5em 0;
 }
 
 .modificar button {
@@ -100,6 +100,7 @@ hr {
     border-radius: 100%;
     border: solid rgb(224, 160, 195);
     margin: 0.7vh;
+    font-size: small;
     color: aliceblue;
 
 }

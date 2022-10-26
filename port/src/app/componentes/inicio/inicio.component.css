@@ -60,7 +60,9 @@
     float: right;
     background-color: rgba(216, 5, 93, 0.89);
     border-radius: 100%;
-    height: 5vh;
+    height: 4.5vh;
+    font-size: small;
+    text-align: center;
     border: solid rgb(224, 160, 195);
 }
 
@@ -87,7 +89,8 @@
     float: right;
     background-color: rgba(216, 5, 93, 0.89);
     border-radius: 100%;
-    height: 5vh;
+    height: 4.3vh;
+    font-size: small;
     border: solid rgb(224, 160, 195);
 
 }
@@ -95,7 +98,10 @@
 #lapiz {
     background-color: rgba(216, 5, 93, 0.89);
     border-radius: 100%;
-    height: 5vh;
+    height: 4.4vh;
+   
+    text-align: center;
+    font-size: smaller;
     border: solid rgb(224, 160, 195);
     margin-left: 2vw;
 }
@@ -230,18 +236,18 @@
 
     .titulo button {
         height: 2em;
-        font-size: small;
-        width: 2em;
+        font-size: x-small;
+        padding-right: 3px;
         font-weight: 100;
-        border: solid 0.16em rgb(255, 209, 249);
+        border: solid 0.2em rgb(255, 209, 249);
     }
 
     .nombre button {
         height: 2em;
-        font-size: small;
-        width: 2em;
+        font-size: x-small;
         font-weight: 100;
-        border: solid 0.16em rgb(255, 209, 249);
+        padding-right: 3px;
+        border: solid 0.2em rgb(255, 209, 249);
     }
 
 

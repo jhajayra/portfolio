@@ -1,34 +1,46 @@
 .skills {
-  padding: 4vh;
-  height: 67vh;
+  padding-top: 4vh;
+  height: auto;
+ 
+  margin-right: 2em;
 }
 
 .skill-titulo {
   color: rgb(245, 200, 235);
-  margin-top: 3vh;
   text-align: center;
+  line-height: 0;
+  padding-top:0.1em ;
+
+  padding-bottom: 2vh;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 hr {
-  line-height: 0vh;
+  line-height: 1vh;
   color: white;
 }
 
-
-.container-skill {
-  padding: 0.5vh;
+.caja{
+  padding: 1em;
+  justify-content: center;
+  width: auto;
+  
+}
+.container {
   background-color: rgba(0, 0, 0, 0.527);
   height: auto;
-  width: 80vw;
+  width: auto;
   border-radius: 4vh;
-  margin-left: 8vw;
+
   text-align: center;
   text-transform: capitalize;
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
   padding-bottom: 3vh;
+  display: block;
+  justify-content: center;
 
 }
+
 
 .lenguaje {
   margin: 0.5vw;
@@ -48,67 +60,75 @@ hr {
     justify-content: center;
     align-items: center;
   }
-  .container-skill{
-    margin-left: 0.6em;
+  .skills{
+    margin-right: 0;
+    width: 80%;
+    margin-left: 2em;
+    height: auto;
+  }
+  .container{
+   justify-content: center;
+   
   }
   .skill-titulo {
-    font-size: xx-large;
+    font-size: x-large;
   }
 
   .lenguaje {
     margin-bottom: 4vh;
   }
 
-  .skills {
-    height: auto;
-  }
-  .modificar button {
-    height: 2.3em;
-   
-   
+  
+  #ag{
+    font-size: small;
+    margin-bottom: 0.1em;
+    margin-right: 0;
+    margin-top: 0.5em;
   }
  
 }
 
 .porcentaje {
   color: rgb(253, 232, 240);
-  font-size: larger;
-  height: 4vh;
+  font-size: medium;
+  height: 3vh;
   text-decoration: overline;
 
 }
 
-.modificar{
-  align-items: center;
-}
-.modificar button {
-
+.modificar a{
   background-color: rgba(221, 109, 156, 0.63);
   border-radius: 100%;
-  border: solid rgb(224, 160, 195);
-  margin: 0.7vh;
+  border: solid 2px rgb(224, 160, 195);
+  font-size: x-small;
   color: aliceblue;
-  font-size: medium;
+  margin: 0.3em;
+  padding: 0.2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 
 }
 
 .agregar {
-  height: 7vh;
-  margin-top: 2vh;
-  padding-bottom: 2vh;
+  padding-top: 1.2vh;
+  padding-bottom: 0.8vh;
+  justify-content: right;
+  padding-right: 5vh;
 }
 
 .agregar button {
   float: right;
+  width: auto;
   background-color: rgba(197, 5, 85, 0.89);
-  border-radius: 12%;
+  border-radius: 0.4em;
   border: solid rgb(224, 160, 195);
-  margin: 0.7vh;
   color: aliceblue;
-  margin-left: 5vw;
+  margin-left: 1em;
   align-items: start;
-  font-size: x-large;
-  font-weight: 600;
+  font-size: 1.3em;
+  font-weight: 500;
+  justify-content: right;
+  z-index: 10;
 }
 
 .agregar button:hover {

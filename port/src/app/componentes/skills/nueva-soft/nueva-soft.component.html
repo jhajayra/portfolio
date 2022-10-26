@@ -1,0 +1,30 @@
+<div class="container ">
+    <div class="row animate__animated animate__bounceInRight">
+        <form (ngSubmit)="crearSoft()" novalidate #f="ngForm">
+
+            <div class="form-group">
+                <label for="nombreSoft">Soft Skill's Name :</label>
+                <input type="text" class="form-control" id="nombreSoft" name="nombreSoft" [(ngModel)]="nombreSoft"
+                    required
+                    minlength="5"
+                    maxlength="550"
+                    #nskill = "ngModel" >
+                    <div class="alert" *ngIf=" nskill.invalid && (nskill.dirty || nskill.touched)">
+                        <h6 *ngIf="nskill.errors?.['required']">Enter Valid Skill.</h6>
+                        <h6 *ngIf="nskill.errors?.['minlength']">The skill must have at least 5 characters.</h6>
+                        <h6 *ngIf="nskill.errors?.['maxlength']">The skill must be less than 50 characters.</h6>
+                    </div>
+            </div>
+
+          
+
+
+            <div class="crear">
+                <button ><i class="fa-solid fa-folder-plus"></i> Add</button>
+                <button type="button" routerLink="/skills"> <i class="fa-solid fa-rectangle-xmark"></i> Cancel</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>

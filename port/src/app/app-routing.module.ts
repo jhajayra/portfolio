@@ -7,6 +7,7 @@ import { SkillsComponent } from './componentes/skills/skills.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
 import { ProyectosComponent } from './componentes/proyectos/proyectos.component';
 import { LoginComponent } from './componentes/login/login.component';
+import { SoftSkillsComponent } from './componentes/skills/nueva-soft/soft-skills.component';
 
 //editar experiencias
 import { NuevaExperienciaComponent } from './componentes/experiencia/nueva-experiencia.component';
@@ -23,16 +24,19 @@ import { EditarSkillComponent } from './componentes/skills/editar-skill.componen
 //editar inicio y  sobre-mi
 
 import { EditarInicioComponent } from './componentes/inicio/editar-inicio.component';
+import { NuevaSoftComponent } from './componentes/skills/nueva-soft/nueva-soft.component';
+import { EditarSoftComponent } from './componentes/skills/nueva-soft/editar-soft.component';
 
 
 const routes: Routes = [
-  { path: 'home', component: InicioComponent },
+  {path: 'home', component: InicioComponent },
   {path: 'login', component:LoginComponent},
 
   {path:'experience', component: ExperienciaComponent},
   {path:'education', component: EducacionComponent},
   {path:'projects', component: ProyectosComponent},
   {path:'skills', component: SkillsComponent},
+  {path:'soft', component: SoftSkillsComponent},
   
   //editar y agregar experiencias
   {path:'new-experience', component: NuevaExperienciaComponent},
@@ -52,6 +56,10 @@ const routes: Routes = [
 
   //editar inicio
   {path: 'edit-home/:idPer', component: EditarInicioComponent},
+
+  //editar soft skills
+  {path:'new-soft', component: NuevaSoftComponent},
+  {path:'edit-soft/:id', component: EditarSoftComponent},
 
   //redirecciona a inicio
   {path:'', component: InicioComponent, pathMatch: 'full'},

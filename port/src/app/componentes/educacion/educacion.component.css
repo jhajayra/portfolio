@@ -83,7 +83,7 @@ hr {
 
 .modificar {
 
-    padding: 1vw;
+    padding: 0 0.5em 0.5em 0;
 }
 
 .modificar button {
@@ -93,6 +93,7 @@ hr {
     border: solid rgb(224, 160, 195);
     margin: 0.7vh;
     color: aliceblue;
+    font-size: small;
 
 }
 .agregar {

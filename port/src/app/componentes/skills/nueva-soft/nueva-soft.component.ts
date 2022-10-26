@@ -1,32 +1,30 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Skills } from 'src/app/models/Skills';
 import { SoftSkills } from 'src/app/models/SoftSkills';
-import { SkillsService } from 'src/app/servicios/skills.service';
+import { SoftSkillsService } from 'src/app/servicios/soft-skills.service';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-nueva-skill',
-  templateUrl: './nueva-skill.component.html',
-  styleUrls: ['./nueva-skill.component.css']
+  selector: 'app-nueva-soft',
+  templateUrl: './nueva-soft.component.html',
+  styleUrls: ['./nueva-soft.component.css']
 })
-export class NuevaSkillComponent implements OnInit {
+export class NuevaSoftComponent implements OnInit {
 
-  nombreSkill:string;
-  porcentaje:number;
+  nombreSoft: string;
 
-  constructor(private skillServ: SkillsService, 
-              private ruta:Router) { }
+  constructor( private ruta:Router, 
+               private softServ: SoftSkillsService) { }
 
   ngOnInit(): void {
   }
 
-  crearSkill(): void{
-    const skill =new Skills (this.nombreSkill, this.porcentaje);
-    this.skillServ.guardarSkill(skill).subscribe(
+  crearSoft(): void {
+    const soft = new SoftSkills (this.nombreSoft);
+    this.softServ.guardarSoft(soft).subscribe(
       data => {
         Swal.fire({
-          title: 'Added Skill!',
+          title: 'Added Soft Skill!',
           icon: 'success',
           width: 300,
           padding: '1em',
@@ -47,6 +45,5 @@ export class NuevaSkillComponent implements OnInit {
       }
     )
   }
-
 
 }

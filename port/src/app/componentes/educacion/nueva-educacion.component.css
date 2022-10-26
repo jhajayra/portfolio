@@ -16,13 +16,19 @@
 }
 .form-group input {
     line-height: 2vh;
-    width: 38vw;
+    width: 30vw;
+    height: 5.5vh;
+    margin-left:1em ;
     border-radius: 1em;
     background-color: rgba(39, 1, 22, 0.849);
     color: aliceblue;
     font-weight: 300;
-    padding-left: 4%;
+    padding-left: 1em;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#anioEdu{
+    width: 10em;
 }
 
 .form-group  label {
@@ -63,13 +69,14 @@
     align-items: center;
     background: rgba(0, 0, 0, 0.651);
     border-radius: 3vh;
+    margin-left: 1.5em;
     justify-content: center;
 }
 .alert h6 {
-    
+    font-size: small;
     color: rgb(255, 255, 255);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    height: 2vh;
+    height: 1vh;
 }
 
 @media (max-width: 760px){
