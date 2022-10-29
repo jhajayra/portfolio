@@ -12,50 +12,47 @@ import Swal from 'sweetalert2';
 export class EditarExperienciaComponent implements OnInit {
 
   expeLabo: Experiencia = null;
-  
-  constructor(private experiencia:ExperienciaService,
-    private activateRouter:ActivatedRoute,
-    private ruta:Router) { }
+
+  constructor(private experiencia: ExperienciaService,
+    private activateRouter: ActivatedRoute,
+    private ruta: Router) { }
 
   ngOnInit(): void {
     const id = this.activateRouter.snapshot.params['id'];
     this.experiencia.verExpe(id).subscribe(
       data => {
         this.expeLabo = data;
-      }, err =>{
+      }, err => {
         Swal.fire({
           title: 'Failed.',
           icon: 'error',
           width: 350,
           padding: '1em',
-          background: 'radial-gradient( circle farthest-corner at 7.5% 14.2%,  rgba(254,243,240,1) 0%, rgba(250,236,252,1) 90% )',
           confirmButtonColor: 'rgb(170, 5, 74)',
         });
         this.ruta.navigate(['']);
-      }  )
+      })
   }
 
-  actualizar():void{
+  actualizar(): void {
     const id = this.activateRouter.snapshot.params['id'];
-    
-    this.experiencia.actualizarExpe(id,this.expeLabo).subscribe(
+
+    this.experiencia.actualizarExpe(id, this.expeLabo).subscribe(
       data => {
         Swal.fire({
           title: 'Updated Experience!',
           icon: 'success',
           width: 300,
           padding: '1em',
-          background: 'radial-gradient( circle farthest-corner at 7.5% 14.2%,  rgba(254,243,240,1) 0%, rgba(250,236,252,1) 90% )',
           confirmButtonColor: 'rgb(170, 5, 74)',
         });
         this.ruta.navigate(['/experience']);
-      }, err =>{
+      }, err => {
         Swal.fire({
           title: 'Failed, Check Your Information.',
           icon: 'error',
           width: 350,
           padding: '1em',
-          background: 'radial-gradient( circle farthest-corner at 7.5% 14.2%,  rgba(254,243,240,1) 0%, rgba(250,236,252,1) 90% )',
           confirmButtonColor: 'rgb(170, 5, 74)',
         });
         this.ruta.navigate(['/experience']);

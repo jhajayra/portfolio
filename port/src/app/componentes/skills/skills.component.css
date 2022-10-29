@@ -1,7 +1,7 @@
 .skills {
   padding-top: 4vh;
   height: auto;
- 
+
   margin-right: 2em;
 }
 
@@ -9,23 +9,21 @@
   color: rgb(245, 200, 235);
   text-align: center;
   line-height: 0;
-  padding-top:0.1em ;
+  padding-top: 0.1em;
 
   padding-bottom: 2vh;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-hr {
-  line-height: 1vh;
-  color: white;
-}
 
-.caja{
+
+.caja {
   padding: 1em;
   justify-content: center;
   width: auto;
-  
+
 }
+
 .container {
   background-color: rgba(0, 0, 0, 0.527);
   height: auto;
@@ -60,16 +58,19 @@ hr {
     justify-content: center;
     align-items: center;
   }
-  .skills{
+
+  .skills {
     margin-right: 0;
     width: 80%;
     margin-left: 2em;
     height: auto;
   }
-  .container{
-   justify-content: center;
-   
+
+  .container {
+    justify-content: center;
+
   }
+
   .skill-titulo {
     font-size: x-large;
   }
@@ -78,25 +79,30 @@ hr {
     margin-bottom: 4vh;
   }
 
-  
-  #ag{
+
+  #ag {
     font-size: small;
     margin-bottom: 0.1em;
     margin-right: 0;
     margin-top: 0.5em;
   }
- 
+
 }
 
 .porcentaje {
   color: rgb(253, 232, 240);
   font-size: medium;
   height: 3vh;
-  text-decoration: overline;
+  cursor: none;
+
 
 }
 
-.modificar a{
+.circulo {
+  cursor: grab;
+}
+
+.modificar a {
   background-color: rgba(221, 109, 156, 0.63);
   border-radius: 100%;
   border: solid 2px rgb(224, 160, 195);
@@ -106,8 +112,40 @@ hr {
   padding: 0.2em;
   padding-left: 0.5em;
   padding-right: 0.5em;
-
+  cursor: pointer;
 }
+
+.lenguaje:hover {
+  
+  transition: all;
+
+ 
+  -webkit-animation: flash 1s;
+  animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0.9;
+
+  }
+}
+
+
 
 .agregar {
   padding-top: 1.2vh;
@@ -132,9 +170,5 @@ hr {
 }
 
 .agregar button:hover {
-  transform: scale(1.1);
-}
-
-.modificar button:hover {
   transform: scale(1.1);
 }

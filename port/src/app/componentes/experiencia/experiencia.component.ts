@@ -38,41 +38,39 @@ export class ExperienciaComponent implements OnInit {
       title: 'Are You Sure?',
       text: "You won't be able to revert this!",
       icon: 'warning',
-      width: 400,
+      width: 350,
       padding: '1em',
-      background: 'radial-gradient( circle farthest-corner at 7.5% 14.2%,  rgba(254,243,240,1) 0%, rgba(250,236,252,1) 90% )',
+     
       showCancelButton: true,
       confirmButtonColor: 'rgb(170, 5, 74)',
       cancelButtonColor: 'rgb(46, 1, 20)',
       confirmButtonText: 'Yes, Delete It!',
     }).then((result) => {
-      if (idExp != undefined) {
-        this.expeServ.borrarExpe(idExp).subscribe(
-          data => {
+      if (result.isConfirmed) {
+        this.expeServ.borrarExpe(idExp).subscribe(data => {
           this.cargarExperiencia();
-        }, err => {
           Swal.fire({
-            title: 'Failed.',
-            icon: 'error',
+            title: 'Deleted!',
+            icon: 'success',
             width: 350,
             padding: '1em',
-            background: 'radial-gradient( circle farthest-corner at 7.5% 14.2%,  rgba(254,243,240,1) 0%, rgba(250,236,252,1) 90% )',
-            confirmButtonColor: 'rgb(170, 5, 74)',
+            showConfirmButton: false,
+            timer: 1700
           });
-        }
-        )
+        })
+      } else {
         Swal.fire({
-          title: 'Deleted!',
-          icon: 'success',
+          title: 'Cancelled!',
+          icon: 'error',
           width: 350,
           padding: '1em',
-          background: 'radial-gradient( circle farthest-corner at 7.5% 14.2%,  rgba(254,243,240,1) 0%, rgba(250,236,252,1) 90% )',
           showConfirmButton: false,
           timer: 1700
-        })
-        
+        });
       }
-    })
+
+    }
+    )
     
   }
 }

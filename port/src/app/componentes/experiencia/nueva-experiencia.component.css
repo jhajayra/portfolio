@@ -7,13 +7,13 @@
 }
 
 .row {
-    padding-top: 4vh;
+    padding-top: 3vh;
     margin: 2vh;
     display: block;
     
 }
 .form-group {
-    padding: 0.5vw;
+    padding: 0.4em;
 }
 .form-group input {
     width: 22vw;
@@ -33,7 +33,7 @@
     font-size: 3.8vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 500;
-    line-height: 6vh;
+    margin-top: 0.3em;
     padding-left: 1vw;
     background-color: rgba(0, 0, 0, 0.247);
     border-radius: 3vh;
@@ -83,7 +83,7 @@ select [type="month"]::-webkit-scrollbar-corner {
 
 .crear {
     display: flex;
-    padding-top: 2em;
+    padding-top: 1em;
 }
 .crear button {
     color: aliceblue;
@@ -93,7 +93,7 @@ select [type="month"]::-webkit-scrollbar-corner {
     border: solid rgb(226, 204, 212);
     border-radius: 2vh;
     text-align: center;
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
     margin-left: 2em;
     margin-right: 3em;
     
@@ -128,7 +128,7 @@ select [type="month"]::-webkit-scrollbar-corner {
         margin-bottom: 5vh;
         border: solid 1.7px;
         border-radius: 1vh;
-        margin-left: 2em;
+        margin-left: 3em;
         margin-right: 1em;
     }
     .form-group input{
@@ -142,5 +142,8 @@ select [type="month"]::-webkit-scrollbar-corner {
     }
     .form-group  label {
         font-size: x-large;
+    }
+    .fecha-inicio label, .fecha-fin label {
+        font-size: large;
     }
 }

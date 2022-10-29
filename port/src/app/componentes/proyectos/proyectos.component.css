@@ -83,10 +83,32 @@ hr {
       text-align: end;
 }
 
-.card:hover{
-    transition: all;
-    border: 1vh solid rgb(245, 173, 187);
+/* Flashing */
+.card #caja:hover {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
 
+@-webkit-keyframes flash {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0.9;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 0.9;
+
+    }
 }
 
 .modificar {

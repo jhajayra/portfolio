@@ -1,8 +1,9 @@
 .contenedor {
     justify-content: center;
     height: 73vh;
- 
-   }
+
+}
+
 .educacion {
     margin-top: 2vh;
     margin-bottom: 2vh;
@@ -18,44 +19,53 @@
     background-color: rgba(7, 0, 3, 0.507);
     margin: 1rem;
     border-radius: 1rem;
-    
-    
+
+
 }
 
 @media (max-width: 760px) {
     .educacion {
-        display: block; 
+        display: block;
         justify-content: center;
+        padding: 0 2.3em ;
     }
+
     .card {
-        width: 15em;
+        width: auto;
+        height: a;
         align-items: center;
-        margin-left: 4em;
-        
+        margin-left: 2em;
+        display: block;
+        padding-bottom: 2.5em;
+        margin-bottom: 2.2em;
     }
-    .contenedor{
+
+    .contenedor {
         justify-content: center;
         height: auto;
     }
-    h3 {
-        font-size: x-large;
-    }
-    h4 {
-        font-size:large;
-    }
-    
 
-    
+    h3 {
+        font-size: large;
+    }
+
+    h4 {
+        font-size: large;
+    }
+
+
+
 }
 
 .titulo {
     color: rgb(255, 193, 219);
-    
+
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
-  
+
 }
+
 hr {
     color: rgb(255, 255, 255);
 }
@@ -63,23 +73,53 @@ hr {
 .lugar {
     color: rgb(237, 244, 250);
     text-align: start;
-   
+
     text-align: center;
     text-transform: capitalize;
-   
+
 }
 
-.anio {
+.ojo-anio {
+    display: flex;
+    padding-top: 1em;
     color: white;
     text-align: center;
-      text-align: end;
+    justify-content: center;
 }
 
-.card:hover{
+.ojo-anio h5 {
+    align-items: center;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+#certificado a {
+    font-size: large;
+    border-radius: 100%;
+    color: white;
+    padding: 3px 5px;
+    border: 1px solid rgb(255, 255, 255);
+
+}
+
+#certificado:hover {
+    color: rgb(245, 232, 208);
     transition: all;
-    border: 1vh solid rgb(245, 173, 187);
-
+    transform: scale(1turn);
+    -moz-transform: rotate(2turn);
+    -ms-transform: rotate(2turn);
+    -o-transform: rotate(2turn);
+    -webkit-transform: rotate(2turn);
+ 
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -webkit-transition: all 2s ease;
 }
+
+
+
+
 
 .modificar {
 
@@ -96,6 +136,7 @@ hr {
     font-size: small;
 
 }
+
 .agregar {
     height: 7vh;
     margin-top: 2vh;
@@ -120,4 +161,34 @@ hr {
 
 .modificar button:hover {
     transform: scale(1.1);
+}
+
+
+
+/* Flashing */
+.card #caja:hover {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0.9;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 0.9;
+
+    }
 }

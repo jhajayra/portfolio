@@ -5,14 +5,14 @@
 }
 
 .row {
-    padding-top: 7vh;
+    padding-top: 5vh;
     margin: 0vh;
     display: block;
     justify-content: center;
     padding-left: 19vw;
 }
 .form-group {
-    padding: 1vw;
+    padding: 0.5em;
 }
 .form-group input {
     line-height: 2vh;
@@ -53,11 +53,11 @@
     border: solid rgb(226, 204, 212);
     border-radius: 2vh;
     text-align: center;
-    margin-bottom: 6vh;
-    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-top: 1vh;
     justify-content: right;
-    margin-right: 4em;
-    margin-left: 5em;
+    margin-right: 3em;
+    margin-left: 4em;
 }
 
 .crear button:hover{
@@ -93,6 +93,7 @@
     }
     .form-group input{
         width: auto;
+        height: auto;
     }
     .row{
         padding-left: 2em;

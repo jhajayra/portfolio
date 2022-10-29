@@ -43,6 +43,13 @@
                         max="2023">
                 </div>
 
+                <div class="form-group">
+                    <label for="urlEdu">Url Certificate :</label>
+                    <input type="url" class="form-control" id="urlEdu" name="urlEdu"
+                        [(ngModel)]="educacion.urlEdu" 
+                        required >
+                </div>
+
                 <div class="editar">
                     <button ><i class="fa-solid fa-folder-plus"></i> Add</button>
                     <button type="button" routerLink="/education"> <i class="fa-solid fa-rectangle-xmark"></i> Cancel</button>

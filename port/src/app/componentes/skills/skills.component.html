@@ -19,14 +19,14 @@
       <hr>
       <div class="circulos">
         <div class="lenguaje animate__animated animate__zoomIn " *ngFor="let skill of skills" >
-          <circle-progress  class="circulo "
+          <circle-progress  class="circulo " title="Click Here"
           [percent]="skill.porcentaje"
           [subtitle]="skill.nombreSkill"            
           ></circle-progress>
           <p class="porcentaje">{{skill.porcentaje}} %</p>
           <div class="modificar">
-            <a  *ngIf="isLogged" routerLink="/edit-skill/{{skill.idSkill}}"><i class="fa fa-pencil"></i></a>
-            <a *ngIf="isLogged" (click)="borrar(skill.idSkill)"><i class="fa fa-trash"></i></a>
+            <a id="pencil"  *ngIf="isLogged" routerLink="/edit-skill/{{skill.idSkill}}"><i class="fa fa-pencil"></i></a>
+            <a id="trash" *ngIf="isLogged" (click)="borrar(skill.idSkill)"><i class="fa fa-trash"></i></a>
           </div>
     </div>
       </div>
