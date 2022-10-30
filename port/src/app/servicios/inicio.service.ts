@@ -8,7 +8,7 @@ import { Usuario } from '../models/Usuario';
   providedIn: 'root'
 })
 export class InicioService {
-  private Url='http://localhost:8080/user'
+  private Url='https://jami-backend.herokuapp.com/user'
 
   constructor( private http: HttpClient) { }
 

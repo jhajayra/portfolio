@@ -8,7 +8,7 @@ import { SoftSkills } from '../models/SoftSkills';
 })
 export class SoftSkillsService {
 
-  private Url = 'http://localhost:8080/skillsSoft'
+  private Url = 'https://jami-backend.herokuapp.com/skillsSoft'
 
   constructor(private httpSoft: HttpClient) { }
 

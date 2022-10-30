@@ -8,7 +8,7 @@ import { Skills } from '../models/Skills';
 })
 export class SkillsService {
 
-  private Url = 'http://localhost:8080/skills'
+  private Url = 'https://jami-backend.herokuapp.com/skills'
 
   constructor(private httpSkill:HttpClient) { }
 

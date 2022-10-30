@@ -7,7 +7,7 @@ import { Experiencia } from '../models/Experiencia';
   providedIn: 'root'
 })
 export class ExperienciaService {
-  private expeUrl = 'http://localhost:8080/experience'
+  private expeUrl = 'https://jami-backend.herokuapp.com/experience'
 
   constructor(private httpExpe: HttpClient) { }
 
