@@ -1,7 +1,7 @@
-<div class="inicio container-fluid">
+<div class="inicio container">
 
   <div class="foto animate__animated animate__zoomIn animate__slow">
-    <img src="../../../assets/imagenes/foto1.jpg" alt="foto de perfil" height="390" width="220">
+    <img src="../../../assets/imagenes/foto1.jpg" alt="foto de perfil">
   </div>
   <div class="presentacion animate__animated animate__zoomIn animate__slow">
     <div class="saludo">
@@ -10,11 +10,11 @@
     </div>
 
     <div class="nombre">
-      <h1> {{usuario.nombreCompleto}} </h1>
+      <h1> {{usuario.nombreCompleto}}</h1>
       <button routerLink="/edit-home/{{usuario.idPer}}"
       *ngIf="isLogged"><i  class="fa fa-pencil"></i></button>
     </div>
-    <div class="titulo lapiz">
+    <div class="titulo ">
       <h2>I'm {{usuario.titulo}}</h2>
       <button routerLink="/edit-home/{{usuario.idPer}}" *ngIf="isLogged"><i class="fa fa-pencil"></i></button>
     </div>
@@ -31,7 +31,6 @@
         <div class="collapse collapse-horizontal" id="about">
           <label name="" class="card card-body">
         {{usuario.descripcion}}
-      
           </label>
         </div>
       </div>
@@ -42,6 +41,7 @@
       
       <label >
       {{usuario.descripcion}}
+
       </label>
 
     </div>

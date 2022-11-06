@@ -40,10 +40,11 @@ export class ExperienciaComponent implements OnInit {
       icon: 'warning',
       width: 350,
       padding: '1em',
-     
+      color: '#fff',
+      background: 'rgb(1, 1, 1, 0.8)',
       showCancelButton: true,
-      confirmButtonColor: 'rgb(170, 5, 74)',
-      cancelButtonColor: 'rgb(46, 1, 20)',
+      confirmButtonColor: 'rgb(190, 41, 116)',
+      cancelButtonColor: 'rgb(150, 84, 116',
       confirmButtonText: 'Yes, Delete It!',
     }).then((result) => {
       if (result.isConfirmed) {
@@ -54,6 +55,8 @@ export class ExperienciaComponent implements OnInit {
             icon: 'success',
             width: 350,
             padding: '1em',
+            color: '#fff',
+            background: 'rgb(1, 1, 1, 0.8)',
             showConfirmButton: false,
             timer: 1700
           });
@@ -64,6 +67,8 @@ export class ExperienciaComponent implements OnInit {
           icon: 'error',
           width: 350,
           padding: '1em',
+          color: '#fff',
+          background: 'rgb(1, 1, 1, 0.8)',
           showConfirmButton: false,
           timer: 1700
         });

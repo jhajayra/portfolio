@@ -12,17 +12,17 @@ import Swal from 'sweetalert2';
 })
 export class NuevaSkillComponent implements OnInit {
 
-  nombreSkill:string;
-  porcentaje:number;
+  nombreSkill: string;
+  porcentaje: number;
 
-  constructor(private skillServ: SkillsService, 
-              private ruta:Router) { }
+  constructor(private skillServ: SkillsService,
+    private ruta: Router) { }
 
   ngOnInit(): void {
   }
 
-  crearSkill(): void{
-    const skill =new Skills (this.nombreSkill, this.porcentaje);
+  crearSkill(): void {
+    const skill = new Skills(this.nombreSkill, this.porcentaje);
     this.skillServ.guardarSkill(skill).subscribe(
       data => {
         Swal.fire({
@@ -30,18 +30,23 @@ export class NuevaSkillComponent implements OnInit {
           icon: 'success',
           width: 300,
           padding: '1em',
-          confirmButtonColor: 'rgb(170, 5, 74)',
+          color: '#fff',
+          background: 'rgb(1, 1, 1, 0.8)',
+          confirmButtonColor: 'rgb(69, 170, 69)'
         });
-         this.ruta.navigate(['/skills']);
+        this.ruta.navigate(['/skills']);
       }, err => {
         Swal.fire({
           title: 'Failed, Check Your Information.',
-          icon: 'error',
+          icon: 'warning',
           width: 350,
           padding: '1em',
-          confirmButtonColor: 'rgb(170, 5, 74)',
+          color: '#fff',
+          background: 'rgb(1, 1, 1, 0.84)',
+          showConfirmButton: false,
+          timer: 2000
         });
-         this.ruta.navigate(['/skills']);
+        this.ruta.navigate(['/skills']);
       }
     )
   }

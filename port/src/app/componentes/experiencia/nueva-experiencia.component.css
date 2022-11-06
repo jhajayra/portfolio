@@ -28,7 +28,6 @@
 }
 
 .form-group  label {
-     
     color: rgb(255, 188, 225);
     font-size: 3.8vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -44,7 +43,6 @@
 }
 .fecha-inicio input, .fecha-fin input {
     width: 8em;
-    margin-left: 1em;
     margin: 0.3em;
     text-align: center;
 }
@@ -65,20 +63,13 @@
     font-weight: 300;
     border: solid 1px ;
     margin: 0.3em;
-
     margin-left: 1em;
     text-align: center;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
 }
 
 
-select [type="month"]::-webkit-scrollbar-corner {
-    filter: invert(1);
-    padding-right: 0.5em;
-  }
-
-
-
+  
 
 
 .crear {
@@ -135,7 +126,7 @@ select [type="month"]::-webkit-scrollbar-corner {
         width: auto;
     }
     .row{
-        padding-left: 2em;
+        padding-left: 5em;
     }
     .alert{
         width: 15em;

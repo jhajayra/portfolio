@@ -18,10 +18,11 @@
 
             <div class="form-group">
                 <label for="porcentaje">Percent :</label>
-                <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje"
+                <input type="number" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="skill.porcentaje"
                     required
-                    minlength="1"
                     maxlength="3"
+                    min="1"
+                    max="100"
                     #numero = "ngModel" >
                     <div class="alert" *ngIf=" numero.invalid && (numero.dirty || numero.touched)">
                         <h6 *ngIf="numero.errors?.['required']">Enter Valid Percent.</h6>

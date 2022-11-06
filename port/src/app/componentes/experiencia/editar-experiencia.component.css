@@ -149,7 +149,7 @@
     }
 
     .row {
-        padding-left: 2em;
+        padding-left: 1em;
     }
 
     .alert {
@@ -165,3 +165,4 @@
         font-size: large;
     }
 }
+

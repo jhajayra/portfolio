@@ -1,11 +1,8 @@
-
 .container {
-  
   background-color: rgba(0, 0, 0, 0.527);
   height: auto;
   width: auto;
   border-radius: 4vh;
- 
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 4vh;
@@ -17,13 +14,13 @@
 
 
 .caja h3 {
-    color: rgb(245, 200, 235);
-    text-align: center;
-    line-height: 0;
-    padding-bottom: 2vh;
-    padding-top:0.7em ;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- 
+  color: rgb(245, 200, 235);
+  text-align: center;
+  line-height: 0;
+  padding-bottom: 2vh;
+  padding-top: 0.7em;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 hr {
@@ -32,10 +29,10 @@ hr {
 }
 
 .caja h6 {
-    font-size: larger;
-    color: rgb(253, 232, 240);
-    text-transform: capitalize;
-    justify-content: center;
+  font-size: larger;
+  color: rgb(253, 232, 240);
+  text-transform: capitalize;
+  justify-content: center;
 
 }
 
@@ -44,63 +41,78 @@ hr {
   justify-content: center;
 }
 
-.modificar{
-    padding-left: 1em;
-    
+.modificar {
+  display: flex;
+  justify-content: center;
+  padding-left: 1em;
+
+}
+
+.modificar a {
+  background-color: rgba(221, 109, 156, 0.63);
+  border-radius: 100%;
+  border: solid 2px rgb(224, 160, 195);
+  font-size: x-small;
+  color: aliceblue;
+  margin: 0.3em;
+  padding: 0.1em 0.2em ;
+  cursor: pointer;
+}
+
+
+.agregar {
+  justify-content: right;
+  padding-top: 1.2vh;
+  padding-bottom: 0.8vh;
+  padding-right: 5vh;
+}
+
+.agregar button {
+  float: right;
+  width: auto;
+  background-color: rgba(197, 5, 85, 0.89);
+  border-radius: 0.4em;
+  border: solid rgb(224, 160, 195);
+  color: aliceblue;
+  margin-left: 1em;
+  align-items: center;
+  font-size: 1.3em;
+  font-weight: 500;
+  justify-content: right;
+  z-index: 10;
+  margin-bottom: 0;
+}
+
+.agregar button:hover {
+  transform: scale(1.1);
+}
+
+.modificar button:hover {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 760px) {
+
+  .agregar button {
+    font-size: small;
+  }
+
+  .agregar {
+    padding-bottom: 0.1em;
+    padding-right: 0;
+    padding-top: 0.5em;
   }
 
   .modificar button {
-    align-items: start;
-    background-color: rgba(221, 109, 156, 0.63);
-    border-radius: 100%;
-    border: solid 2px rgb(224, 160, 195);
-    margin: 0.6vh;
+    font-size: xx-small;
+    text-align: center;
+    justify-content: center;
 
-    color: aliceblue;
-    font-size: x-small;
-  
-  }
-  
-  .agregar {
-    justify-content: right;
-    padding-top: 1.2vh;
-    padding-bottom: 0.8vh;
-    padding-right: 5vh;
-  }
-  
-  .agregar button {
-    float: right;
-    width: auto;
-    background-color: rgba(197, 5, 85, 0.89);
-    border-radius: 0.4em;
-    border: solid rgb(224, 160, 195);
-    color: aliceblue;
-    margin-left: 1em;
-    align-items: center;
-    font-size: 1.3em;
-    font-weight: 500;
-    justify-content: right;
-    z-index: 10;
-    margin-bottom: 0;
-  }
-  
-  .agregar button:hover {
-    transform: scale(1.1);
-  }
-  
-  .modificar button:hover {
-    transform: scale(1.1);
   }
 
-
-  @media (max-width: 760px) {
-    
-    .agregar button{
-     font-size: small;
-    }
-    .agregar {
-      padding-bottom: 0.1em;
-      padding-right: 0;
-      padding-top: 0.5em;
-    }
+  .caja h6 {
+    font-size: 1em;
+    padding-top: 0.1em;
   }
+}

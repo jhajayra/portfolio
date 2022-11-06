@@ -29,8 +29,11 @@
 
                 <div class="form-group">
                     <label for="anioProye">Year :</label>
-                    <input type="text" class="form-control" id="anioProye" name="anioProye"
-                        [(ngModel)]="anioProye" required>
+                    <input type="number" class="form-control" id="anioProye" name="anioProye"
+                        [(ngModel)]="anioProye" required
+                        maxlength="4"
+                            min="2000"
+                            max="2023">
                 </div>
                 <div class="crear">
                     <button ><i class="fa-solid fa-folder-plus"></i> Add</button>

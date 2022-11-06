@@ -72,6 +72,7 @@
 
 }
 
+
 .crear button:hover{
     transform: scale(0.95);
     transition: 7ms;
@@ -112,7 +113,7 @@
         height: 10em;
     }
     .row{
-        padding-left: 2em;
+        padding-left: 0.5em;
        
     }
     .alert{
@@ -122,3 +123,8 @@
         font-size: x-large;
     }
 }
+
+
+  #anioProye {
+    width: 10em;
+  }

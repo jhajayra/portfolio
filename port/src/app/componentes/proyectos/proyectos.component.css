@@ -26,13 +26,15 @@
     .proyectos {
         display: block; 
         justify-content: center;
-        padding-top: 1vh;
+        padding: 1vh 1.5vh;
+        justify-content: center;
         width: 20em;
     }
     .card {
         margin-bottom: 4vh;
         align-items: center;
-        margin-left: 3.5em;
+        justify-content: center;
+
         height: auto;
         padding: 2vh;
     }
@@ -134,7 +136,7 @@ hr {
 .agregar button {
     float: right;
     background-color: rgba(197, 5, 85, 0.89);
-    border-radius: 12%;
+    border-radius: 1.5vh;
     border: solid rgb(224, 160, 195);
     margin: 0.7vh;
     color: aliceblue;

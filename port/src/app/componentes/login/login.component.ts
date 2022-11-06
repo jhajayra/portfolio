@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { LoginUsuario } from 'src/app/models/login-usuario';
 import { AuthService } from 'src/app/servicios/auth.service';
 import { TokenService } from 'src/app/servicios/token.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-login',
@@ -35,7 +36,8 @@ export class LoginComponent implements OnInit {
     }
   
     onLogin(): void {
-      this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password);
+
+       this.loginUsuario = new LoginUsuario(this.nombreUsuario, this.password);
       this.authService.login(this.loginUsuario).subscribe(
         (data) => {
           this.isLogged = true;
@@ -48,10 +50,26 @@ export class LoginComponent implements OnInit {
         (err) => {
           
           this.isLogginFail = true;
-          this.errMsj = err.error.mensaje;
-          console.log(this.errMsj);
+          Swal.fire({
+            title: 'LOGIN FAILED',
+            width: 380,
+            padding: '4em',
+            position: "bottom",
+            timer: 3000,
+            showConfirmButton: false,
+            color: 'rgb(255, 235, 248)',
+            background: 'rgb(61, 0, 41, 0.1)',
+            backdrop: `
+              rgba(5, 8, 7,0.6)  
+              url("../../../assets/imagenes/poli.gif") 
+              no-repeat
+              center
+            `
+          });
+          
         }
         );
+        
         this.router.navigate(['']);
       
     }

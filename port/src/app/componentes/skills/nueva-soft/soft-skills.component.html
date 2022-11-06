@@ -10,11 +10,11 @@
       <h3>Soft Skills</h3>
       <hr>
       <div class="lista" *ngFor="let soft of softList">
-        <h6> <i class="fa-solid fa-star-half-stroke"></i> &nbsp;{{soft.nombreSoft}}</h6>
+        <h6> • &nbsp;{{soft.nombreSoft}}</h6>
         
         <div class="modificar">
-          <button *ngIf="isLogged" routerLink="/edit-soft/{{soft.idSoft}}"><i class="fa fa-pencil"></i></button>
-          <button *ngIf="isLogged" (click)="borrar(soft.idSoft)"><i class="fa fa-trash"></i></button>
+          <a *ngIf="isLogged" routerLink="/edit-soft/{{soft.idSoft}}"><i class="fa fa-pencil"></i></a>
+          <a *ngIf="isLogged" (click)="borrar(soft.idSoft)"><i class="fa fa-trash"></i></a>
         </div>
 
       </div>

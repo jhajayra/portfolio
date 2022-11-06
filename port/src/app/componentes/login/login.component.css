@@ -6,7 +6,7 @@
 
 .dialogo {
 
-    width: 22em;
+    width: 20em;
     text-align: justify;
     justify-content: center;
     align-items: center;
@@ -71,10 +71,6 @@ form .fila button[type="button"]{
     background: linear-gradient(-135deg, #2e002b, #88014b);
     transition: all 0.3s ease;
 }
-
-.head  button  {
-    color: white;
-  }
 
   @media (max-width: 576px) {
     .dialogo {

@@ -26,6 +26,9 @@
     font-weight: 300;
     font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+#porcentaje {
+    padding-left: 1em ;
+}
 
 .form-group  label {
      
@@ -105,3 +108,25 @@
         width: 15em;
     }
 }
+
+input[type=number] {
+    position: relative; 
+    padding: 5px;
+    padding-right: 25px;
+  }
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    opacity: 1;
+  }
+
+  input[type=number]::-webkit-outer-spin-button, 
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: inner-spin-button !important;
+    appearance: auto;
+    width: 18%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 98%;
+  }

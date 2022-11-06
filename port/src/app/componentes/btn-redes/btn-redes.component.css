@@ -1,68 +1,46 @@
-  .redes{
-    display: flex;
-  }
+.social {
+  display: flex;
+}
 
-  ul{
-    float: right;
-    padding-top: 1vh;
-
-  }
-  
-  li{
-  
- 
-    margin: 0.2em;
-    border-radius: 50%;
-    background: #1a000d94;
-    cursor: pointer;
-    align-items: center;
-    display: flex;
-    justify-content: center; 
-    border: 0.8vmin solid #160005;
-    font: 1.6em sans-serif;
-    margin-right: 0.5em;
-  
-   
-  }
-  
-  li a{
-    padding-top: 0.2vw;
-    padding-left: 0.4vw;
-    padding-right: 0.4vw;
-    text-align: center;
-    color: rgb(255, 247, 250);
-    
-  }
-  
-  li:hover {
+.social button{
+  margin: 0.2em;
+  border-radius: 50%;
+  background: #1a000d94;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border: 0.8vmin solid #160005;
+  font: 1.6em sans-serif;
+  margin-right: 0.5em;
+  padding: 0.1em 0.2em;
+  text-align: center;
+  color: rgb(255, 247, 250);
+}
+.social button:hover {
     border: 0.8vmin solid #ebdee1;
     transform: scale(1.2);
     transition: 0.1s;
-  }
-  
-  li a:hover{
+
     color: rgb(255, 255, 255);
-    transform: scale(1.1);
   }
 
 
-  button {
-      color: white;
-      border: solid 1vw #160005;
-      background: #1a000dbb;
-      float: end;
-      font-weight: 600;
-      font-size: x-large;
-      justify-content: end;
+
+
+  @media (max-width: 576px) {
+    .social button {
+      margin-right: 2px;
+      font-size: larger;
+      border: none;
+      background: none;
+    }
+    .social {
+      padding-top: 1em;
     }
 
-    @media (max-width: 576px){
-      button {
-        font-size: medium;
-        font-weight: 400;
-      }
-      .navbar {
-        padding: 2.55vh;
+  }
 
-      }
-    }
+
+
+ 

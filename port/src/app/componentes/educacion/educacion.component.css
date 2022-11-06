@@ -145,7 +145,7 @@ hr {
 .agregar button {
     float: right;
     background-color: rgba(197, 5, 85, 0.89);
-    border-radius: 12%;
+    border-radius: 1.5vh;
     border: solid rgb(224, 160, 195);
     margin: 0.7vh;
     color: aliceblue;
