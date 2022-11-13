@@ -45,18 +45,21 @@ export class EditarInicioComponent implements OnInit {
           icon: 'success',
           width: 300,
           padding: '1em',
-          background: 'radial-gradient( circle farthest-corner at 7.5% 14.2%,  rgba(254,243,240,1) 0%, rgba(250,236,252,1) 90% )',
-          confirmButtonColor: 'rgb(170, 5, 74)',
+          color: '#fff',
+          background: 'rgb(1, 1, 1, 0.8)',
+          confirmButtonColor: 'rgb(69, 170, 69)',  
         });
          this.ruta.navigate(['']);
       }, err => {
         Swal.fire({
           title: 'Wrong Update.',
-          icon: 'error',
+          icon: 'warning',
           width: 350,
           padding: '1em',
-          background: 'radial-gradient( circle farthest-corner at 7.5% 14.2%,  rgba(254,243,240,1) 0%, rgba(250,236,252,1) 90% )',
-          confirmButtonColor: 'rgb(170, 5, 74)',
+          color: '#fff',
+          background: 'rgb(1, 1, 1, 0.84)',
+          showConfirmButton:false,
+          timer: 2000
         });
         this.ruta.navigate(['']);
       }

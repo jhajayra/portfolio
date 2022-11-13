@@ -52,7 +52,7 @@ export class LoginComponent implements OnInit {
           this.isLogginFail = true;
           Swal.fire({
             title: 'LOGIN FAILED',
-            width: 380,
+            width: 370,
             padding: '4em',
             position: "bottom",
             timer: 3000,
@@ -60,7 +60,7 @@ export class LoginComponent implements OnInit {
             color: 'rgb(255, 235, 248)',
             background: 'rgb(61, 0, 41, 0.1)',
             backdrop: `
-              rgba(5, 8, 7,0.6)  
+              rgba(5, 8, 7,0.8)  
               url("../../../assets/imagenes/poli.gif") 
               no-repeat
               center

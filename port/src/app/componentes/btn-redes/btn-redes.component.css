@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.social button{
+.social a{
   margin: 0.2em;
   border-radius: 50%;
   background: #1a000d94;
@@ -17,7 +17,7 @@
   text-align: center;
   color: rgb(255, 247, 250);
 }
-.social button:hover {
+.social a:hover {
     border: 0.8vmin solid #ebdee1;
     transform: scale(1.2);
     transition: 0.1s;
@@ -29,7 +29,7 @@
 
 
   @media (max-width: 576px) {
-    .social button {
+    .social a {
       margin-right: 2px;
       font-size: larger;
       border: none;

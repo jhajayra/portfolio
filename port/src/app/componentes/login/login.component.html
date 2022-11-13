@@ -18,8 +18,9 @@
                     <input type="password" id="password" class="form-control" for="password" required [(ngModel)]="password"
                     placeholder=" Password" [ngModelOptions]="{standalone: true}">
                 </div>
-                <div class="fila">
-                    <button type="button" (click)="onLogin()"> Accsess </button>
+                <div class="botones">
+                    <button type="button" routerLink="/home"> Cancel</button>
+                    <button type="button" (click)="onLogin()"> Accsess&nbsp;&nbsp;<i class="fa-solid fa-circle-arrow-right"></i></button>
                 </div>
                 
                 

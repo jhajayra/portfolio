@@ -139,19 +139,25 @@
   border-radius: 0 0 1em 1em;
 }
 .nombre button, .titulo button, #lapiz {
-  background-color: rgba(216, 5, 93, 0.89);
+  background:none;
   border-radius: 100%;
   height: 4.4vh;
   text-align: center;
   font-size: smaller;
-  border: solid rgb(224, 160, 195);
+  border: none rgb(224, 160, 195);
   margin-left: 1em;
   color: white;
 }
-.about:hover,.nombre button:hover, .titulo button:hover, #lapiz:hover {
+.nombre button:hover, .titulo button:hover, #lapiz:hover {
+  transform: scale(1.3);
+  transition: all;
+  color: rgba(201, 37, 105, 0.89);
+}
+.about:hover{
   transform: scale(1.1);
   transition: all;
 }
+
 .nombre, .titulo {
   position: relative;
   }

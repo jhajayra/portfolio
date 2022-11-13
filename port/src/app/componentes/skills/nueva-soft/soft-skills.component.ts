@@ -11,15 +11,15 @@ import Swal from 'sweetalert2';
 })
 export class SoftSkillsComponent implements OnInit {
 
-  softList : SoftSkills[] = [];
+  softList: SoftSkills[] = [];
 
   isLogged = false;
 
-  constructor(private softServ: SoftSkillsService, private token:TokenService) { }
+  constructor(private softServ: SoftSkillsService, private token: TokenService) { }
 
   ngOnInit(): void {
     this.cargarSoft();
-    if (this.token.getToken()){
+    if (this.token.getToken()) {
       this.isLogged = true;
     } else {
       this.isLogged = false;
@@ -27,40 +27,46 @@ export class SoftSkillsComponent implements OnInit {
   }
 
   cargarSoft(): void {
-    this.softServ.lista().subscribe( data=>{this.softList = data});
+    this.softServ.lista().subscribe(data => { this.softList = data });
   }
 
-  borrar(idSoft?: number){
-      Swal.fire({
-        title: 'Are You Sure?',
-        text: "You won't be able to revert this!",
-        icon: 'warning',
-        width: 350,
-        padding: '1em',
-        showCancelButton: true,
-        confirmButtonColor: 'rgb(170, 5, 74)',
-        cancelButtonColor: 'rgb(46, 1, 20)',
-        confirmButtonText: 'Yes, Delete It!',
-      }).then((result) => {
-      if (result.isConfirmed){
+  borrar(idSoft?: number) {
+    Swal.fire({
+      title: 'Are You Sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      width: 350,
+      padding: '1em',
+      color: '#fff',
+      background: 'rgb(1, 1, 1, 0.8)',
+      showCancelButton: true,
+      confirmButtonColor: 'rgb(190, 41, 116)',
+      cancelButtonColor: 'rgb(150, 84, 116',
+      confirmButtonText: 'Yes, Delete It!',
+    }).then((result) => {
+      if (result.isConfirmed) {
         this.softServ.borrarSoft(idSoft).subscribe(
           data => {
-          this.cargarSoft();
-          Swal.fire({
-            title: 'Deleted!',
-            icon: 'success',
-            width: 350,
-            padding: '1em',
-            showConfirmButton: false,
-            timer: 1700
-          });
-        })
+            this.cargarSoft();
+            Swal.fire({
+              title: 'Deleted!',
+              icon: 'success',
+              width: 350,
+              padding: '1em',
+              color: '#fff',
+              background: 'rgb(1, 1, 1, 0.8)',
+              showConfirmButton: false,
+              timer: 1700
+            });
+          })
       } else {
         Swal.fire({
           title: 'Cancelled!',
           icon: 'error',
           width: 350,
           padding: '1em',
+          color: '#fff',
+          background: 'rgb(1, 1, 1, 0.8)',
           showConfirmButton: false,
           timer: 1700
         });
@@ -68,6 +74,6 @@ export class SoftSkillsComponent implements OnInit {
 
     }
     )
-    
+
   }
 }

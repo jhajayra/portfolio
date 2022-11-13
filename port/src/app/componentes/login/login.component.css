@@ -58,14 +58,18 @@ form .fila input:valid{
   border-color: #14010a;
     }
 
-form .fila button[type="button"]{
+.botones {
+    display: flex;
+    padding-top: 1em;
+    justify-content: center;
+}
+form .botones button[type="button"]{
     color: #fff;
     border: solid rgb(46, 0, 11);
     float: right;
-    margin-top: -1vw;
-    margin-right: 3vh;
     border-radius: 2vh;
     text-align: center;
+    margin: 0 2em 0 1.5em;
     font-weight: 500;
     cursor: pointer;
     background: linear-gradient(-135deg, #2e002b, #88014b);
@@ -75,6 +79,12 @@ form .fila button[type="button"]{
   @media (max-width: 576px) {
     .dialogo {
       padding: 4em;
+    }
+
+    form .botones button[type="button"]{
+        margin: 0 0.7em 0 0.7em;
+        font-size: 0.8em;
+        
     }
   
   }
