@@ -40,7 +40,17 @@
 </header>
 
 <body>
-    <router-outlet></router-outlet>
+   
+    <router-outlet>
+        <ngx-spinner bdColor = "rgba(21,16,23,0.95)" 
+        size = "medium" 
+        color = "#ffffff"
+        type = "ball-running-dots" 
+        [fullScreen] = "false">
+        
+        <h4 id="loading"> Loading... </h4></ngx-spinner>
+    </router-outlet>
+    
 
 </body>
 <footer>

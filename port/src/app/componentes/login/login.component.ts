@@ -61,7 +61,7 @@ export class LoginComponent implements OnInit {
             background: 'rgb(61, 0, 41, 0.1)',
             backdrop: `
               rgba(5, 8, 7,0.8)  
-              url("../../../assets/imagenes/poli.gif") 
+              url("../../../assets/imagenes/gritando.gif") 
               no-repeat
               center
             `
